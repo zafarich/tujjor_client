@@ -7,19 +7,19 @@
                 <div class="title-box title__about__us">
                     <ul>
                         <li>
-                            <nuxt-link to="/">Главная страница </nuxt-link>
+                            <nuxt-link to="/">{{$t('home')}} </nuxt-link>
                             /
                         </li>
 
                         <li>
-                            <nuxt-link to="#"> Избранное </nuxt-link>
+                            <nuxt-link to="#"> {{$t('izb')}} </nuxt-link>
                         </li>
                     </ul>
                 </div>
             </div>
             <section class="container popular__container">
                 <div class="popular__heading">
-                    У вас нет продукта в корзины!
+                    {{$t('netkor')}}
                 </div>
             </section>
         </section>
@@ -28,19 +28,19 @@
                 <div class="title-box title__about__us">
                     <ul>
                         <li>
-                            <nuxt-link to="/">Главная страница </nuxt-link>
+                            <nuxt-link to="/"> {{$t('home')}}</nuxt-link>
                             /
                         </li>
 
                         <li>
-                            <nuxt-link to="#"> Избранное </nuxt-link>
+                            <nuxt-link to="#">  {{$t('izb')}} </nuxt-link>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <section class="container popular__container">
-                <div class="popular__heading">Избранное</div>
+                <div class="popular__heading"> {{$t('izb')}}</div>
                 <div class="popular__item-box">
                     <div
                         class="popular__items"
@@ -91,14 +91,14 @@
                                         {{
                                             updatePriceFormat(product.discount)
                                         }}
-                                        сум
+                                       {{$t('sum')}}
                                     </span>
                                     <span
                                         class="popular__items__desription--price"
                                         v-if="!product.discount"
                                     >
                                         {{ updatePriceFormat(product.price) }}
-                                        сум
+                                          {{$t('sum')}}
                                     </span>
 
                                     <p
@@ -130,7 +130,7 @@
                                     class="popular__items__desription--price popular__items__desription--old--price hidden"
                                 >
                                     {{ updatePriceFormat(product.price) }}
-                                    сум
+                                      {{$t('sum')}}
                                 </span>
                             </div>
                         </nuxt-link>
@@ -150,13 +150,13 @@
                 <div v-if="dangerModal.showContent">
                     <div class="d-block text-center">
                         <h3>
-                            Вы хотите удалить
+                            {{$t('vixotite')}}
                             {{
                                 removeProductId === "rm/all"
                                     ? "все продукты"
                                     : "этот продукт"
                             }}
-                            из корзины?
+                          {{$t('izkor')}}
                         </h3>
                     </div>
                     <b-button
@@ -266,7 +266,7 @@
                         defaultProductId();
                         addProductId('rm/all');
                     "
-                    >Удалить все продукты из списка</a
+                    >{{$t('vseud')}}</a
                 >
             </section>
         </section>

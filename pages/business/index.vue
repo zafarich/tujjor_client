@@ -68,14 +68,14 @@
                 <div
                     class="d-flex flex-column justify-content-center input__box form-floating"
                 >
-                    <label for="name">Полное имя</label>
+                    <label for="name">{{$t('fullname')}}</label>
                     <input
                         name="name"
                         id="name"
                         v-model="shopAccess.name"
                         type="text"
                         class="form-control"
-                        placeholder="Полное имя"
+                        :placeholder="$t('fullname')"
                     />
                     <h6
                         class="error-text"
@@ -88,28 +88,28 @@
                 <div
                     class="d-flex flex-column justify-content-center input__box form-floating"
                 >
-                    <label for="email">Электронная почта</label>
+                    <label for="email">{{$t('elpoch')}}</label>
                     <input
                         name="email"
                         id="email"
                         v-model="shopAccess.email"
                         type="email"
                         class="form-control"
-                        placeholder="Электронная почта"
+                        :placeholder="$t('elpoch')"
                     />
                 </div>
 
                 <div
                     class="d-flex flex-column justify-content-center input__box form-floating"
                 >
-                    <label for="phone">Номер телефона</label>
+                    <label for="phone">{{$t('tel')}}</label>
                     <input
                         name="phone"
                         id="phone"
                         v-model="shopAccess.phone"
                         type="text"
                         class="form-control"
-                        placeholder="Номер телефона"
+                        :placeholder="$t('tel')"
                     />
                     <h6
                         class="error-text"
@@ -122,14 +122,14 @@
                 <div
                     class="d-flex flex-column justify-content-center input__box form-floating"
                 >
-                    <label for="companyName">Название компании</label>
+                    <label for="companyName">{{$t('nazfilm')}}</label>
                     <input
                         name="companyName"
                         id="companyName"
                         v-model="shopAccess.companyName"
                         type="text"
                         class="form-control"
-                        placeholder="Название компании"
+                        :placeholder="$t('nazfilm')"
                     />
                     <h6
                         class="error-text"
@@ -142,14 +142,14 @@
                 <div
                     class="d-flex flex-column justify-content-center input__box form-floating"
                 >
-                    <label for="comment">Сообщение</label>
+                    <label for="comment">{{$t('sobsheniya')}}</label>
                     <textarea
                         name="comment"
                         id="comment"
                         v-model="shopAccess.comment"
                         type="text"
                         class="form-control"
-                        placeholder="Сообщение"
+                        :placeholder="$t('sobsheniya')"
                     />
                 </div>
 
@@ -164,7 +164,7 @@
                             label="Small Spinner"
                         ></b-spinner>
                     </div>
-                    Отправить
+                   {{$t('sendx')}}
                 </button>
             </div>
 
@@ -178,7 +178,7 @@
             >
                 <div class="d-block text-center">
                     <h3>
-                        Вы уже отправили запрос, хотите изменить ваши данные?
+                        {{$t('viuje')}}
                     </h3>
                 </div>
                 <b-button
@@ -186,14 +186,14 @@
                     variant="warning"
                     block
                     @click="$router.push('/')"
-                    >Нет!</b-button
+                    >{{$t('net')}}</b-button
                 >
                 <b-button
                     class="b-button"
                     variant="danger"
                     block
                     @click="modalShow = !modalShow"
-                    >Да!</b-button
+                    >{{$t('da')}}</b-button
                 >
             </b-modal>
 
@@ -208,14 +208,14 @@
                 class="b-modal"
             >
                 <div class="d-block text-center ">
-                    <h3>Ваш запрос успешно отправлен.</h3>
+                    <h3>{{$t('zapuspeshno')}}</h3>
                 </div>
                 <b-button
                     variant="primary"
                     block
                     @click="$router.push('/')"
                     class="b-button"
-                    >ОК!</b-button
+                    >{{$t('ok')}}</b-button
                 >
             </b-modal>
         </div>
@@ -290,14 +290,14 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="fullName">Ф.И.О</label>
+                        <label for="fullName">{{$t('fio')}}</label>
                         <input
                             name="fullName"
                             id="fullName"
                             v-model="shopCreate.fullNameDirector"
                             type="text"
                             class="form-control"
-                            placeholder="Ф.И.О"
+                            :placeholder="$t('fio')"
                         />
                         <h6
                             class="error-text"
@@ -313,14 +313,14 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="shopName">Название вашей фирмы</label>
+                        <label for="shopName">{{$t('nazfilm')}}</label>
                         <input
                             name="shopName"
                             id="shopName"
                             v-model="shopCreate.shopName"
                             type="text"
                             class="form-control"
-                            placeholder="Название вашей фирмы"
+                            :placeholder="$t('nazfilm')"
                         />
                         <h6
                             class="error-text"
@@ -333,14 +333,14 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="shopCardIndex">Банковские реквизиты</label>
+                        <label for="shopCardIndex">{{$t('bankrek')}}</label>
                         <input
                             name="shopCardIndex"
                             id="shopCardIndex"
                             v-model="shopCreate.shopId"
                             type="text"
                             class="form-control"
-                            placeholder="Банковские реквизиты"
+                            :placeholder="$t('bankrek')"
                         />
                         <h6
                             class="error-text"
@@ -353,14 +353,14 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="shopCardMfo">МФО</label>
+                        <label for="shopCardMfo">{{$t('mfo')}}</label>
                         <input
                             name="shopCardMfo"
                             id="shopCardMfo"
                             v-model="shopCreate.mfo"
                             type="text"
                             class="form-control"
-                            placeholder="МФО"
+                            :placeholder="$t('elpoch')"
                         />
                         <h6
                             class="error-text"
@@ -373,14 +373,14 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="shopAddress">Адрес</label>
+                        <label for="shopAddress">{{$t('adres')}}</label>
                         <input
                             name="shopAddress"
                             id="shopAddress"
                             v-model="shopCreate.address"
                             type="text"
                             class="form-control"
-                            placeholder="Адрес"
+                            :placeholder="$t('adres')"
                         />
                         <h6
                             class="error-text"
@@ -393,7 +393,7 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="shopPhone">Номер телефона</label>
+                        <label for="shopPhone">{{$t('tel')}}</label>
                         <input
                             name="shopPhone"
                             id="shopPhone"
@@ -414,14 +414,14 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="bank">Название Банка</label>
+                        <label for="bank">{{$t('imyabank')}}</label>
                         <input
                             name="bank"
                             id="bank"
                             v-model="shopCreate.bankName"
                             type="text"
                             class="form-control"
-                            placeholder="Название Банка"
+                            :placeholder="$t('imyabank')"
                         />
                         <h6
                             class="error-text"
@@ -454,7 +454,7 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="shopEmail">Email</label>
+                        <label for="shopEmail">{{$t('email')}}</label>
                         <input
                             name="shopEmail"
                             id="shopEmail"
@@ -482,11 +482,11 @@
                                 label="Small Spinner"
                             ></b-spinner>
                         </div>
-                        Получить договор
+                     {{$t('poldog')}}
                     </button>
 
                     <nuxt-link :to="{ name: `application___${$i18n.locale}` }"
-                        >У меня есть договор</nuxt-link
+                        >{{$t('estdog')}}</nuxt-link
                     >
                 </div>
 
@@ -500,14 +500,14 @@
                 >
                     <div class="d-block text-center">
                         <h3>
-                            Загрузите пожалуйста ваш договор и лицензию.
+                            {{$t('zagdog')}}
                         </h3>
                     </div>
                     <div
                         class="d-flex align-items-baseline  input__box form-floating"
                     >
                         <label class="input__file__label" for="shopContract"
-                            >Договор:</label
+                            >{{$t('dog')}}</label
                         >
                         <input
                             name="shopContract"
@@ -516,7 +516,7 @@
                             type="file"
                             accept="image/*,.pdf"
                             class="form-control input__file"
-                            placeholder="Договор"
+                            :placeholder="$t('dog')"
                             @change="handleFileContract"
                         />
                     </div>
@@ -530,7 +530,7 @@
                                 shopCreate.modalSend = !shopCreate.modalSend
                             "
                         >
-                            У вас нет договора?
+                           {{$t('udog')}}
                         </a>
                     </div>
 
@@ -538,7 +538,7 @@
                         class="d-flex  align-items-start input__box form-floating"
                     >
                         <label class="input__file__label" for="shopLicense"
-                            >Лицензия:</label
+                            >{{$t('litsenziya')}}</label
                         >
                         <input
                             name="shopLicense"
@@ -547,7 +547,7 @@
                             type="file"
                             accept="image/*,.pdf"
                             class="form-control input__file"
-                            placeholder="Лицензия"
+                            :placeholder="$t('litsenziya')"
                             @change="handleFileLicense"
                         />
                     </div>
@@ -557,7 +557,7 @@
                         variant="primary"
                         block
                         @click="sendCreateShop"
-                        >Отправить!</b-button
+                        >{{$t('sendx')}}</b-button
                     >
                 </b-modal>
 
@@ -572,7 +572,7 @@
                     class="b-modal"
                 >
                     <div class="d-block text-center ">
-                        <h3>Ваш запрос успешно отправлен.</h3>
+                        <h3>{{$t('zapuspeshno')}}</h3>
                     </div>
                     <b-button
                         variant="primary"
@@ -594,8 +594,7 @@
                 >
                     <div class="d-block text-center">
                         <h3>
-                            Вы уже отправили запрос, хотите изменить ваши
-                            данные?
+                           {{$t('viuje')}}
                         </h3>
                     </div>
                     <b-button
@@ -603,14 +602,14 @@
                         variant="warning"
                         block
                         @click="$router.push('/')"
-                        >Нет!</b-button
+                        >{{$t('net')}}</b-button
                     >
                     <b-button
                         class="b-button"
                         variant="danger"
                         block
                         @click="confirmEdit"
-                        >Да!</b-button
+                        >{{$t('da')}}</b-button
                     >
                 </b-modal>
             </div>
@@ -1210,7 +1209,7 @@
             class="shop__log__box"
         >
             <div>
-                <p>Ваш магазин успешно создан!</p>
+                <p>{{$t('maguspeshno')}}</p>
             </div>
         </section>
     </section>
