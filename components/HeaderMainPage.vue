@@ -143,52 +143,55 @@
                         </button>
                     </div>
 
-                    <div
-                        class="header-search"
-                        :class="
-                            searchActive.active ? searchActive.searchClass : ''
-                        "
-                        @keypress="searchByTxt"
-                    >
-                        <input
-                            type="text"
-                            :placeholder="$t('search')"
-                            name="search"
-                            v-model="searchTxt"
-                            id="search-id"
-                        />
-                        <input
-                            type="text"
-                            :placeholder="$t('search')"
-                            name="search"
-                            id="search-id"
-                            style="position: absolute; left: -100000px"
-                        />
-                        <button @click="searchByTxt">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 20 20"
-                                fill="none"
-                            >
-                                <path
-                                    d="M8.71429 15.7857C12.9748 15.7857 16.4286 12.6773 16.4286 8.84286C16.4286 5.00842 12.9748 1.9 8.71429 1.9C4.4538 1.9 1 5.00842 1 8.84286C1 12.6773 4.4538 15.7857 8.71429 15.7857Z"
-                                    stroke="white"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M14.5 14.05L19 18.1"
-                                    stroke="white"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </button>
-                    </div>
+                    <form @submit.prevent="searchByTxt" class="header-search">
+                        <div
+                            class="header-search"
+                            :class="
+                                searchActive.active
+                                    ? searchActive.searchClass
+                                    : ''
+                            "
+                        >
+                            <input
+                                type="text"
+                                :placeholder="$t('search')"
+                                name="search"
+                                v-model="searchTxt"
+                                id="search-id"
+                            />
+                            <input
+                                type="text"
+                                :placeholder="$t('search')"
+                                name="search"
+                                id="search-id"
+                                style="position: absolute; left: -100000px"
+                            />
+                            <button type="submit">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.71429 15.7857C12.9748 15.7857 16.4286 12.6773 16.4286 8.84286C16.4286 5.00842 12.9748 1.9 8.71429 1.9C4.4538 1.9 1 5.00842 1 8.84286C1 12.6773 4.4538 15.7857 8.71429 15.7857Z"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M14.5 14.05L19 18.1"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
 
                     <div
                         :class="
@@ -917,16 +920,10 @@ export default {
 
         // search settings
         searchByTxt(event) {
-            this.resetSearchSettings();
-            // validate is it enter or click
-            if (event.key === "Enter" || event.type === "click") {
-                const txt = this.searchTxt;
-                this.setSearchTxt(txt);
-                this.$router.push({
-                    name: "search-id___" + this.$i18n.locale,
-                    params: { id: txt }
-                });
-            }
+            this.$router.push({
+                name: `filter___${this.$i18n.locale}`,
+                query: { search: this.searchTxt }
+            });
         },
 
         // search by category

@@ -3,7 +3,7 @@
         <div class="header_back" id="header__back"></div>
         <Header-main-page />
 
-        <Nuxt />
+        <Nuxt :key="$route.fullPath" />
 
         <Footer />
     </div>

@@ -2,7 +2,7 @@
     <div id="filter">
         <div class="container">
             <div class="title-filter">
-                <select v-model="filter.sort">
+                <select v-model="filter.sort" @change="changeSort">
                     <option value="" disabled selected>
                         {{ $t("sortBy") }}
                     </option>
@@ -29,7 +29,7 @@
                         <vue-slider
                             v-model="priceRange"
                             :min="0"
-                            :max="400000"
+                            :max="4000000"
                             :interval="5000"
                             :process-style="{
                                 backgroundColor: '#FE9E0D'
@@ -70,8 +70,12 @@
                             <span class="checkmark"></span>
                         </label>
                     </div>
+
+                    <button class="filter-btn" @click="filterData">
+                        {{ $t("sarfil") }}
+                    </button>
                 </div>
-                <div class="filter-right">
+                <div class="filter-right" v-if="products.length > 0">
                     <div class="card-row">
                         <div
                             class="card-4"
@@ -82,8 +86,8 @@
                         </div>
                     </div>
 
-                    <div class="btn-again">
-                        <button>{{ $t("all") }}</button>
+                    <div class="btn-again" v-if="filterLimit != filter.page">
+                        <button @click="addProducts">{{ $t("all") }}</button>
                     </div>
                 </div>
             </div>
@@ -95,18 +99,21 @@
 export default {
     data() {
         return {
-            priceRange: [0, 400000],
+            priceRange: [0, 4000000],
             filter: {
                 page: 1,
                 limit: 12,
                 category: [],
                 brand: [],
                 search: "",
-                start: "",
-                end: "",
+                start: 0,
+                end: 0,
                 sort: ""
             },
-            brands: []
+            brands: [],
+            products: [],
+            page: 1,
+            filterLimit: 0
         };
     },
     async mounted() {
@@ -117,7 +124,12 @@ export default {
             );
         }
 
+        if (this.$route.query.search) {
+            this.filter.search = this.$route.query.search;
+        }
         let filterNav = await this.$axios.$post(`product/count`, this.filter);
+
+        this.filterLimit = Math.ceil(filterNav.count / this.filter.limit);
 
         filterNav.brands.forEach(item => {
             let brand = this.$store.state.all.brandsAll.find(
@@ -125,10 +137,30 @@ export default {
             );
             this.brands.push(brand);
         });
-
         await this.getData();
     },
     methods: {
+        async filterData() {
+            this.filter.start = this.priceRange[0];
+            this.filter.end = this.priceRange[1];
+
+            this.filter.page = 1;
+            this.products = [];
+            await this.getNav();
+            await this.getData();
+        },
+
+        async getNav() {
+            let filterNav = await this.$axios.$post(
+                `product/count`,
+                this.filter
+            );
+
+            this.filterLimit = Math.ceil(filterNav.count / this.filter.limit);
+        },
+        changeSort() {
+            this.getData();
+        },
         // get find all children
         getChild(category) {
             category.forEach(item => {
@@ -158,6 +190,18 @@ export default {
                 `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
                 this.filter
             );
+            this.products = products.data;
+        },
+        async addProducts() {
+            if (this.filterLimit > this.filter.page) {
+                this.filter.page = this.filter.page + 1;
+                let products = await this.$axios.$post(
+                    `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
+                    this.filter
+                );
+
+                this.products = this.products.concat(products.data);
+            }
         }
     }
 };
@@ -169,7 +213,7 @@ div#filter {
     div.title-filter {
         display: flex;
         justify-content: flex-end;
-
+        margin-bottom: 20px;
         select {
             background: #ffffff;
             cursor: pointer;
@@ -264,6 +308,17 @@ div#filter {
 
     div.filter-content {
         display: flex;
+        button.filter-btn {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 10px 30px;
+            color: #ffffff;
+            background: #003466;
+            border-radius: 5px;
+            border: none;
+            margin-top: 15px;
+        }
         div.filter-nav {
             width: 265px;
             h5.filter-title {
@@ -291,7 +346,7 @@ div#filter {
 
         div.filter-right {
             width: calc(100% - 265px);
-            padding-left: 15px;
+            padding-left: 20px;
         }
 
         div.btn-again {
