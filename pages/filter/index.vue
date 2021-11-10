@@ -1,111 +1,78 @@
 <template>
-    <div id="filter">
-        <base-loading v-if="!isGet"></base-loading>
-        <div class="container">
-            <div v-if="products.length > 0">
-                <div class="title-filter">
-                    <select v-model="filter.sort" @change="changeSort">
-                        <option value="" disabled selected>
-                            {{ $t("sortBy") }}
-                        </option>
-                        <option value="new"> {{ $t("sortNew") }} </option>
-                        <option value="popular">
-                            {{ $t("sortPop") }}
-                        </option>
-                        <option value="priceDown">
-                            {{ $t("sortUb") }}
-                        </option>
-                        <option value="priceUp">
-                            {{ $t("sortVoz") }}
-                        </option>
-                    </select>
-                </div>
+  <div id="filter">
+    <base-loading v-if="!isGet"></base-loading>
+    <div class="container">
+      <div v-if="products.length > 0">
+        <div class="filter-content">
+          <div class="filter-nav">
+            <h5 class="filter-title">{{ $t("sortPrice") }}</h5>
 
-                <div class="filter-content">
-                    <div class="filter-nav">
-                        <h5 class="filter-title">
-                            {{ $t("sortPrice") }}
-                        </h5>
-
-                        <div class="filter-range">
-                            <vue-slider
-                                v-model="priceRange"
-                                :min="0"
-                                :max="4000000"
-                                :interval="5000"
-                                :process-style="{
+            <div class="filter-range">
+              <vue-slider
+                v-model="priceRange"
+                :min="0"
+                :max="4000000"
+                :interval="5000"
+                :process-style="{
                                     backgroundColor: '#FE9E0D'
                                 }"
-                                :tooltip-style="{
+                :tooltip-style="{
                                     backgroundColor: 'black',
                                     borderColor: 'black'
                                 }"
-                            ></vue-slider>
+              ></vue-slider>
 
-                            <div class="prices">
-                                <h6>
-                                    {{ beautySum(priceRange[0]) }}
-                                    {{ $t("sum") }}
-                                </h6>
-                                <h6>-</h6>
-                                <h6>
-                                    {{ beautySum(priceRange[1]) }}
-                                    {{ $t("sum") }}
-                                </h6>
-                            </div>
-                        </div>
-
-                        <h5 class="filter-title">
-                            {{ $t("sortBrand") }}
-                        </h5>
-
-                        <div class="filter-brand">
-                            <label
-                                class="cont"
-                                v-for="(item, index) in brands"
-                                :key="index"
-                            >
-                                {{ item.name }}
-                                <input
-                                    type="checkbox"
-                                    v-model="filter.brand"
-                                    :value="item._id"
-                                />
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-
-                        <button class="filter-btn" @click="filterData">
-                            {{ $t("sarfil") }}
-                        </button>
-                    </div>
-                    <div class="filter-right" v-if="products.length > 0">
-                        <div class="card-row">
-                            <div
-                                class="card-4"
-                                v-for="product in products"
-                                :key="product._id"
-                            >
-                                <ProductCard :product="product" />
-                            </div>
-                        </div>
-
-                        <div
-                            class="btn-again"
-                            v-if="filterLimit != filter.page"
-                        >
-                            <button @click="addProducts">
-                                {{ $t("all") }}
-                            </button>
-                        </div>
-                    </div>
-                </div>
+              <div class="prices">
+                <h6>
+                  {{ beautySum(priceRange[0]) }}
+                  {{ $t("sum") }}
+                </h6>
+                <h6>-</h6>
+                <h6>
+                  {{ beautySum(priceRange[1]) }}
+                  {{ $t("sum") }}
+                </h6>
+              </div>
             </div>
 
-            <div v-else>
-                <h4>{{ $t("err4") }}</h4>
+            <h5 class="filter-title">{{ $t("sortBrand") }}</h5>
+
+            <div class="filter-brand">
+              <label class="cont" v-for="(item, index) in brands" :key="index">
+                {{ item.name }}
+                <input type="checkbox" v-model="filter.brand" :value="item._id" />
+                <span class="checkmark"></span>
+              </label>
             </div>
+            <div class="btn-sor">
+              <button class="filter-btn" @click="filterData">{{ $t("sarfil") }}</button>
+            </div>
+          </div>
+          <div class="filter-right" v-if="products.length > 0">
+            <div class="title-filter">
+              <select v-model="filter.sort" @change="changeSort">
+                <option value disabled selected>{{ $t("sortBy") }}</option>
+                <option value="new">{{ $t("sortNew") }}</option>
+                <option value="popular">{{ $t("sortPop") }}</option>
+                <option value="priceDown">{{ $t("sortUb") }}</option>
+                <option value="priceUp">{{ $t("sortVoz") }}</option>
+              </select>
+            </div>
+            <div class="card-row">
+              <div class="card-4" v-for="product in products" :key="product._id">
+                <ProductCard :product="product" />
+              </div>
+            </div>
+
+            <div class="btn-again" v-if="filterLimit != filter.page">
+              <button @click="addProducts">{{ $t("all") }}</button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div v-else>
+        <h4>{{ $t("err4") }}</h4>
       </div>
     </div>
   </div>
@@ -114,56 +81,54 @@
 <script>
 import BaseLoading from "../../components/UI/BaseLoading.vue";
 export default {
-    components: { BaseLoading },
-    data() {
-        return {
-            priceRange: [0, 4000000],
-            filter: {
-                page: 1,
-                limit: 12,
-                category: [],
-                brand: [],
-                search: "",
-                start: 0,
-                end: 0,
-                sort: ""
-            },
-            brands: [],
-            products: [],
-            page: 1,
-            filterLimit: 0,
-            isGet: false
-        };
-    },
-    async mounted() {
-        if (this.$route.query.category) {
-            this.getChildren(
-                this.$route.query.category,
-                this.$store.state.all.categoryAll
-            );
-        }
+  components: { BaseLoading },
+  data() {
+    return {
+      priceRange: [0, 4000000],
+      filter: {
+        page: 1,
+        limit: 12,
+        category: [],
+        brand: [],
+        search: "",
+        start: 0,
+        end: 0,
+        sort: ""
+      },
+      brands: [],
+      products: [],
+      page: 1,
+      filterLimit: 0,
+      isGet: false
+    };
+  },
+  async mounted() {
+    if (this.$route.query.category) {
+      this.getChildren(
+        this.$route.query.category,
+        this.$store.state.all.categoryAll
+      );
+    }
 
     if (this.$route.query.search) {
       this.filter.search = this.$route.query.search;
     }
     let filterNav = await this.$axios.$post(`product/count`, this.filter);
 
-        if (filterNav.count) {
-            this.filterLimit = Math.ceil(filterNav.count / this.filter.limit);
+    if (filterNav.count) {
+      this.filterLimit = Math.ceil(filterNav.count / this.filter.limit);
 
-            filterNav.brands.forEach(item => {
-                let brand = this.$store.state.all.brandsAll.find(
-                    i => i._id == item
-                );
-                this.brands.push(brand);
-            });
-        }
-        await this.getData();
-    },
-    methods: {
-        async filterData() {
-            this.filter.start = this.priceRange[0];
-            this.filter.end = this.priceRange[1];
+      filterNav.brands.forEach(item => {
+        let brand = this.$store.state.all.brandsAll.find(i => i._id == item);
+        this.brands.push(brand);
+      });
+    }
+    await this.getData();
+  },
+  methods: {
+    async filterData() {
+      this.filter.start = this.priceRange[0];
+      this.filter.end = this.priceRange[1];
 
       this.filter.page = 1;
       this.products = [];
@@ -203,23 +168,23 @@ export default {
       });
     },
 
-        async getData() {
-            this.isGet = false;
-            let products = await this.$axios.$post(
-                `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
-                this.filter
-            );
-            this.products = products.data;
+    async getData() {
+      this.isGet = false;
+      let products = await this.$axios.$post(
+        `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
+        this.filter
+      );
+      this.products = products.data;
 
-            this.isGet = true;
-        },
-        async addProducts() {
-            if (this.filterLimit > this.filter.page) {
-                this.filter.page = this.filter.page + 1;
-                let products = await this.$axios.$post(
-                    `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
-                    this.filter
-                );
+      this.isGet = true;
+    },
+    async addProducts() {
+      if (this.filterLimit > this.filter.page) {
+        this.filter.page = this.filter.page + 1;
+        let products = await this.$axios.$post(
+          `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
+          this.filter
+        );
 
         this.products = this.products.concat(products.data);
       }
@@ -231,6 +196,7 @@ export default {
 <style lang="scss">
 div#filter {
   padding: 15px 0px;
+  margin-top: 50px;
   div.title-filter {
     display: flex;
     justify-content: flex-end;
@@ -342,6 +308,8 @@ div#filter {
     }
     div.filter-nav {
       width: 265px;
+      padding-top: 50px;
+      
       h5.filter-title {
         font-weight: 500;
         font-size: 18px;
@@ -396,19 +364,31 @@ div#filter {
   }
 }
 @media only screen and (max-width: 440px) {
-    .fil-btn{
-        display: flex;
-        justify-content: center;
+    #filter{
+        margin-top: 0px !important;
     }
+  .fil-btn {
+    display: flex;
+    justify-content: center;
+  }
   .filter-content {
     flex-direction: column;
     .filter-nav {
       width: 100% !important;
       margin-bottom: 50px;
+      padding-top: 20px !important;
+      .btn-sor{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
     }
     .filter-right {
-        padding-left: 0 !important;
+      padding-left: 0 !important;
       width: 100% !important;
+      .title-filter{
+          justify-content: flex-start !important;
+      }
     }
   }
 }
