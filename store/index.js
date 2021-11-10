@@ -4,6 +4,7 @@ import orders from "./modules/orders";
 import search from "./modules/search";
 import redirect from "./modules/redirect";
 import authSets from "./modules/auth";
+import all from "./modules/all";
 
 export const state = () => ({});
 export const mutations = {};
@@ -15,5 +16,6 @@ export const modules = {
     orders,
     search,
     redirect,
-    authSets
+    authSets,
+    all
 };

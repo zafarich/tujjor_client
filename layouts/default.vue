@@ -1,5 +1,5 @@
 <template>
-    <div class="layout">
+    <div class="layout" v-if="isData">
         <div class="header_back" id="header__back"></div>
         <Header-main-page />
 
@@ -10,7 +10,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            isData: false
+        };
+    },
+    async mounted() {
+        await this.$store.dispatch("getCat");
+        await this.$store.dispatch("getBrands");
+        this.isData = true;
+    }
+};
 </script>
 
 <style>

@@ -232,7 +232,7 @@
                                 />
                             </svg>
                         </span>
-                        <h5>+99833 485 20 10</h5>
+                        <a href="tel:+998911800882">+99891 180 08 82</a>
                     </div>
 
                     <ul class="social-links">
@@ -338,9 +338,10 @@ footer {
             span {
                 margin-right: 10px;
             }
-            h5 {
+            h5,
+            a {
                 font-weight: normal;
-                font-size: 18px;
+                font-size: 14px;
                 line-height: 120%;
                 margin-bottom: 0px;
                 color: #ffffff;

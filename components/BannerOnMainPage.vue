@@ -18,25 +18,17 @@
                         <!-- Text slides with image -->
 
                         <a
-                            v-if="$i18n.locale == 'uz'"
-                            :href="item.url.uz"
+                            :href="`${item.url}?lang=${$i18n.locale}`"
                             v-for="(item, index) in slider"
                             :key="index"
                             class="b-carousel-slide"
                         >
                             <b-carousel-slide
+                                v-if="$i18n.locale == 'uz'"
                                 :img-src="$cdn + item.image.uz"
                             ></b-carousel-slide>
-                        </a>
-
-                        <a
-                            v-if="$i18n.locale == 'ru'"
-                            :href="item.url.ru"
-                            v-for="(item, index) in slider"
-                            :key="index"
-                            class="b-carousel-slide"
-                        >
                             <b-carousel-slide
+                                v-if="$i18n.locale == 'ru'"
                                 :img-src="$cdn + item.image.ru"
                             ></b-carousel-slide>
                         </a>
@@ -50,11 +42,20 @@
                     alt="Banner photo"
                 />
             </div> -->
-                <div class="banner__box--small--img">
-                    <img
-                        src="../assets/img/other/banner.png"
-                        alt="Banner photo"
-                    />
+                <div class="banner__box--small--img" v-if="advImage.length > 0">
+                    <a
+                        :href="`${advImage[0].url}?lang=${$i18n.locale}`"
+                        class="b-carousel-slide"
+                    >
+                        <img
+                            v-if="$i18n.locale == 'ru'"
+                            :src="$cdn + advImage[0].image.ru"
+                            alt="Other item photo"/>
+                        <img
+                            v-if="$i18n.locale == 'uz'"
+                            :src="$cdn + advImage[0].image.uz"
+                            alt="Other item photo"
+                    /></a>
                 </div>
             </div>
         </section>
@@ -73,10 +74,17 @@ export default {
             slider: [],
             slide: 0,
             sliding: null,
-            image: ""
+            image: "",
+            advImage: []
         };
     },
     async mounted() {
+        // banner options
+        let res = await this.$axios.get("/banner/all");
+        let data = res.data.data;
+        let five = data.filter(item => item.position == 5);
+        this.advImage = five;
+
         let slider = await this.$axios.get("/slider/all").then(res => {
             if (res.success) {
                 return res;
@@ -147,6 +155,7 @@ export default {
             img {
                 height: 100%;
                 width: 100%;
+                object-fit: cover;
             }
         }
     }

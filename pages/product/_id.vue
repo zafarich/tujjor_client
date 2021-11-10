@@ -413,58 +413,15 @@
 
             <section class="container popular__container">
                 <div class="popular__heading">{{ $t("mag") }}</div>
-                <div class="popular__item-box">
-                    <nuxt-link
-                        class="popular__items"
+
+                <div class="card-row">
+                    <div
+                        class="card-5"
                         v-for="product in productsInMagazine.data"
                         :key="product._id"
-                        :to="{
-                            name: `product-id___${$i18n.locale}`,
-                            params: { id: product.slug }
-                        }"
                     >
-                        <img
-                            class="popular__items__img"
-                            :src="$cdn + product.image"
-                            alt="Popular item photo"
-                            type="photo/png"
-                        />
-                        <div class="popular__items__desription">
-                            <div class="name__rating">
-                                <span class="popular__items__desription--name">
-                                    {{ product.category[$i18n.locale] }}
-                                </span>
-
-                                <div class="magazine__item--rating">
-                                    <img
-                                        src="../../assets/img/magazines/star.png"
-                                        alt="Star img"
-                                    /><span>4</span>
-                                </div>
-                            </div>
-                            <h4 class="popular__items__desription--categorie">
-                                {{ product.name[$i18n.locale] }}
-                            </h4>
-                            <span
-                                class="popular__items__desription--price"
-                                v-if="!product.discount"
-                                >{{ updatePriceFormat(product.price) }}
-                                {{ $t("sum") }}</span
-                            >
-                            <span
-                                class="popular__items__desription--price"
-                                v-if="!!product.discount"
-                                >{{ updatePriceFormat(product.discount) }}
-                                {{ $t("sum") }}</span
-                            >
-                            <span
-                                class="popular__items__desription--price popular__items__desription--old--price hidden"
-                                v-if="!!product.discount"
-                                >{{ updatePriceFormat(product.price) }}
-                                {{ $t("sum") }}</span
-                            >
-                        </div>
-                    </nuxt-link>
+                        <ProductCard :product="product" />
+                    </div>
                 </div>
                 <a
                     href="#"
@@ -480,58 +437,15 @@
 
             <section class="container popular__container">
                 <div class="popular__heading">{{ $t("red") }}</div>
-                <div class="popular__item-box">
-                    <nuxt-link
-                        class="popular__items"
+
+                <div class="card-row">
+                    <div
+                        class="card-5"
                         v-for="product in productsByCategory.data"
                         :key="product._id"
-                        :to="{
-                            name: `product-id___${$i18n.locale}`,
-                            params: { id: product.slug }
-                        }"
                     >
-                        <img
-                            class="popular__items__img"
-                            :src="$cdn + product.image"
-                            alt="Popular item photo"
-                            type="photo/png"
-                        />
-                        <div class="popular__items__desription">
-                            <div class="name__rating">
-                                <span class="popular__items__desription--name">
-                                    {{ product.category[$i18n.locale] }}
-                                </span>
-
-                                <div class="magazine__item--rating">
-                                    <img
-                                        src="../../assets/img/magazines/star.png"
-                                        alt="Star img"
-                                    /><span>4</span>
-                                </div>
-                            </div>
-                            <h4 class="popular__items__desription--categorie">
-                                {{ product.name[$i18n.locale] }}
-                            </h4>
-                            <span
-                                class="popular__items__desription--price"
-                                v-if="!product.discount"
-                                >{{ updatePriceFormat(product.price) }}
-                                {{ $t("sum") }}</span
-                            >
-                            <span
-                                class="popular__items__desription--price"
-                                v-if="!!product.discount"
-                                >{{ updatePriceFormat(product.discount) }}
-                                {{ $t("sum") }}</span
-                            >
-                            <span
-                                class="popular__items__desription--price popular__items__desription--old--price hidden"
-                                v-if="!!product.discount"
-                                >{{ updatePriceFormat(product.price) }}
-                                {{ $t("sum") }}</span
-                            >
-                        </div>
-                    </nuxt-link>
+                        <ProductCard :product="product" />
+                    </div>
                 </div>
                 <a
                     href="#"
@@ -590,7 +504,7 @@
                         </nuxt-link>
                     </span>
 
-                    <nuxt-link to="/basket" class=" header__item basket">
+                    <nuxt-link to="/basket" class="header__item basket">
                         <span
                             class="basket icon__box d-flex justify-content-center align-items-center"
                         >

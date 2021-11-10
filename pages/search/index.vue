@@ -2,11 +2,11 @@
     <section>
         <base-loading v-if="!isGet"></base-loading>
 
-        <div class="filtr__section" v-if="isGet && noData">
+        <div class="filtr__section">
             <div class="product-show">
                 <div class="container">
-                    <div class="title-box">
-                        <!-- <ul>
+                    <!-- <div class="title-box">
+                        <ul>
                             <li v-if="linksForTitle.length > 0">
                                 <nuxt-link :to="linksForTitle">
                                     {{ linksForTitle }}
@@ -24,8 +24,8 @@
                                 </nuxt-link>
                                 /
                             </li>
-                        </ul> -->
-                    </div>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
 
@@ -36,11 +36,11 @@
             </section>
         </div>
 
-        <div class="filtr__section" v-if="isGet && !noData">
+        <div class="filtr__section">
             <div class="product-show">
                 <div class="container">
-                    <div class="title-box">
-                        <!-- <ul>
+                    <!-- <div class="title-box">
+                        <ul>
                             <li v-if="linksForTitle.length > 0">
                                 <nuxt-link :to="linksForTitle">
                                     {{ linksForTitle }}
@@ -58,14 +58,13 @@
                                 </nuxt-link>
                                 /
                             </li>
-                        </ul> -->
-                    </div>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
 
             <section
                 class="container popular__container catalog__page__filtr__box"
-                v-if="!noData"
             >
                 <div class="popular__dropdown__box">
                     <div class="person__home--description">

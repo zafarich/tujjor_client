@@ -3,58 +3,73 @@
         <base-loading v-if="!isGet"></base-loading>
 
         <section class="container popular__container" v-if="isGet">
-            <div class="container other__item__banner">
-                <div class=" other__item__banner--carousel">
-                    <b-carousel
-                        class="b-carousel"
-                        id="carousel-1"
-                        v-model="slide"
-                        :interval="3000"
-                        indicators
-                        background="#ababab"
-                        style="text-shadow: 1px 1px 2px #333;"
-                        @sliding-start="onSlideStart"
-                        @sliding-end="onSlideEnd"
-                    >
-                        <!-- Text slides with image -->
-                        <b-carousel-slide
-                            v-for="(item, index) in bannerOne"
-                            :key="index"
-                            class="b-carousel-slide"
-                            :img-src="$cdn + item.image"
-                        ></b-carousel-slide>
-
-                        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-                    </b-carousel>
+            <div class="grid">
+                <div class="left" v-if="bannerOne.length > 0">
+                    <a :href="`${bannerOne[0].url}?lang=${$i18n.locale}`">
+                        <img
+                            v-if="$i18n.locale == 'ru'"
+                            :src="$cdn + bannerOne[0].image.ru"
+                            alt=""
+                        />
+                        <img
+                            v-if="$i18n.locale == 'uz'"
+                            :src="$cdn + bannerOne[0].image.uz"
+                            alt=""
+                        />
+                    </a>
                 </div>
-
-                <div class="other__item__banner--banner--box">
-                    <div
-                        class="other__item__banner--banner--1"
-                        v-if="bannerTwo.length > 0"
-                    >
-                        <img
-                            :src="$cdn + bannerTwo[0].image"
-                            alt="Other item photo"
-                        />
+                <div class="right">
+                    <div class="rtop" v-if="bannerTwo.length > 0">
+                        <a :href="`${bannerTwo[0].url}?lang=${$i18n.locale}`">
+                            <img
+                                v-if="$i18n.locale == 'ru'"
+                                :src="$cdn + bannerTwo[0].image.ru"
+                                alt="Other item photo"
+                            />
+                            <img
+                                v-if="$i18n.locale == 'uz'"
+                                :src="$cdn + bannerTwo[0].image.uz"
+                                alt="Other item photo"
+                            />
+                        </a>
                     </div>
-                    <div
-                        class="other__item__banner--banner--2"
-                        v-if="bannerThree.length > 0"
-                    >
-                        <img
-                            :src="$cdn + bannerThree[0].image"
-                            alt="Other item photo"
-                        />
-                    </div>
-                    <div
-                        class="other__item__banner--banner--3"
-                        v-if="bannerFour.length > 0"
-                    >
-                        <img
-                            :src="$cdn + bannerFour[0].image"
-                            alt="Other item photo"
-                        />
+                    <div class="rbottom">
+                        <div class="rb" v-if="bannerThree.length > 0">
+                            <a
+                                :href="
+                                    `${bannerThree[0].url}?lang=${$i18n.locale}`
+                                "
+                            >
+                                <img
+                                    v-if="$i18n.locale == 'ru'"
+                                    :src="$cdn + bannerThree[0].image.ru"
+                                    alt="Other item photo"
+                                />
+                                <img
+                                    v-if="$i18n.locale == 'uz'"
+                                    :src="$cdn + bannerThree[0].image.uz"
+                                    alt="Other item photo"
+                                />
+                            </a>
+                        </div>
+                        <div class="rb" v-if="bannerFour.length > 0">
+                            <a
+                                :href="
+                                    `${bannerFour[0].url}?lang=${$i18n.locale}`
+                                "
+                            >
+                                <img
+                                    v-if="$i18n.locale == 'ru'"
+                                    :src="$cdn + bannerFour[0].image.ru"
+                                    alt="Other item photo"
+                                />
+                                <img
+                                    v-if="$i18n.locale == 'uz'"
+                                    :src="$cdn + bannerFour[0].image.uz"
+                                    alt="Other item photo"
+                                />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,6 +181,8 @@ export default {
         this.allProducts.data = products.data;
         this.isGet = true;
 
+
+
         // banner options
         let res = await this.$axios.get("/banner/all");
         let data = res.data.data;
@@ -188,6 +205,42 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 </style>
 <style lang="scss">
+.grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 450px;
+    div {
+        overflow: hidden;
+        width: calc((100% - 20px) / 2);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .left {
+        height: 100%;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        .rtop {
+            height: calc((100% - 20px) / 2);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .rbottom {
+            height: calc((100% - 20px) / 2);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .rb {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+    }
+}
 .other__item__banner {
     display: flex;
     justify-content: space-between;
@@ -240,6 +293,7 @@ export default {
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -252,6 +306,7 @@ export default {
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -265,6 +320,25 @@ export default {
 }
 
 @media only screen and (max-width: 543px) {
+    .grid {
+        flex-direction: column;
+        height: unset;
+        div.left {
+            height: 450px;
+            width: 100%;
+            margin-bottom: 20px;
+            img {
+                object-fit: cover;
+            }
+        }
+        div.right {
+            width: 100%;
+            div {
+                height: calc(450px / 2) !important;
+            }
+        }
+    }
+
     .other__item__banner {
         &--carousel {
             flex-basis: 100%;
@@ -285,6 +359,8 @@ export default {
 }
 
 @media only screen and (max-width: 375px) {
+    .grid {
+    }
     .other__item__banner {
         &--carousel {
             display: none;

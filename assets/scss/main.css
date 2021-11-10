@@ -519,6 +519,297 @@ div.title-box ul li a {
 }
 
 div.title-box ul li a:hover {
-  color: f7931e;
+  color: #f7931e;
+}
+
+div.fixvh-category {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  opacity: 0.5;
+  z-index: 1000;
+}
+
+div.category-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 1000;
+  height: 100vh;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+div.category-modal div.category-nav {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+div.category-modal div.category-nav button.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #f7931e;
+  border: none;
+  right: -41px;
+  top: 8px;
+  z-index: 101;
+}
+
+div.category-modal div.category-nav button.close-btn .icon-times {
+  color: #fff;
+}
+
+div.category-modal div.category-nav div.scroll-modal {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+div.category-modal div.category-nav div.category-left {
+  width: 400px;
+  padding: 0px 15px;
+  border-right: 1px solid #bbb;
+}
+
+div.category-modal div.category-nav div.category-left ul {
+  list-style-type: none;
+  padding-right: 15px;
+}
+
+div.category-modal div.category-nav div.category-left li button {
+  display: block;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+}
+
+div.category-modal div.category-nav div.category-left li button:hover {
+  color: #f7931e;
+}
+
+div.category-modal div.category-nav div.category-left li.active-li button {
+  background-color: #f7931e;
+  color: #fff;
+}
+
+div.category-modal div.category-nav div.category-content {
+  width: calc(100% - 400px);
+  padding: 0px 30px;
+  position: relative;
+}
+
+div.category-modal div.category-nav div.category-content h3.category-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+div.category-modal div.category-nav div.category-content div.visible-all a {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 5px;
+  display: block;
+}
+
+div.category-modal div.category-nav div.category-content a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+div.category-modal div.category-nav div.category-content ul {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+
+div.category-modal div.category-nav div.category-content ul a {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 5px;
+  display: block;
+}
+
+div.category-modal div.category-nav div.category-content a.click-parent {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  color: #333;
+  display: block;
+  font-weight: 500;
+}
+
+div.category-modal div.category-nav div.category-content a:hover {
+  color: #f7931e !important;
+}
+
+div.category-modal div.category-nav div.scroll-modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+div.category-modal div.category-nav div.scroll-modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+div.category-modal div.category-nav div.scroll-modal::-webkit-scrollbar-thumb {
+  background: #f7931e;
+  border-radius: 5px;
+}
+
+div.category-modal div.category-nav div.scroll-modal::-webkit-scrollbar-thumb:hover {
+  background: #f7931e;
+}
+
+div.hidden-category {
+  -webkit-transform: translateX(-104%);
+          transform: translateX(-104%);
+  opacity: 0;
+}
+
+div.category-mobile {
+  position: fixed;
+  z-index: 1234454545;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  padding: 15px;
+}
+
+div.category-mobile a.visible-all-mobile {
+  font-size: 16px;
+  color: #333;
+}
+
+div.category-mobile div.title-t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.category-mobile div.title-t h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+div.category-mobile div.title-t button {
+  border: none;
+  background-color: transparent;
+}
+
+div.category-mobile div.title-t button .close-mobile {
+  font-size: 26px;
+  color: #f7931e;
+}
+
+div.category-mobile div.category-acc {
+  margin-top: 20px;
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+div.category-mobile div.category-acc div.acc-item {
+  margin-bottom: 5px;
+}
+
+div.category-mobile div.category-acc div.acc-item button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff7ec;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff7ec;
+}
+
+div.category-mobile div.category-acc div.acc-item button b {
+  font-size: 18px;
+}
+
+div.category-mobile div.category-acc div.acc-item button .icon-down {
+  font-size: 18px;
+  color: #f7931e;
+}
+
+div.category-mobile div.category-acc div.acc-item button .rotate {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+div.category-mobile div.category-acc div.acc-item div.acc-content {
+  padding: 15px;
+}
+
+div.category-mobile div.category-acc div.acc-item div.acc-content ul {
+  list-style-type: none;
+}
+
+div.category-mobile div.category-acc div.acc-item div.acc-content ul li a {
+  color: #333;
+  display: block;
+  font-size: 16px !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+div.category-mobile div.category-acc div.acc-item div.acc-content ul li a:active {
+  color: #f7931e;
+}
+
+div.category-mobile div.category-acc div.acc-item div.acc-content ul li ul {
+  margin-bottom: 15px;
+}
+
+div.category-mobile div.category-acc div.acc-item div.acc-content ul li ul li a {
+  font-weight: 400;
+  color: #777;
+}
+
+@media (max-width: 800px) {
+  div.category-modal div.category-nav div.category-left {
+    width: 280px;
+  }
+  div.category-modal div.category-nav div.category-content {
+    width: calc(100% - 280px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

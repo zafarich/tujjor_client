@@ -91,7 +91,7 @@ export default {
     sortPrice: "Narx oralig'ida",
     noComment: "Izohlar yo'q",
     allComment: "Yana izohlarni ko'rsatish",
-    cat: "Bo'limlar",
+    cat: "Kataloglar",
     lang: "O'zbekiston bo'ylab yetkazib berish",
     regis: "Ro'yhatdan o'tish",
     vop: "Savol javoblar",
