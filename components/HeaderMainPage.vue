@@ -719,15 +719,18 @@
                             </div>
 
                             <div v-else class="visible-all">
-                                <a
-                                    href="#"
-                                    @click.stop="
-                                        searchByCategory(visibleCategory),
-                                            doVisibleCategory()
-                                    "
-                                >
-                                    Barchasini ko'rish
-                                </a>
+                                <span @click="isCategoryModal = false">
+                                    <nuxt-link
+                                        :to="{
+                                            name: `filter___${$i18n.locale}`,
+                                            query: {
+                                                category: visibleCategory._id
+                                            }
+                                        }"
+                                    >
+                                        {{ $t("visibleAll") }}
+                                    </nuxt-link>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -769,54 +772,59 @@
                                 <li
                                     v-for="(child, i) in item.children"
                                     :key="i"
+                                    @click="visibleMobile = false"
                                 >
-                                    <a
-                                        href="#"
-                                        @click.stop="
-                                            searchByCategory(child),
-                                                doVisibleCategory()
-                                        "
+                                    <nuxt-link
+                                        :to="{
+                                            name: `filter___${$i18n.locale}`,
+                                            query: {
+                                                category: child._id
+                                            }
+                                        }"
                                     >
                                         {{ child.name[$i18n.locale] }}
-                                    </a>
+                                    </nuxt-link>
 
                                     <ul v-if="child.children.length > 0">
                                         <li
                                             v-for="(grandchild,
                                             j) in child.children"
                                             :key="j"
+                                            @click="isCategoryModal = false"
                                         >
-                                            <a
-                                                href="#"
-                                                @click.stop="
-                                                    searchByCategory(
-                                                        grandchild
-                                                    ),
-                                                        doVisibleCategory()
-                                                "
+                                            <nuxt-link
+                                                :to="{
+                                                    name: `filter___${$i18n.locale}`,
+                                                    query: {
+                                                        category: grandchild._id
+                                                    }
+                                                }"
                                             >
                                                 {{
                                                     grandchild.name[
                                                         $i18n.locale
                                                     ]
                                                 }}
-                                            </a>
+                                            </nuxt-link>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
 
                             <div v-else>
-                                <a
-                                    class="visible-all-mobile"
-                                    href="#"
-                                    @click.stop="
-                                        searchByCategory(item),
-                                            doVisibleCategory()
-                                    "
-                                >
-                                    Barchasini ko'rish
-                                </a>
+                                <span @click="visibleMobile = false">
+                                    <nuxt-link
+                                        :to="{
+                                            name: `filter___${$i18n.locale}`,
+                                            query: {
+                                                category: item._id
+                                            }
+                                        }"
+                                        class="visible-all-mobile"
+                                    >
+                                        {{ $t("visibleAll") }}
+                                    </nuxt-link>
+                                </span>
                             </div>
                         </div>
                     </div>
