@@ -1,102 +1,118 @@
 <template>
     <div id="filter">
+        <base-loading v-if="!isGet"></base-loading>
         <div class="container">
-            <div class="title-filter">
-                <select v-model="filter.sort" @change="changeSort">
-                    <option value="" disabled selected>
-                        {{ $t("sortBy") }}
-                    </option>
-                    <option value="new"> {{ $t("sortNew") }} </option>
-                    <option value="popular">
-                        {{ $t("sortPop") }}
-                    </option>
-                    <option value="priceDown">
-                        {{ $t("sortUb") }}
-                    </option>
-                    <option value="priceUp">
-                        {{ $t("sortVoz") }}
-                    </option>
-                </select>
+            <div v-if="products.length > 0">
+                <div class="title-filter">
+                    <select v-model="filter.sort" @change="changeSort">
+                        <option value="" disabled selected>
+                            {{ $t("sortBy") }}
+                        </option>
+                        <option value="new"> {{ $t("sortNew") }} </option>
+                        <option value="popular">
+                            {{ $t("sortPop") }}
+                        </option>
+                        <option value="priceDown">
+                            {{ $t("sortUb") }}
+                        </option>
+                        <option value="priceUp">
+                            {{ $t("sortVoz") }}
+                        </option>
+                    </select>
+                </div>
+
+                <div class="filter-content">
+                    <div class="filter-nav">
+                        <h5 class="filter-title">
+                            {{ $t("sortPrice") }}
+                        </h5>
+
+                        <div class="filter-range">
+                            <vue-slider
+                                v-model="priceRange"
+                                :min="0"
+                                :max="4000000"
+                                :interval="5000"
+                                :process-style="{
+                                    backgroundColor: '#FE9E0D'
+                                }"
+                                :tooltip-style="{
+                                    backgroundColor: 'black',
+                                    borderColor: 'black'
+                                }"
+                            ></vue-slider>
+
+                            <div class="prices">
+                                <h6>
+                                    {{ beautySum(priceRange[0]) }}
+                                    {{ $t("sum") }}
+                                </h6>
+                                <h6>-</h6>
+                                <h6>
+                                    {{ beautySum(priceRange[1]) }}
+                                    {{ $t("sum") }}
+                                </h6>
+                            </div>
+                        </div>
+
+                        <h5 class="filter-title">
+                            {{ $t("sortBrand") }}
+                        </h5>
+
+                        <div class="filter-brand">
+                            <label
+                                class="cont"
+                                v-for="(item, index) in brands"
+                                :key="index"
+                            >
+                                {{ item.name }}
+                                <input
+                                    type="checkbox"
+                                    v-model="filter.brand"
+                                    :value="item._id"
+                                />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <button class="filter-btn" @click="filterData">
+                            {{ $t("sarfil") }}
+                        </button>
+                    </div>
+                    <div class="filter-right" v-if="products.length > 0">
+                        <div class="card-row">
+                            <div
+                                class="card-4"
+                                v-for="product in products"
+                                :key="product._id"
+                            >
+                                <ProductCard :product="product" />
+                            </div>
+                        </div>
+
+                        <div
+                            class="btn-again"
+                            v-if="filterLimit != filter.page"
+                        >
+                            <button @click="addProducts">
+                                {{ $t("all") }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="filter-content">
-                <div class="filter-nav">
-                    <h5 class="filter-title">
-                        {{ $t("sortPrice") }}
-                    </h5>
-
-                    <div class="filter-range">
-                        <vue-slider
-                            v-model="priceRange"
-                            :min="0"
-                            :max="4000000"
-                            :interval="5000"
-                            :process-style="{
-                                backgroundColor: '#FE9E0D'
-                            }"
-                            :tooltip-style="{
-                                backgroundColor: 'black',
-                                borderColor: 'black'
-                            }"
-                        ></vue-slider>
-
-                        <div class="prices">
-                            <h6>
-                                {{ beautySum(priceRange[0]) }} {{ $t("sum") }}
-                            </h6>
-                            <h6>-</h6>
-                            <h6>
-                                {{ beautySum(priceRange[1]) }} {{ $t("sum") }}
-                            </h6>
-                        </div>
-                    </div>
-
-                    <h5 class="filter-title">
-                        {{ $t("sortBrand") }}
-                    </h5>
-
-                    <div class="filter-brand">
-                        <label
-                            class="cont"
-                            v-for="(item, index) in brands"
-                            :key="index"
-                        >
-                            {{ item.name }}
-                            <input
-                                type="checkbox"
-                                v-model="filter.brand"
-                                :value="item._id"
-                            />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-
-                    <button class="filter-btn" @click="filterData">
-                        {{ $t("sarfil") }}
-                    </button>
-                </div>
-                <div class="filter-right" v-if="products.length > 0">
-                    <div class="card-row">
-                        <div
-                            class="card-4"
-                            v-for="product in products"
-                            :key="product._id"
-                        >
-                            <ProductCard :product="product" />
-                        </div>
-                    </div>
-
-                    <div class="btn-again" v-if="filterLimit != filter.page">
-                        <button @click="addProducts">{{ $t("all") }}</button>
-                    </div>
-                </div>
+            <div v-else>
+                <h4>{{ $t("err4") }}</h4>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import BaseLoading from "../../components/UI/BaseLoading.vue";
 export default {
+    components: { BaseLoading },
     data() {
         return {
             priceRange: [0, 4000000],
@@ -113,7 +129,8 @@ export default {
             brands: [],
             products: [],
             page: 1,
-            filterLimit: 0
+            filterLimit: 0,
+            isGet: false
         };
     },
     async mounted() {
@@ -129,14 +146,16 @@ export default {
         }
         let filterNav = await this.$axios.$post(`product/count`, this.filter);
 
-        this.filterLimit = Math.ceil(filterNav.count / this.filter.limit);
+        if (filterNav.count) {
+            this.filterLimit = Math.ceil(filterNav.count / this.filter.limit);
 
-        filterNav.brands.forEach(item => {
-            let brand = this.$store.state.all.brandsAll.find(
-                i => i._id == item
-            );
-            this.brands.push(brand);
-        });
+            filterNav.brands.forEach(item => {
+                let brand = this.$store.state.all.brandsAll.find(
+                    i => i._id == item
+                );
+                this.brands.push(brand);
+            });
+        }
         await this.getData();
     },
     methods: {
@@ -186,11 +205,14 @@ export default {
         },
 
         async getData() {
+            this.isGet = false;
             let products = await this.$axios.$post(
                 `product/filter?page=${this.filter.page}&limit=${this.filter.limit}`,
                 this.filter
             );
             this.products = products.data;
+
+            this.isGet = true;
         },
         async addProducts() {
             if (this.filterLimit > this.filter.page) {

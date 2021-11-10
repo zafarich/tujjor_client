@@ -684,30 +684,34 @@
                                     index) in visibleCategory.children"
                                     :key="index"
                                 >
-                                    <nuxt-link
-                                        class="click-parent"
-                                        :to="{
-                                            name: `filter___${$i18n.locale}`,
-                                            query: { category: item._id }
-                                        }"
-                                    >
-                                        {{ item.name[$i18n.locale] }}
-                                    </nuxt-link>
+                                    <span @click="isCategoryModal = false">
+                                        <nuxt-link
+                                            class="click-parent"
+                                            :to="{
+                                                name: `filter___${$i18n.locale}`,
+                                                query: { category: item._id }
+                                            }"
+                                        >
+                                            {{ item.name[$i18n.locale] }}
+                                        </nuxt-link>
+                                    </span>
 
                                     <ul v-if="item.children.length > 0">
                                         <li
                                             v-for="(child, i) in item.children"
                                             :key="i"
+                                            @click="isCategoryModal = false"
                                         >
-                                            <a
-                                                href="#"
-                                                @click.stop="
-                                                    searchByCategory(child),
-                                                        doVisibleCategory()
-                                                "
+                                            <nuxt-link
+                                                :to="{
+                                                    name: `filter___${$i18n.locale}`,
+                                                    query: {
+                                                        category: child._id
+                                                    }
+                                                }"
                                                 >{{
                                                     child.name[$i18n.locale]
-                                                }}</a
+                                                }}</nuxt-link
                                             >
                                         </li>
                                     </ul>
