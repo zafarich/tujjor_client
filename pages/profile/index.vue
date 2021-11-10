@@ -169,7 +169,7 @@
                                                 }}
                                             </p>
                                             <p class="p-second">
-                                                <span>Размер:</span>
+                                                <span>{{$t('size')}}</span>
                                                 {{ products.size }}
                                             </p>
                                         </div>
@@ -412,7 +412,7 @@
                                                 }}
                                             </p>
                                             <p class="p-second">
-                                                <span>Размер:</span>
+                                                <span>{{$t('size')}}</span>
                                                 {{ products.size }}
                                             </p>
                                         </div>
@@ -643,7 +643,7 @@
                                                 }}
                                             </p>
                                             <p class="p-second">
-                                                <span>Размер:</span>
+                                                <span>{{$t('size')}}</span>
                                                 {{ products.size }}
                                             </p>
                                         </div>

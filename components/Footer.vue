@@ -178,7 +178,7 @@
                 </div>
                 <div class="footer__item footer__item--5">
                     <h2 class="footer__title">
-                        {{ $t("address") }}
+                        {{ $t("adres") }}
                     </h2>
 
                     <div class="info__item">

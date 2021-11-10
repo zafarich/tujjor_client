@@ -69,7 +69,7 @@
                     <div
                         class="d-flex flex-column justify-content-center input__box form-floating"
                     >
-                        <label for="name">Поиск номер договора</label>
+                        <label for="name">{{$t('poiskdog')}}</label>
                         <div class="input-search">
                             <input
                                 name="name"
@@ -77,7 +77,7 @@
                                 v-model="application.code"
                                 type="text"
                                 class="form-control"
-                                placeholder="Номер договора"
+                                :placeholder="$t('numdog')"
                                 @blur="searchApplication"
                             />
                             <button @click="searchApplication">
@@ -88,62 +88,62 @@
 
                     <div class="box-info" v-if="shop != null">
                         <div class="item-info">
-                            <h4>Ф.И.О</h4>
+                            <h4>{{$t('fio')}}</h4>
                             <h3>{{ shop.fullNameDirector }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>Название фирмы</h4>
+                            <h4>{{$t('nazfil')}}</h4>
                             <h3>{{ shop.shopName }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>Банковские реквизиты</h4>
+                            <h4>{{$t('bankrek')}}</h4>
                             <h3>{{ shop.shopId }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>МФО</h4>
+                            <h4>{{$t('mfo')}}</h4>
                             <h3>{{ shop.mfo }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>Адрес</h4>
+                            <h4>{{$t('adres')}}</h4>
                             <h3>{{ shop.address }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>Номер телефона</h4>
+                            <h4>{{$t('tel')}}</h4>
                             <h3>{{ shop.phone }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>Название Банка</h4>
+                            <h4>{{$t('imya bank')}}</h4>
                             <h3>{{ shop.bankName }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>ИНН</h4>
+                            <h4>{{$t('inn')}}</h4>
                             <h3>{{ shop.inn }}</h3>
                         </div>
                         <div class="item-info">
-                            <h4>Email</h4>
+                            <h4>{{$t('email')}}</h4>
                             <h3>{{ shop.email }}</h3>
                         </div>
                     </div>
 
                     <h6 v-if="notFound" class="error-text mb-3">
-                        Shartnoma topilmadi !!!
+        {{$t('shartnot')}}
                     </h6>
 
-                    <b-form-group label="Shartnoma:" label-cols-sm="3">
+                    <b-form-group :label="$t('shart')" label-cols-sm="3">
                         <b-form-file
-                            placeholder="Shartnomani yuklang"
+                            :placeholder="$t('shartyuk')"
                             id="file-default"
-                            browse-text="Fayni tanlash"
+                            :browse-text="$t('filechoose')"
                             accept=".pdf, .doc, .docx"
                             :required="true"
                             v-model="application.file"
                         ></b-form-file>
                     </b-form-group>
-                    <b-form-group label="Guvohnoma:" label-cols-sm="3">
+                    <b-form-group :label="$t('guv')" label-cols-sm="3">
                         <b-form-file
-                            placeholder="Guvohnomani yuklang"
+                            :placeholder="$t('guvyuk')"
                             id="file-default2"
-                            browse-text="Fayni tanlash"
+                            :browse-text="$t('filechoose')"
                             accept=".pdf, .doc, image/jpeg, image/jpg, image/png"
                             :required="true"
                             v-model="application.ser"
@@ -160,7 +160,7 @@
                                 label="Small Spinner"
                             ></b-spinner>
                         </div>
-                        Отправить
+                       {{$t('sendx')}}
                     </button>
                 </form>
             </div>
@@ -176,14 +176,14 @@
                 class="b-modal"
             >
                 <div class="d-block text-center ">
-                    <h3>Ваш запрос успешно отправлен.</h3>
+                    <h3>{{$t('zapuspeshno')}}.</h3>
                 </div>
                 <b-button
                     variant="primary"
                     block
                     @click="$router.push('/')"
                     class="b-button"
-                    >ОК!</b-button
+                    >{{$t('ok')}}</b-button
                 >
             </b-modal>
         </div>
