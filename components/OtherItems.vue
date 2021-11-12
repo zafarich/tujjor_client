@@ -358,9 +358,41 @@ export default {
     }
 }
 
-@media only screen and (max-width: 375px) {
-    .grid {
+@media only screen and (max-width: 575px) {
+   .grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: unset !important;
+    div {
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+    .left {
+        height: unset !important;
+        margin-bottom: 10px !important;
+    }
+    .right {
+      
+        .rtop {
+            height: unset !important;
+            margin-bottom:  10px !important
+            
+        }
+        .rbottom {
+               height: unset !important;
+           ;
+            .rb {
+                width: calc((100% - 10px) / 2);
+                   height: unset !important;
+            }
+        }
+    }
+}
     .other__item__banner {
         &--carousel {
             display: none;
