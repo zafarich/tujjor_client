@@ -52,7 +52,7 @@ export default {
     upr2: "Maxsulot soni 1 dan kam bo'lmasligi lozim!",
     upr7: "Kamida bitta mahsulotni tanlash kerak",
     upr3: "Maxsulot savatdan o'chirildi!",
-
+    visibleAll: "Barchasini ko'rish",
     err4: "Maxsulot topilmadi!",
     brand: "Brend",
     rating: "Reyting",
