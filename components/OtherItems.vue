@@ -5,7 +5,7 @@
         <section class="container popular__container" v-if="isGet">
             <div class="grid">
                 <div class="left" v-if="bannerOne.length > 0">
-                    <a :href="`${bannerOne[0].url}?lang=${$i18n.locale}`">
+                    <a :href="`${bannerOne[0].url}&lang=${$i18n.locale}`">
                         <img
                             v-if="$i18n.locale == 'ru'"
                             :src="$cdn + bannerOne[0].image.ru"
@@ -20,7 +20,7 @@
                 </div>
                 <div class="right">
                     <div class="rtop" v-if="bannerTwo.length > 0">
-                        <a :href="`${bannerTwo[0].url}?lang=${$i18n.locale}`">
+                        <a :href="`${bannerTwo[0].url}&lang=${$i18n.locale}`">
                             <img
                                 v-if="$i18n.locale == 'ru'"
                                 :src="$cdn + bannerTwo[0].image.ru"
@@ -37,7 +37,7 @@
                         <div class="rb" v-if="bannerThree.length > 0">
                             <a
                                 :href="
-                                    `${bannerThree[0].url}?lang=${$i18n.locale}`
+                                    `${bannerThree[0].url}&lang=${$i18n.locale}`
                                 "
                             >
                                 <img
@@ -55,7 +55,7 @@
                         <div class="rb" v-if="bannerFour.length > 0">
                             <a
                                 :href="
-                                    `${bannerFour[0].url}?lang=${$i18n.locale}`
+                                    `${bannerFour[0].url}&lang=${$i18n.locale}`
                                 "
                             >
                                 <img
@@ -180,8 +180,6 @@ export default {
         const products = await this.fetchProduct();
         this.allProducts.data = products.data;
         this.isGet = true;
-
-
 
         // banner options
         let res = await this.$axios.get("/banner/all");

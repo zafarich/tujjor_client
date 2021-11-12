@@ -44,7 +44,7 @@
             </div> -->
                 <div class="banner__box--small--img" v-if="advImage.length > 0">
                     <a
-                        :href="`${advImage[0].url}?lang=${$i18n.locale}`"
+                        :href="`${advImage[0].url}&lang=${$i18n.locale}`"
                         class="b-carousel-slide"
                     >
                         <img
