@@ -1,6 +1,6 @@
 <template>
     <div class="filtr__section">
-        <div class="product-show">
+        <!-- <div class="product-show">
             <div class="container">
                 <div class="title-box">
                     <ul>
@@ -346,37 +346,8 @@
 
                     <a href="#" class="popular__btn">Показать ещё</a>
                 </section>
-
-                <!-- <div class="catalog__page__btn--box">
-                                        <a
-                                                href="#"
-                                                class="catalog__page--btn catalog__page--btn--active"
-                                                >1</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >2</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >3</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >4</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >5</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >...</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >30</a
-                                        >
-                                        <a href="#" class="catalog__page--btn"
-                                                >></a
-                                        >
-                                </div> -->
             </div>
-        </section>
+        </section> -->
     </div>
 </template>
 

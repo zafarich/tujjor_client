@@ -1,6 +1,6 @@
 <template>
     <section class="all_magazine__section">
-        <div class="product-show">
+        <!-- <div class="product-show">
             <div class="container">
                 <div class="title-box">
                     <ul>
@@ -495,7 +495,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 </template>
 <script>
