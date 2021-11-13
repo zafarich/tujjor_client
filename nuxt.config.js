@@ -69,12 +69,12 @@ export default {
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
-        { src: "@/plugins/vue-slick-carousel.js" },
-        { src: "@/plugins/clickOut.js" },
-        { src: "@/plugins/beautySum.js" },
+        { src: "@/plugins/vue-slick-carousel.js", ssr: false },
+        { src: "@/plugins/clickOut.js", ssr: false },
+        { src: "@/plugins/beautySum.js", ssr: false },
         { src: "@/plugins/vue-slider-component.js", ssr: false },
-        { src: "@/plugins/vue-star-rating.js", mode: "client", ssr: false },
-        { src: "@plugins/v-mask.js" },
+        { src: "@/plugins/vue-star-rating.js", ssr: false },
+        { src: "@plugins/v-mask.js", ssr: false },
         { src: "@plugins/persistedState.js", ssr: false },
         { src: "@plugins/vuelidate.js", ssr: false },
         { src: "@plugins/pdf.js", ssr: false }
@@ -118,7 +118,7 @@ export default {
         lazy: true,
         langDir: "lang/",
         strategy: "prefix_except_default",
-        defaultLocale: "ru"
+        defaultLocale: "uz"
     },
     recaptcha: {
         hideBadge: true, // Boolean Hide badge element

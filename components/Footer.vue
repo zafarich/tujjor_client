@@ -232,7 +232,7 @@
                                 />
                             </svg>
                         </span>
-                        <a href="tel:+998911800882">+99891 180 08 82</a>
+                        <a href="tel:+998939938811">+99893 993 8811</a>
                     </div>
 
                     <ul class="social-links">
@@ -253,7 +253,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a
+                                href="https://www.instagram.com/tujjor.uz/"
+                                target="_blank"
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="21"
@@ -269,7 +272,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a
+                                href="https://m.facebook.com/pages/category/Product-Service/Tujjoruz-105731721362746/"
+                                target="_blank"
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="11"
