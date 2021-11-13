@@ -78,8 +78,6 @@
                         />
                     </div>
 
-                    <!-- <recaptcha id="recaptcha" /> -->
-
                     <button class="button__links">
                         {{ $t("reg") }}
                     </button>

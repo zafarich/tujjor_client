@@ -101,7 +101,6 @@ export default {
         "@nuxtjs/style-resources",
         "@nuxtjs/axios",
         "@nuxtjs/auth-next",
-        "@nuxtjs/recaptcha",
         "@nuxtjs/i18n",
         "@nuxt/image"
     ],
@@ -119,11 +118,6 @@ export default {
         langDir: "lang/",
         strategy: "prefix_except_default",
         defaultLocale: "uz"
-    },
-    recaptcha: {
-        hideBadge: true, // Boolean Hide badge element
-        siteKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", // Site key for requests,
-        version: 2 // Version
     },
 
     router: {
