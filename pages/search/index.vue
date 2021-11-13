@@ -465,7 +465,7 @@ export default {
                     -moz-appearance: none;
                     appearance: none;
 
-                    background-image: url("../../assets/img/other/vector.png");
+                    background-image: url("@/assets/img/other/vector.png");
                     background-repeat: no-repeat;
                     background-position: 97% 50%;
                 }

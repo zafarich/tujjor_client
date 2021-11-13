@@ -509,7 +509,6 @@ export default {
                 +teene +
                 ";c=https://tujjor.org/profile";
 
-                
             const base64 = btoa(str);
             console.log("base64", base64, str);
             const link = "https://checkout.paycom.uz/" + base64;
@@ -700,7 +699,7 @@ a.test {
                     -moz-appearance: none;
                     appearance: none;
 
-                    background-image: url("../../assets/img/checkout__order/vector.png");
+                    background-image: url("@/assets/img/checkout__order/vector.png");
                     background-repeat: no-repeat;
                     background-position: 97% 50%;
                 }

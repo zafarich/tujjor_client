@@ -126,7 +126,7 @@
                     <!--                    <div class="video__box&#45;&#45;item">-->
                     <!--                        <img-->
                     <!--                            class="video__box&#45;&#45;item&#45;&#45;img"-->
-                    <!--                            src="../assets/img/magazine description/bg.png"-->
+                    <!--                            src="@/assets/img/magazine description/bg.png"-->
                     <!--                            alt="News"-->
                     <!--                        />-->
                     <!--                        <div class="video__about__box">-->
@@ -159,7 +159,7 @@
                     <!--                    <div class="video__box&#45;&#45;item">-->
                     <!--                        <img-->
                     <!--                            class="video__box&#45;&#45;item&#45;&#45;img"-->
-                    <!--                              src="../assets/img/magazine description/bg.png"-->
+                    <!--                              src="@/assets/img/magazine description/bg.png"-->
                     <!--                            alt="News"-->
                     <!--                        />-->
                     <!--                        <div class="video__about__box">-->

@@ -25,7 +25,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -48,7 +48,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -58,7 +58,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -81,7 +81,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -91,7 +91,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -114,7 +114,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -133,7 +133,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -156,7 +156,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -166,7 +166,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -189,7 +189,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -199,7 +199,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -222,7 +222,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -241,7 +241,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -264,7 +264,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -274,7 +274,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -297,7 +297,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>
@@ -307,7 +307,7 @@
                 <div class="order__item__box">
                     <div class="order__item--header">
                         <img
-                            src="../assets/img/magazine description/bg.png"
+                            src="@/assets/img/magazine description/bg.png"
                             alt="Item image"
                         />
                         <div class="order__item__description">
@@ -330,7 +330,7 @@
                         <div class="order__item--color">
                             <span>Цвет:</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Color image"
                             />
                         </div>

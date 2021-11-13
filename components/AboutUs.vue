@@ -6,12 +6,12 @@
                 <div class="title-box title__about__us">
                     <ul>
                         <li>
-                            <nuxt-link to="/">{{$t('home')}}</nuxt-link>
+                            <nuxt-link to="/">{{ $t("home") }}</nuxt-link>
                             /
                         </li>
 
                         <li>
-                            <nuxt-link to="#">{{$t('about')}} </nuxt-link>
+                            <nuxt-link to="#">{{ $t("about") }} </nuxt-link>
                         </li>
                     </ul>
                 </div>
@@ -21,7 +21,7 @@
                 id="about__section"
             >
                 <div class="popular__heading about__heading" id="about__head">
-                    {{$t('about')}}
+                    {{ $t("about") }}
                 </div>
                 <div
                     class="about__us__box"
@@ -45,7 +45,7 @@
                     светильник на самый утонченный . -->
                     </h1>
                     <!-- <img
-                    src="../assets/img/about us/about.jpg"
+                    src="@/assets/img/about us/about.jpg"
                     alt="Photo about us"
                     class="about__us--img"
                 /> -->

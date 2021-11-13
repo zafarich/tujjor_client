@@ -425,7 +425,7 @@ export default {
                 -moz-appearance: none;
                 appearance: none;
 
-                background-image: url("../../assets/img/checkout__order/vector.png");
+                background-image: url("@/assets/img/checkout__order/vector.png");
                 background-repeat: no-repeat;
                 background-position: 97% 50%;
             }

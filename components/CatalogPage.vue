@@ -26,10 +26,7 @@
             <div class="popular__dropdown__box">
                 <button class="popular__dropdown--btn">
                     <span>Сортировка по</span>
-                    <img
-                        src="../assets/img/magazines/vector.png"
-                        alt="Vector"
-                    />
+                    <img src="@/assets/img/magazines/vector.png" alt="Vector" />
                 </button>
                 <div class="popular__dropdown__content">
                     <a href="#" class="popular__dropdown--link">По дате</a>
@@ -165,7 +162,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -191,7 +188,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -213,7 +210,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -235,7 +232,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -257,7 +254,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -283,7 +280,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -305,7 +302,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -327,7 +324,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />

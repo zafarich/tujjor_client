@@ -18,7 +18,7 @@
                         <!-- Text slides with image -->
 
                         <a
-                            :href="`${item.url}?lang=${$i18n.locale}`"
+                            :href="`${item.url}&lang=${$i18n.locale}`"
                             v-for="(item, index) in slider"
                             :key="index"
                             class="b-carousel-slide"
@@ -38,7 +38,7 @@
                 </div>
                 <!-- <div class="banner__box--large--img">
                 <img
-                    src="../assets/img/banner/banner-large.png"
+                    src="@/assets/img/banner/banner-large.png"
                     alt="Banner photo"
                 />
             </div> -->

@@ -31,7 +31,7 @@
                         <div class="magazine__description__img">
                             <div class="magazine__description__img--box">
                                 <img
-                                    src="../../assets/img/magazine description/icon/Vector-1.png"
+                                    src="@/assets/img/magazine description/icon/Vector-1.png"
                                     alt="Icon image"
                                 />
                                 <span v-text="magazine.phone"> </span>
@@ -39,7 +39,7 @@
 
                             <div class="magazine__description__img--box">
                                 <img
-                                    src="../../assets/img/magazine description/icon/Vector-3.png"
+                                    src="@/assets/img/magazine description/icon/Vector-3.png"
                                     alt="Icon image"
                                 />
                                 <span v-text="magazine.email"> </span>
@@ -47,7 +47,7 @@
 
                             <div class="magazine__description__img--box">
                                 <img
-                                    src="../../assets/img/magazine description/icon/Vector-2.png"
+                                    src="@/assets/img/magazine description/icon/Vector-2.png"
                                     alt="Icon image"
                                 />
                                 <span v-text="magazine.address"> </span>
@@ -88,7 +88,7 @@
                         >
                             <div class="magazine__description__img--box">
                                 <img
-                                    src="../../assets/img/magazine description/icon/Vector-1.png"
+                                    src="@/assets/img/magazine description/icon/Vector-1.png"
                                     alt="Icon image"
                                 />
                                 <span v-text="magazine.phone"> </span>
@@ -96,7 +96,7 @@
 
                             <div class="magazine__description__img--box">
                                 <img
-                                    src="../../assets/img/magazine description/icon/Vector-3.png"
+                                    src="@/assets/img/magazine description/icon/Vector-3.png"
                                     alt="Icon image"
                                 />
                                 <span v-text="magazine.email"> </span>
@@ -104,7 +104,7 @@
 
                             <div class="magazine__description__img--box">
                                 <img
-                                    src="../../assets/img/magazine description/icon/Vector-2.png"
+                                    src="@/assets/img/magazine description/icon/Vector-2.png"
                                     alt="Icon image"
                                 />
                                 <span v-text="magazine.address"> </span>
@@ -569,7 +569,7 @@ export default {
             border-radius: 5px;
             overflow: hidden;
 
-            background-image: url("../../assets/img/magazine description/bg-2.jpg");
+            background-image: url("@/assets/img/magazine description/bg-2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -674,7 +674,7 @@ export default {
                     -moz-appearance: none;
                     appearance: none;
 
-                    background-image: url("../../assets/img/other/vector.png");
+                    background-image: url("@/assets/img/other/vector.png");
                     background-repeat: no-repeat;
                     background-position: 97% 50%;
                 }

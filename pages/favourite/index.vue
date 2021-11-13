@@ -7,19 +7,19 @@
                 <div class="title-box title__about__us">
                     <ul>
                         <li>
-                            <nuxt-link to="/">{{$t('home')}} </nuxt-link>
+                            <nuxt-link to="/">{{ $t("home") }} </nuxt-link>
                             /
                         </li>
 
                         <li>
-                            <nuxt-link to="#"> {{$t('izb')}} </nuxt-link>
+                            <nuxt-link to="#"> {{ $t("izb") }} </nuxt-link>
                         </li>
                     </ul>
                 </div>
             </div>
             <section class="container popular__container">
                 <div class="popular__heading">
-                    {{$t('netkor')}}
+                    {{ $t("netkor") }}
                 </div>
             </section>
         </section>
@@ -28,19 +28,19 @@
                 <div class="title-box title__about__us">
                     <ul>
                         <li>
-                            <nuxt-link to="/"> {{$t('home')}}</nuxt-link>
+                            <nuxt-link to="/"> {{ $t("home") }}</nuxt-link>
                             /
                         </li>
 
                         <li>
-                            <nuxt-link to="#">  {{$t('izb')}} </nuxt-link>
+                            <nuxt-link to="#"> {{ $t("izb") }} </nuxt-link>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <section class="container popular__container">
-                <div class="popular__heading"> {{$t('izb')}}</div>
+                <div class="popular__heading">{{ $t("izb") }}</div>
                 <div class="popular__item-box">
                     <div
                         class="popular__items"
@@ -69,7 +69,7 @@
 
                                     <div class="magazine__item--rating">
                                         <img
-                                            src="../../assets/img/magazines/star.png"
+                                            src="@/assets/img/magazines/star.png"
                                             alt="Star img"
                                         /><span>4</span>
                                     </div>
@@ -91,14 +91,14 @@
                                         {{
                                             updatePriceFormat(product.discount)
                                         }}
-                                       {{$t('sum')}}
+                                        {{ $t("sum") }}
                                     </span>
                                     <span
                                         class="popular__items__desription--price"
                                         v-if="!product.discount"
                                     >
                                         {{ updatePriceFormat(product.price) }}
-                                          {{$t('sum')}}
+                                        {{ $t("sum") }}
                                     </span>
 
                                     <p
@@ -130,7 +130,7 @@
                                     class="popular__items__desription--price popular__items__desription--old--price hidden"
                                 >
                                     {{ updatePriceFormat(product.price) }}
-                                      {{$t('sum')}}
+                                    {{ $t("sum") }}
                                 </span>
                             </div>
                         </nuxt-link>
@@ -150,13 +150,13 @@
                 <div v-if="dangerModal.showContent">
                     <div class="d-block text-center">
                         <h3>
-                            {{$t('vixotite')}}
+                            {{ $t("vixotite") }}
                             {{
                                 removeProductId === "rm/all"
                                     ? "все продукты"
                                     : "этот продукт"
                             }}
-                          {{$t('izkor')}}
+                            {{ $t("izkor") }}
                         </h3>
                     </div>
                     <b-button
@@ -266,7 +266,7 @@
                         defaultProductId();
                         addProductId('rm/all');
                     "
-                    >{{$t('vseud')}}</a
+                    >{{ $t("vseud") }}</a
                 >
             </section>
         </section>

@@ -25,7 +25,7 @@
             <div class="magazine__description__logo__text">
                 <img
                     class="magazine__description--logo"
-                    src="../assets/img/magazine description/magazine-icon.png"
+                    src="@/assets/img/magazine description/magazine-icon.png"
                     alt="Logo image"
                 />
                 <p class="magazine__description--text">
@@ -38,7 +38,7 @@
             <div class="magazine__description__img">
                 <div class="magazine__description__img--box">
                     <img
-                        src="../assets/img/magazine description/icon/Vector-1.png"
+                        src="@/assets/img/magazine description/icon/Vector-1.png"
                         alt="Icon image"
                     />
                     <span> +998 90 999-20-30 </span>
@@ -46,7 +46,7 @@
 
                 <div class="magazine__description__img--box">
                     <img
-                        src="../assets/img/magazine description/icon/Vector-3.png"
+                        src="@/assets/img/magazine description/icon/Vector-3.png"
                         alt="Icon image"
                     />
                     <span>
@@ -56,7 +56,7 @@
 
                 <div class="magazine__description__img--box">
                     <img
-                        src="../assets/img/magazine description/icon/Vector-2.png"
+                        src="@/assets/img/magazine description/icon/Vector-2.png"
                         alt="Icon image"
                     />
                     <span
@@ -78,7 +78,7 @@
                         <button class="popular__dropdown--btn">
                             <span>Сортировка по</span>
                             <img
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Vector"
                             />
                         </button>
@@ -221,7 +221,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -247,7 +247,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -269,7 +269,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -291,7 +291,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -313,7 +313,7 @@
                         <div class="popular__items">
                             <img
                                 class="popular__items__img"
-                                src="../assets/img/magazine description/bg.png"
+                                src="@/assets/img/magazine description/bg.png"
                                 alt="Popular item photo"
                                 type="photo/png"
                             />
@@ -419,7 +419,7 @@ export default {
             border-radius: 5px;
             overflow: hidden;
 
-            background-image: url("../assets/img/magazine description/bg-2.jpg");
+            background-image: url("@/assets/img/magazine description/bg-2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
 

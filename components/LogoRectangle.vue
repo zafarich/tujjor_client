@@ -2,16 +2,16 @@
     <section class="logo__rectangle">
         <div class="logo__rectangle--rectangle">
             <img
-                src="../assets/img/other/yellow-rectangle.png"
+                src="@/assets/img/other/yellow-rectangle.png"
                 alt="Logo yellow rectangle"
             />
 
             <h4 class="logo__rectangle--rectangle--header">
-                {{$t('lang')}}
+                {{ $t("lang") }}
             </h4>
             <div class="logo__rectangle--rectangle--men">
                 <img
-                    src="../assets/img/other/logo-men.png"
+                    src="@/assets/img/other/logo-men.png"
                     alt="Logo rectangle men"
                 />
             </div>

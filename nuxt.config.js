@@ -102,7 +102,8 @@ export default {
         "@nuxtjs/axios",
         "@nuxtjs/auth-next",
         "@nuxtjs/recaptcha",
-        "@nuxtjs/i18n"
+        "@nuxtjs/i18n",
+        "@nuxt/image"
     ],
     i18n: {
         locales: [{

@@ -22,10 +22,7 @@
             <div class="popular__dropdown__box">
                 <button class="popular__dropdown--btn">
                     <span>Сортировка по</span>
-                    <img
-                        src="../assets/img/magazines/vector.png"
-                        alt="Vector"
-                    />
+                    <img src="@/assets/img/magazines/vector.png" alt="Vector" />
                 </button>
 
                 <div class="popular__dropdown__content">
@@ -44,13 +41,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/logo.png"
+                            src="@/assets/img/magazines/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span> {{ magazine.rating }} </span>
                     </div>
@@ -63,21 +60,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/img-first.png"
+                            src="@/assets/img/magazines/img-first.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/img-second.png"
+                                src="@/assets/img/magazines/img-second.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/img-second-2.png"
+                                src="@/assets/img/magazines/img-second-2.png"
                                 alt="Item img"
                             />
                         </div>
@@ -89,13 +86,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/logo.png"
+                            src="@/assets/img/magazines/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -109,21 +106,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/img-first.png"
+                            src="@/assets/img/magazines/img-first.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/img-second.png"
+                                src="@/assets/img/magazines/img-second.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/img-second-2.png"
+                                src="@/assets/img/magazines/img-second-2.png"
                                 alt="Item img"
                             />
                         </div>
@@ -135,13 +132,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/2/logo.png"
+                            src="@/assets/img/magazines/2/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         />
                         <span>
@@ -157,21 +154,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/2/1.png"
+                            src="@/assets/img/magazines/2/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/2/2.png"
+                                src="@/assets/img/magazines/2/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/2/3.png"
+                                src="@/assets/img/magazines/2/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -183,13 +180,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/3/logo.png"
+                            src="@/assets/img/magazines/3/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -203,21 +200,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/3/1.png"
+                            src="@/assets/img/magazines/3/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/3/2.png"
+                                src="@/assets/img/magazines/3/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/3/3.png"
+                                src="@/assets/img/magazines/3/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -229,13 +226,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/4/logo.png"
+                            src="@/assets/img/magazines/4/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -248,21 +245,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/3/1.png"
+                            src="@/assets/img/magazines/3/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/4/2.png"
+                                src="@/assets/img/magazines/4/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/4/3.png"
+                                src="@/assets/img/magazines/4/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -274,13 +271,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/5/logo.png"
+                            src="@/assets/img/magazines/5/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -294,21 +291,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/5/1.png"
+                            src="@/assets/img/magazines/5/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/5/2.png"
+                                src="@/assets/img/magazines/5/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/5/3.png"
+                                src="@/assets/img/magazines/5/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -320,13 +317,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/6/logo.png"
+                            src="@/assets/img/magazines/6/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -340,21 +337,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/6/1.png"
+                            src="@/assets/img/magazines/6/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/6/2.png"
+                                src="@/assets/img/magazines/6/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/6/3.png"
+                                src="@/assets/img/magazines/6/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -366,13 +363,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/7/logo.png"
+                            src="@/assets/img/magazines/7/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -386,21 +383,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/7/1.png"
+                            src="@/assets/img/magazines/7/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/7/2.png"
+                                src="@/assets/img/magazines/7/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/7/3.png"
+                                src="@/assets/img/magazines/7/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -412,13 +409,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/8/logo.png"
+                            src="@/assets/img/magazines/8/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -431,21 +428,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/8/1.png"
+                            src="@/assets/img/magazines/8/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/8/2.png"
+                                src="@/assets/img/magazines/8/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/8/3.png"
+                                src="@/assets/img/magazines/8/3.png"
                                 alt="Item img"
                             />
                         </div>
@@ -457,13 +454,13 @@
                 <div class="magazine__item--logo__box">
                     <div class="magazine__item--logo">
                         <img
-                            src="../assets/img/magazines/9/logo.png"
+                            src="@/assets/img/magazines/9/logo.png"
                             alt="Magazine logo"
                         />
                     </div>
                     <div class="magazine__item--rating">
                         <img
-                            src="../assets/img/magazines/star.png"
+                            src="@/assets/img/magazines/star.png"
                             alt="Star img"
                         /><span>4</span>
                     </div>
@@ -477,21 +474,21 @@
                 <div class="magazine__item__img__box">
                     <div class="magazine__item__img--first">
                         <img
-                            src="../assets/img/magazines/9/1.png"
+                            src="@/assets/img/magazines/9/1.png"
                             alt="Item img"
                         />
                     </div>
                     <div class="magazine__item__img--second">
                         <div class="magazine__item__img--second--first">
                             <img
-                                src="../assets/img/magazines/9/2.png"
+                                src="@/assets/img/magazines/9/2.png"
                                 alt="Item img"
                             />
                         </div>
 
                         <div class="magazine__item__img--second--second">
                             <img
-                                src="../assets/img/magazines/9/3.png"
+                                src="@/assets/img/magazines/9/3.png"
                                 alt="Item img"
                             />
                         </div>
