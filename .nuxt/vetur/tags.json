@@ -1,0 +1,68 @@
+{
+  "AboutUs": {
+    "description": "Auto imported from components/AboutUs.vue"
+  },
+  "BannerOnMainPage": {
+    "description": "Auto imported from components/BannerOnMainPage.vue"
+  },
+  "Brands": {
+    "description": "Auto imported from components/brands.vue"
+  },
+  "CatalogMagazinesMainPage": {
+    "description": "Auto imported from components/CatalogMagazinesMainPage.vue"
+  },
+  "CatalogPage": {
+    "description": "Auto imported from components/CatalogPage.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "HeaderMainPage": {
+    "description": "Auto imported from components/HeaderMainPage.vue"
+  },
+  "LogoRectangle": {
+    "description": "Auto imported from components/LogoRectangle.vue"
+  },
+  "MagazineDescription": {
+    "description": "Auto imported from components/MagazineDescription.vue"
+  },
+  "News": {
+    "description": "Auto imported from components/news.vue"
+  },
+  "OnSaleItem": {
+    "description": "Auto imported from components/OnSaleItem.vue"
+  },
+  "OtherItems": {
+    "description": "Auto imported from components/OtherItems.vue"
+  },
+  "PopularItem": {
+    "description": "Auto imported from components/PopularItem.vue"
+  },
+  "ProductCard": {
+    "description": "Auto imported from components/ProductCard.vue"
+  },
+  "ProductLike": {
+    "description": "Auto imported from components/ProductLike.vue"
+  },
+  "FaqQuestions": {
+    "description": "Auto imported from components/FAQ/FaqQuestions.vue"
+  },
+  "ModalsDangerMessage": {
+    "description": "Auto imported from components/Modals/DangerMessage.vue"
+  },
+  "ModalsSuccessModal": {
+    "description": "Auto imported from components/Modals/SuccessModal.vue"
+  },
+  "ModalsWarningMessage": {
+    "description": "Auto imported from components/Modals/WarningMessage.vue"
+  },
+  "UIBaseLoading": {
+    "description": "Auto imported from components/UI/BaseLoading.vue"
+  },
+  "UILoadingOnBlocks": {
+    "description": "Auto imported from components/UI/LoadingOnBlocks.vue"
+  }
+}
