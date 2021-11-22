@@ -1,14 +1,12 @@
 <template>
     <section>
-        <base-loading v-if="!isGet"></base-loading>
-
-        <section class="container popular__container" v-if="isGet">
+        <section class="container popular__container" v-if="popular != null">
             <div class="popular__heading">{{ $t("skidka") }}</div>
 
             <div class="card-row">
                 <div
                     class="card-5"
-                    v-for="product in onSaleProducts.data"
+                    v-for="product in popular"
                     :key="product._id"
                 >
                     <ProductCard :product="product" />
@@ -18,8 +16,8 @@
             <a
                 href="#"
                 class="popular__btn text-center"
-                v-if="onSaleProducts.data.length >= onSaleProducts.limit"
-                @click.prevent="updateSaleLimit"
+                v-if="popular.length >= limit"
+                @click.prevent="updatePopular"
                 >{{ $t("all") }}</a
             >
         </section>
@@ -27,75 +25,36 @@
 </template>
 
 <script>
-import BaseLoading from "../components/UI/BaseLoading.vue";
 export default {
-    components: {
-        BaseLoading
-    },
     data() {
         return {
-            onSaleProducts: {
-                data: [],
-                page: 1,
-                limit: 10
-            },
-            isGet: false
+            popular: null,
+            page: 1,
+            limit: 10
         };
     },
+    async mounted() {
+        this.getData();
+    },
     methods: {
-        async updateSaleLimit() {
-            this.onSaleProducts.limit += 10;
-            const products = await this.fetchProduct();
-            this.onSaleProducts.data = products.data;
-        },
+        async getData() {
+            if (this.$store.state.all.limit1) {
+                this.limit = await this.$store.state.all.limit1;
+            }
 
-        async fetchProduct() {
-            const page = this.onSaleProducts.page;
-            const limit = this.onSaleProducts.limit;
-            const res = await this.$axios
-                .$get("home/discount?page=" + page + "&limit=" + limit, {
-                    category: [],
-                    brand: [],
-                    search: "",
-                    sort: "",
-                    start: null,
-                    end: null,
+            this.$axios
+                .$get(`home/discount?page=${this.page}&limit=${this.limit}`, {
                     discount: true
                 })
-                .then(response => {
-                    console.log("searc", response);
-                    if (response.success) {
-                        console.log("search", response);
-                        return response;
-                    } else {
-                        throw new Error("Could not save data!");
-                    }
-                })
-                .catch(err => console.error(err));
-            return res;
+                .then(res => {
+                    this.popular = res.data;
+                });
         },
-
-        //  go to product on click card of product
-        goToProduct(slug) {
-            this.$router.push({
-                name: "product-id",
-                params: { id: slug }
-            });
-        },
-
-        // update price on currency format
-        updatePriceFormat(price) {
-            const form = new Intl.NumberFormat("en-US").format(price);
-            return form.replaceAll(",", " ");
+        updatePopular() {
+            this.limit = this.limit + 10;
+            this.$store.commit("LIMIT_1", this.limit);
+            this.getData();
         }
-    },
-
-    async mounted() {
-        const products = await this.fetchProduct();
-        this.onSaleProducts.data = products.data;
-        console.log("products->", products);
-        console.log(products);
-        this.isGet = true;
     }
 };
 </script>

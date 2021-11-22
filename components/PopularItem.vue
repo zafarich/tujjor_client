@@ -1,14 +1,12 @@
 <template>
     <section>
-        <base-loading v-if="!isGet"></base-loading>
-
-        <section class="container popular__container" v-if="isGet">
+        <section class="container popular__container" v-if="popular != null">
             <div class="popular__heading">{{ $t("popular") }}</div>
 
             <div class="card-row">
                 <div
                     class="card-5"
-                    v-for="product in popularProducts.data"
+                    v-for="product in popular"
                     :key="product._id"
                 >
                     <ProductCard :product="product" />
@@ -18,8 +16,8 @@
             <a
                 href="#"
                 class="popular__btn text-center"
-                v-if="popularProducts.data.length >= popularProducts.limit"
-                @click.prevent="updatePopularLimit"
+                v-if="popular.length >= limit"
+                @click.prevent="updatePopular"
                 >{{ $t("all") }}</a
             >
         </section>
@@ -27,75 +25,35 @@
 </template>
 
 <script>
-import BaseLoading from "../components/UI/BaseLoading.vue";
 export default {
-    components: {
-        BaseLoading
-    },
     data() {
         return {
-            popularProducts: {
-                data: [],
-                page: 1,
-                limit: 10
-            },
-            isGet: false
+            popular: null,
+            page: 1,
+            limit: 10
         };
     },
+    async mounted() {
+        this.getData();
+    },
     methods: {
-        async updatePopularLimit() {
-            this.popularProducts.page += 1;
-            this.popularProducts.limit += 10;
-            const products = await this.fetchProduct();
-            products.data.forEach(arr => {
-                this.popularProducts.data.push(arr);
-            });
-        },
-        async fetchProduct() {
-            const page = this.popularProducts.page;
-            const res = await this.$axios
-                .$post("product/filter?page=" + page + "&limit=" + 10, {
-                    category: [],
-                    brand: [],
-                    search: "",
-                    sort: "",
-                    start: null,
-                    end: null,
+        async getData() {
+            this.limit = await this.$store.state.all.limit3;
+
+            this.$axios
+                .$post(`product/filter?page=${this.page}&limit=${this.limit}`, {
                     sort: "popular"
                 })
-                .then(response => {
-                    console.log("searc", response);
-                    if (response.success) {
-                        console.log("search", response);
-                        return response;
-                    } else {
-                        throw new Error("Could not save data!");
-                    }
-                })
-                .catch(err => console.error(err));
-            return res;
+                .then(res => {
+                    this.popular = res.data;
+                });
         },
+        updatePopular() {
+            this.limit = this.limit + 10;
+            this.$store.commit("LIMIT_3", this.limit);
 
-        //  go to product on click card of product
-        goToProduct(slug) {
-            this.$router.push({
-                name: "product-id",
-                params: { id: slug }
-            });
-        },
-
-        // update price on currency format
-        updatePriceFormat(price) {
-            const form = new Intl.NumberFormat("en-US").format(price);
-            return form.replaceAll(",", " ");
+            this.getData();
         }
-    },
-
-    async mounted() {
-        const products = await this.fetchProduct();
-        this.popularProducts.data = products.data;
-        console.log("popular products", products);
-        this.isGet = true;
     }
 };
 </script>

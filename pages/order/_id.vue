@@ -550,7 +550,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 a.test {
     font-size: 30px;
     position: fixed;

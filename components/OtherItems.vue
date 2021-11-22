@@ -1,8 +1,6 @@
 <template>
     <section>
-        <base-loading v-if="!isGet"></base-loading>
-
-        <section class="container popular__container" v-if="isGet">
+        <section class="container popular__container" v-if="popular != null">
             <div class="grid">
                 <div class="left" v-if="bannerOne.length > 0">
                     <a :href="`${bannerOne[0].url}&lang=${$i18n.locale}`">
@@ -77,7 +75,7 @@
             <div class="card-row">
                 <div
                     class="card-5"
-                    v-for="product in allProducts.data"
+                    v-for="product in popular"
                     :key="product._id"
                 >
                     <ProductCard :product="product" />
@@ -87,8 +85,8 @@
             <a
                 href="#"
                 class="popular__btn text-center"
-                v-if="allProducts.data.length >= allProducts.limit"
-                @click.prevent="updateFetchLimit"
+                v-if="popular.length >= limit"
+                @click.prevent="updatePopular"
                 >{{ $t("all") }}</a
             >
         </section>
@@ -96,11 +94,7 @@
 </template>
 
 <script>
-import BaseLoading from "../components/UI/BaseLoading.vue";
 export default {
-    components: {
-        BaseLoading
-    },
     data() {
         return {
             slide: 0,
@@ -112,75 +106,29 @@ export default {
             bannerFour: [],
             bannerFive: [],
 
-            allProducts: {
-                data: [],
-                page: 1,
-                limit: 20
-            },
-            isGet: false
+            popular: null,
+            page: 1,
+            limit: 20
         };
     },
     methods: {
-        async updateFetchLimit() {
-            this.allProducts.limit += 20;
-            this.allProducts.page += 1;
-            const products = await this.fetchProduct();
-            products.data.forEach(item => {
-                this.allProducts.data.push(item);
-            });
-        },
+        async getData() {
+            this.limit = await this.$store.state.all.limit2;
 
-        async fetchProduct() {
-            const page = this.allProducts.page;
-            const res = await this.$axios
-                .$post("product/filter?page=" + page + "&limit=" + 20, {
-                    category: [],
-                    brand: [],
-                    search: "",
-                    sort: "",
-                    start: null,
-                    end: null
-                })
-                .then(response => {
-                    if (response.success) {
-                        console.log("search", response);
-                        return response;
-                    } else {
-                        throw new Error("Could not save data!");
-                    }
-                })
-                .catch(err => console.error(err));
-            return res;
+            this.$axios
+                .$post(`product/filter?page=${this.page}&limit=${this.limit}`)
+                .then(res => {
+                    this.popular = res.data;
+                });
         },
-
-        //  go to product on click card of product
-        goToProduct(slug) {
-            this.$router.push({
-                name: "product-id",
-                params: { id: slug }
-            });
-        },
-
-        // update price on currency format
-        updatePriceFormat(price) {
-            const form = new Intl.NumberFormat("en-US").format(price);
-            return form.replaceAll(",", " ");
-        },
-
-        // banner option
-        onSlideStart(slide) {
-            this.sliding = true;
-        },
-        onSlideEnd(slide) {
-            this.sliding = false;
+        updatePopular() {
+            this.limit = this.limit + 10;
+            this.$store.commit("LIMIT_2", this.limit);
+            this.getData();
         }
     },
 
     async mounted() {
-        const products = await this.fetchProduct();
-        this.allProducts.data = products.data;
-        this.isGet = true;
-
         // banner options
         let res = await this.$axios.get("/banner/all");
         let data = res.data.data;
@@ -195,6 +143,8 @@ export default {
         this.bannerTwo = two;
         this.bannerThree = three;
         this.bannerFour = four;
+
+        this.getData();
     }
 };
 </script>

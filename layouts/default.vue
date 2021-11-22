@@ -20,6 +20,10 @@ export default {
         await this.$store.dispatch("getCat");
         await this.$store.dispatch("getBrands");
         this.isData = true;
+
+        this.$store.commit("LIMIT_1", 10);
+        this.$store.commit("LIMIT_2", 20);
+        this.$store.commit("LIMIT_3", 10);
     }
 };
 </script>

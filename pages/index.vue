@@ -19,7 +19,25 @@ export default {
             seach: null
         };
     },
-    mounted() {}
+    mounted() {},
+
+    created() {
+        window.addEventListener("scroll", this.scrollTop);
+        // window.scrollTo({
+        //     top: this.$store.state.all.scrollTop
+        // });
+    },
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.scrollTop);
+        // window.scrollTo({
+        //     top: 0
+        // });
+    },
+    methods: {
+        scrollTop() {
+            this.$store.commit("SCROLL_TOP", window.scrollY);
+        }
+    }
 };
 </script>
 

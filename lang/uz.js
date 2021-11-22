@@ -173,7 +173,7 @@ export default {
     maguspeshno: "Sizning do'koningiz muvaffaqiyatli yaratildi!",
     izb: "Tanlanganlar",
     netkor: " Savatingizda mahsulot yo'q!",
-    sum: "som",
+    sum: "so'm",
     vixotite: "Siz savatdan",
     izkor: "o'chirmoqchimisiz",
     vseud: "Barcha mahsulotlarni o'chirish",

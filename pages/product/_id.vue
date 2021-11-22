@@ -719,7 +719,6 @@ export default {
 
         // ----------------------------------------------------------
         onResize() {
-            this.setBoxHeight();
             this.setImgWidth();
             this.setImgHeight();
         },
@@ -733,10 +732,6 @@ export default {
 
         setImgWidth() {
             this.carouselData.imgWidth = this.$refs.img__view__item.clientWidth;
-        },
-
-        setBoxHeight() {
-            this.carouselData.boxHeight = this.$refs.img__preview.clientHeight;
         },
 
         // find carousel src

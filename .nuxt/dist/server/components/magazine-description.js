@@ -1,7 +1,7 @@
 exports.ids = [10];
 exports.modules = {
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42,41 +42,41 @@ module.exports = function (url, options) {
 
 /***/ }),
 
-/***/ 122:
+/***/ 123:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVHgBrZJhEYMwDIVTFCABB0NCJUzKHJQp2KFgEiZhNwWbg0pgDrL0lh8ltDkCvLt30Kb9mjQFRAy4VCS3YBHWNVg4wKeX9LZwGvKnEust5SXQqxK7Oue+sFZ0qt99PxlsEiAPRjX8HcW8h40ZtSKrCa3vKIMNorwbbBFnFQUsKOt7DVbqYCisu3Ms8n8HK0rMN5wzyCxey6wEU6WVeTkExLCO/NwNyoCpCQ8N5MAg/Hcntd2TT+Q0Tg93/AHdfdepLR6xAwAAAABJRU5ErkJggg=="
 
 /***/ }),
 
-/***/ 123:
+/***/ 124:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACuSURBVHgBrVKLDYJADH0ywY3ACLqBbKITqBNc3MANZANH0BHcADaADUp7eSSE3AXC8ZJ3afp5vbSFiHhlJ3m4H+xFPvrCHuTDmdBV2WI77CNVQZEK28T+ylOwOCxP+7V+viHXcVmCSeCjLG0DC1vsmGMi39GJWVJDsZK2JOLHeRwSh2fHeuKr6bvFClJChje7n0lHXxRLB9kqf1zxRelSiXtdNva67CD0zBSz2scA3ZGxX5LxLmsAAAAASUVORK5CYII="
 
 /***/ }),
 
-/***/ 124:
+/***/ 125:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAYAAACDBoQZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEjSURBVHgBrZRhccMwDIW1IgiEDMkCYRDCYGHQMNgYuAwGwWPQDoHLIGPwJp2duzYnqU7S704/Yr0825JPRAoAGo4jR+SYkJnK98DRUg3FZDbwOHomcpoz1iH6RjNbazQTtavtYRSfF+RiJqeMPxxXDtF1huaP41VO1Ru7JSy6Jt9lXWMQQTSSrXaEYqh1O5KRCOTA+ZPyz3TgXKPof8nnoqw1B0PckI+aF7Orsv5GPlr+Yt0/d0eB1z8MfZBkB5uA0tXSxU9H+z7vFrGPdHv0DvvolrX4wjaCVlgZQTVz7JYEa1AiT9E19OSB+mac6RHIT6CGlmpg4fjAaKRakJuRDKNEa4H99nraAv/4vTAKtBXcT9VUXXTHcH57Az0DNjrV6P4B4yY67pjQhY4AAAAASUVORK5CYII="
 
 /***/ }),
 
-/***/ 157:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/bg-2.4124a28.jpg";
 
 /***/ }),
 
-/***/ 186:
+/***/ 187:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(252);
+var content = __webpack_require__(253);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -88,32 +88,32 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 250:
+/***/ 251:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/magazine-icon.c4a7718.png";
 
 /***/ }),
 
-/***/ 251:
+/***/ 252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(186);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(187);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 252:
+/***/ 253:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(104);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(157);
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(105);
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(158);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -125,7 +125,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 284:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,12 +133,12 @@ module.exports = ___CSS_LOADER_EXPORT___;
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/MagazineDescription.vue?vue&type=template&id=622ddf08&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"magazine__section"},[_vm._ssrNode("<div class=\"product-show\">","</div>",[_vm._ssrNode("<div class=\"container\">","</div>",[_vm._ssrNode("<div class=\"title-box\">","</div>",[_vm._ssrNode("<ul>","</ul>",[_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v("Главная страница")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Все магазины")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Аристокракта")])],1)],2)])])]),_vm._ssrNode(" <div class=\"container magazine__description__box\"><div class=\"magazine__description__logo__text\"><img"+(_vm._ssrAttr("src",__webpack_require__(250)))+" alt=\"Logo image\" class=\"magazine__description--logo\"> <p class=\"magazine__description--text\">\n                АРИСТОКРАТКА - это больше чем элитный бутик это идеальный\n                шопинг для вашей души, дополняйте модные предметы гардероба\n                стильной одеждой, обувью, сумками и изысканными\n                аксессуарами.\n            </p></div> <div class=\"magazine__description__img\"><div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(122)))+" alt=\"Icon image\"> <span> +998 90 999-20-30 </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(123)))+" alt=\"Icon image\"> <span>\n                    info@aristokratka.uz\n                </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(124)))+" alt=\"Icon image\"> <span>Шахрисабз 3/74, Метро Айбек\n                    <br>\n                    Ташкент, ул. Шахрисабзская 3/74 (Ориентир: Метро Айбек),\n                    100015\n                </span></div></div></div> "),_vm._ssrNode("<section class=\"catalog__container container\">","</section>",[_vm._ssrNode("<div class=\"catalog__filtraiton__box\">","</div>",[_vm._ssrNode("<section class=\"popular__container catalog__dropdown__container\"><div class=\"popular__dropdown__box\"><button class=\"popular__dropdown--btn\"><span>Сортировка по</span> <img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt=\"Vector\"></button> <div class=\"popular__dropdown__content\"><a href=\"#\" class=\"popular__dropdown--link\">По дате</a> <a href=\"#\" class=\"popular__dropdown--link\">По рейтинг</a></div></div></section> "),_vm._ssrNode("<form action=\"#\" class=\"filtraiton__form__box\">","</form>",[_vm._ssrNode("<h5 class=\"filtraiton__header\">\n                    Диапазон цена\n                </h5> "),_vm._ssrNode("<div class=\"input__range\">","</div>",[_c('vue-slider',{attrs:{"id":"range","name":"range","value":"range","min":0,"max":1500000,"interval":10000,"process-style":{
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"magazine__section"},[_vm._ssrNode("<div class=\"product-show\">","</div>",[_vm._ssrNode("<div class=\"container\">","</div>",[_vm._ssrNode("<div class=\"title-box\">","</div>",[_vm._ssrNode("<ul>","</ul>",[_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v("Главная страница")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Все магазины")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Аристокракта")])],1)],2)])])]),_vm._ssrNode(" <div class=\"container magazine__description__box\"><div class=\"magazine__description__logo__text\"><img"+(_vm._ssrAttr("src",__webpack_require__(251)))+" alt=\"Logo image\" class=\"magazine__description--logo\"> <p class=\"magazine__description--text\">\n                АРИСТОКРАТКА - это больше чем элитный бутик это идеальный\n                шопинг для вашей души, дополняйте модные предметы гардероба\n                стильной одеждой, обувью, сумками и изысканными\n                аксессуарами.\n            </p></div> <div class=\"magazine__description__img\"><div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(123)))+" alt=\"Icon image\"> <span> +998 90 999-20-30 </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(124)))+" alt=\"Icon image\"> <span>\n                    info@aristokratka.uz\n                </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(125)))+" alt=\"Icon image\"> <span>Шахрисабз 3/74, Метро Айбек\n                    <br>\n                    Ташкент, ул. Шахрисабзская 3/74 (Ориентир: Метро Айбек),\n                    100015\n                </span></div></div></div> "),_vm._ssrNode("<section class=\"catalog__container container\">","</section>",[_vm._ssrNode("<div class=\"catalog__filtraiton__box\">","</div>",[_vm._ssrNode("<section class=\"popular__container catalog__dropdown__container\"><div class=\"popular__dropdown__box\"><button class=\"popular__dropdown--btn\"><span>Сортировка по</span> <img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Vector\"></button> <div class=\"popular__dropdown__content\"><a href=\"#\" class=\"popular__dropdown--link\">По дате</a> <a href=\"#\" class=\"popular__dropdown--link\">По рейтинг</a></div></div></section> "),_vm._ssrNode("<form action=\"#\" class=\"filtraiton__form__box\">","</form>",[_vm._ssrNode("<h5 class=\"filtraiton__header\">\n                    Диапазон цена\n                </h5> "),_vm._ssrNode("<div class=\"input__range\">","</div>",[_c('vue-slider',{attrs:{"id":"range","name":"range","value":"range","min":0,"max":1500000,"interval":10000,"process-style":{
                             backgroundColor: '#FE9E0D'
                         },"tooltip-style":{
                             backgroundColor: 'black',
                             borderColor: 'black'
-                        }},model:{value:(_vm.value_2),callback:function ($$v) {_vm.value_2=$$v},expression:"value_2"}})],1),_vm._ssrNode(" <h5 class=\"filtraiton__header\">\n                    Филтр по брендам.\n                </h5> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"zara\" name=\"zara\" value=\"Zara\" class=\"filtraiton__form--input\"> <label for=\"zara\" class=\"filtraiton__form--label\">\n                        Zara</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"legendr\" name=\"legendr\" value=\"legendr\" class=\"filtraiton__form--input\"> <label for=\"legendr\" class=\"filtraiton__form--label\">\n                        Legendr</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"abb\" name=\"abb\" value=\"abb\" class=\"filtraiton__form--input\"> <label for=\"abb\" class=\"filtraiton__form--label\">\n                        ABB</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"navigator\" name=\"navigator\" value=\"navigator\" class=\"filtraiton__form--input\"> <label for=\"navigator\" class=\"filtraiton__form--label\">\n                        Navigator</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"telfor\" name=\"telfor\" value=\"telfor\" class=\"filtraiton__form--input\"> <label for=\"telfor\" class=\"filtraiton__form--label\">\n                        TEKFOR</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"wago\" name=\"wago\" value=\"wago\" class=\"filtraiton__form--input\"> <label for=\"wago\" class=\"filtraiton__form--label\">\n                        Wago</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"universal\" name=\"universal\" value=\"universal\" class=\"filtraiton__form--input\"> <label for=\"universal\" class=\"filtraiton__form--label\">\n                        UniVersal</label><br></div> <div class=\"submit__box\"><input type=\"submit\" value=\"Фильтр\" class=\"filtraiton__form--submit\"></div>")],2)],2),_vm._ssrNode(" <div class=\"catalog__page__about\"><section class=\"container popular__container\"><div class=\"popular__item-box\"><div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Футболки</span> <h4 class=\"popular__items__desription--categorie\">\n                                Детская одежда\n                            </h4> <span class=\"popular__items__desription--price popular__items__desription--old--price hidden\">580 000 сум</span> <span class=\"popular__items__desription--price\">480 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Футболки</span> <h4 class=\"popular__items__desription--categorie\">\n                                Мужская кожаная куртка\n                            </h4> <span class=\"popular__items__desription--price\">1 080 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Кроссовки</span> <h4 class=\"popular__items__desription--categorie\">\n                                для фанатов футбола Ювентуса\n                            </h4> <span class=\"popular__items__desription--price\">1 280 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Рубашки</span> <h4 class=\"popular__items__desription--categorie\">\n                                весенная рубашка для мужчин\n                            </h4> <span class=\"popular__items__desription--price\">474 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Одежда</span> <h4 class=\"popular__items__desription--categorie\">\n                                Новая весенная коллекция для женщин\n                            </h4> <span class=\"popular__items__desription--price popular__items__desription--old--price\">1 480 000 сум</span> <span class=\"popular__items__desription--price\">1 280 000 сум</span></div></div></div> <a href=\"#\" class=\"popular__btn\">Показать ещё</a></section></div>")],2)],2)}
+                        }},model:{value:(_vm.value_2),callback:function ($$v) {_vm.value_2=$$v},expression:"value_2"}})],1),_vm._ssrNode(" <h5 class=\"filtraiton__header\">\n                    Филтр по брендам.\n                </h5> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"zara\" name=\"zara\" value=\"Zara\" class=\"filtraiton__form--input\"> <label for=\"zara\" class=\"filtraiton__form--label\">\n                        Zara</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"legendr\" name=\"legendr\" value=\"legendr\" class=\"filtraiton__form--input\"> <label for=\"legendr\" class=\"filtraiton__form--label\">\n                        Legendr</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"abb\" name=\"abb\" value=\"abb\" class=\"filtraiton__form--input\"> <label for=\"abb\" class=\"filtraiton__form--label\">\n                        ABB</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"navigator\" name=\"navigator\" value=\"navigator\" class=\"filtraiton__form--input\"> <label for=\"navigator\" class=\"filtraiton__form--label\">\n                        Navigator</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"telfor\" name=\"telfor\" value=\"telfor\" class=\"filtraiton__form--input\"> <label for=\"telfor\" class=\"filtraiton__form--label\">\n                        TEKFOR</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"wago\" name=\"wago\" value=\"wago\" class=\"filtraiton__form--input\"> <label for=\"wago\" class=\"filtraiton__form--label\">\n                        Wago</label><br></div> <div class=\"center__input__label\"><input type=\"checkbox\" id=\"universal\" name=\"universal\" value=\"universal\" class=\"filtraiton__form--input\"> <label for=\"universal\" class=\"filtraiton__form--label\">\n                        UniVersal</label><br></div> <div class=\"submit__box\"><input type=\"submit\" value=\"Фильтр\" class=\"filtraiton__form--submit\"></div>")],2)],2),_vm._ssrNode(" <div class=\"catalog__page__about\"><section class=\"container popular__container\"><div class=\"popular__item-box\"><div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Футболки</span> <h4 class=\"popular__items__desription--categorie\">\n                                Детская одежда\n                            </h4> <span class=\"popular__items__desription--price popular__items__desription--old--price hidden\">580 000 сум</span> <span class=\"popular__items__desription--price\">480 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Футболки</span> <h4 class=\"popular__items__desription--categorie\">\n                                Мужская кожаная куртка\n                            </h4> <span class=\"popular__items__desription--price\">1 080 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Кроссовки</span> <h4 class=\"popular__items__desription--categorie\">\n                                для фанатов футбола Ювентуса\n                            </h4> <span class=\"popular__items__desription--price\">1 280 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Рубашки</span> <h4 class=\"popular__items__desription--categorie\">\n                                весенная рубашка для мужчин\n                            </h4> <span class=\"popular__items__desription--price\">474 000 сум</span></div></div> <div class=\"popular__items\"><img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Popular item photo\" type=\"photo/png\" class=\"popular__items__img\"> <div class=\"popular__items__desription\"><span class=\"popular__items__desription--name\">Одежда</span> <h4 class=\"popular__items__desription--categorie\">\n                                Новая весенная коллекция для женщин\n                            </h4> <span class=\"popular__items__desription--price popular__items__desription--old--price\">1 480 000 сум</span> <span class=\"popular__items__desription--price\">1 280 000 сум</span></div></div></div> <a href=\"#\" class=\"popular__btn\">Показать ещё</a></section></div>")],2)],2)}
 var staticRenderFns = []
 
 
@@ -532,7 +532,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(251)
+  var style0 = __webpack_require__(252)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -554,7 +554,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/bg.d007fe2.png";
