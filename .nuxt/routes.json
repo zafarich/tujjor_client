@@ -3,55 +3,64 @@
     "name": "about___uz",
     "path": "/about",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_08827303"
   },
   {
     "name": "allmagazines___uz",
     "path": "/allmagazines",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\allmagazines.vue",
-    "chunkName": "pages/allmagazines"
+    "chunkName": "pages/allmagazines",
+    "_name": "_062d9558"
   },
   {
     "name": "application___uz",
     "path": "/application",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\application\\\\index.vue",
-    "chunkName": "pages/application/index"
+    "chunkName": "pages/application/index",
+    "_name": "_7c056608"
   },
   {
     "name": "basket___uz",
     "path": "/basket",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\basket\\\\index.vue",
-    "chunkName": "pages/basket/index"
+    "chunkName": "pages/basket/index",
+    "_name": "_5c5582c2"
   },
   {
     "name": "business___uz",
     "path": "/business",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\business\\\\index.vue",
-    "chunkName": "pages/business/index"
+    "chunkName": "pages/business/index",
+    "_name": "_4c08fd08"
   },
   {
     "name": "faq___uz",
     "path": "/faq",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\faq.vue",
-    "chunkName": "pages/faq"
+    "chunkName": "pages/faq",
+    "_name": "_1d6d2d8c"
   },
   {
     "name": "favourite___uz",
     "path": "/favourite",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\favourite\\\\index.vue",
-    "chunkName": "pages/favourite/index"
+    "chunkName": "pages/favourite/index",
+    "_name": "_fed97efa"
   },
   {
     "name": "filter___uz",
     "path": "/filter",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\filter\\\\index.vue",
-    "chunkName": "pages/filter/index"
+    "chunkName": "pages/filter/index",
+    "_name": "_17f4cdd0"
   },
   {
     "name": "myorders___uz",
     "path": "/myorders",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\myorders.vue",
-    "chunkName": "pages/myorders"
+    "chunkName": "pages/myorders",
+    "_name": "_1cf5b18b"
   },
   {
     "name": "news___uz",
@@ -63,123 +72,144 @@
         "name": "news-id___uz",
         "path": ":id?",
         "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\news\\\\_id.vue",
-        "chunkName": "pages/news/_id"
+        "chunkName": "pages/news/_id",
+        "_name": "_2d74fabd"
       }
-    ]
+    ],
+    "_name": "_9e78e666"
   },
   {
     "name": "profile___uz",
     "path": "/profile",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\profile\\\\index.vue",
-    "chunkName": "pages/profile/index"
+    "chunkName": "pages/profile/index",
+    "_name": "_69f66ffa"
   },
   {
     "name": "index___ru",
     "path": "/ru",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_283a4dc8"
   },
   {
     "name": "search___uz",
     "path": "/search",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\search\\\\index.vue",
-    "chunkName": "pages/search/index"
+    "chunkName": "pages/search/index",
+    "_name": "_3fa414c0"
   },
   {
     "name": "test___uz",
     "path": "/test",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\test.vue",
-    "chunkName": "pages/test"
+    "chunkName": "pages/test",
+    "_name": "_19454f0c"
   },
   {
     "name": "auth-code___uz",
     "path": "/auth/code",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\code.vue",
-    "chunkName": "pages/auth/code"
+    "chunkName": "pages/auth/code",
+    "_name": "_53ff588f"
   },
   {
     "name": "auth-login___uz",
     "path": "/auth/login",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\login.vue",
-    "chunkName": "pages/auth/login"
+    "chunkName": "pages/auth/login",
+    "_name": "_0b3ee037"
   },
   {
     "name": "auth-newpassword___uz",
     "path": "/auth/newpassword",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\newpassword.vue",
-    "chunkName": "pages/auth/newpassword"
+    "chunkName": "pages/auth/newpassword",
+    "_name": "_29689b89"
   },
   {
     "name": "auth-phone___uz",
     "path": "/auth/phone",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\phone.vue",
-    "chunkName": "pages/auth/phone"
+    "chunkName": "pages/auth/phone",
+    "_name": "_3463a3bc"
   },
   {
     "name": "auth-register___uz",
     "path": "/auth/register",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\register.vue",
-    "chunkName": "pages/auth/register"
+    "chunkName": "pages/auth/register",
+    "_name": "_683f3945"
   },
   {
     "name": "profile-edit___uz",
     "path": "/profile/edit",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\profile\\\\edit.vue",
-    "chunkName": "pages/profile/edit"
+    "chunkName": "pages/profile/edit",
+    "_name": "_ff66622e"
   },
   {
     "name": "about___ru",
     "path": "/ru/about",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_08827303"
   },
   {
     "name": "allmagazines___ru",
     "path": "/ru/allmagazines",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\allmagazines.vue",
-    "chunkName": "pages/allmagazines"
+    "chunkName": "pages/allmagazines",
+    "_name": "_062d9558"
   },
   {
     "name": "application___ru",
     "path": "/ru/application",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\application\\\\index.vue",
-    "chunkName": "pages/application/index"
+    "chunkName": "pages/application/index",
+    "_name": "_7c056608"
   },
   {
     "name": "basket___ru",
     "path": "/ru/basket",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\basket\\\\index.vue",
-    "chunkName": "pages/basket/index"
+    "chunkName": "pages/basket/index",
+    "_name": "_5c5582c2"
   },
   {
     "name": "business___ru",
     "path": "/ru/business",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\business\\\\index.vue",
-    "chunkName": "pages/business/index"
+    "chunkName": "pages/business/index",
+    "_name": "_4c08fd08"
   },
   {
     "name": "faq___ru",
     "path": "/ru/faq",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\faq.vue",
-    "chunkName": "pages/faq"
+    "chunkName": "pages/faq",
+    "_name": "_1d6d2d8c"
   },
   {
     "name": "favourite___ru",
     "path": "/ru/favourite",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\favourite\\\\index.vue",
-    "chunkName": "pages/favourite/index"
+    "chunkName": "pages/favourite/index",
+    "_name": "_fed97efa"
   },
   {
     "name": "filter___ru",
     "path": "/ru/filter",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\filter\\\\index.vue",
-    "chunkName": "pages/filter/index"
+    "chunkName": "pages/filter/index",
+    "_name": "_17f4cdd0"
   },
   {
     "name": "myorders___ru",
     "path": "/ru/myorders",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\myorders.vue",
-    "chunkName": "pages/myorders"
+    "chunkName": "pages/myorders",
+    "_name": "_1cf5b18b"
   },
   {
     "name": "news___ru",
@@ -191,104 +221,122 @@
         "name": "news-id___ru",
         "path": ":id?",
         "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\news\\\\_id.vue",
-        "chunkName": "pages/news/_id"
+        "chunkName": "pages/news/_id",
+        "_name": "_2d74fabd"
       }
-    ]
+    ],
+    "_name": "_9e78e666"
   },
   {
     "name": "profile___ru",
     "path": "/ru/profile",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\profile\\\\index.vue",
-    "chunkName": "pages/profile/index"
+    "chunkName": "pages/profile/index",
+    "_name": "_69f66ffa"
   },
   {
     "name": "search___ru",
     "path": "/ru/search",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\search\\\\index.vue",
-    "chunkName": "pages/search/index"
+    "chunkName": "pages/search/index",
+    "_name": "_3fa414c0"
   },
   {
     "name": "test___ru",
     "path": "/ru/test",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\test.vue",
-    "chunkName": "pages/test"
+    "chunkName": "pages/test",
+    "_name": "_19454f0c"
   },
   {
     "name": "auth-code___ru",
     "path": "/ru/auth/code",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\code.vue",
-    "chunkName": "pages/auth/code"
+    "chunkName": "pages/auth/code",
+    "_name": "_53ff588f"
   },
   {
     "name": "auth-login___ru",
     "path": "/ru/auth/login",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\login.vue",
-    "chunkName": "pages/auth/login"
+    "chunkName": "pages/auth/login",
+    "_name": "_0b3ee037"
   },
   {
     "name": "auth-newpassword___ru",
     "path": "/ru/auth/newpassword",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\newpassword.vue",
-    "chunkName": "pages/auth/newpassword"
+    "chunkName": "pages/auth/newpassword",
+    "_name": "_29689b89"
   },
   {
     "name": "auth-phone___ru",
     "path": "/ru/auth/phone",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\phone.vue",
-    "chunkName": "pages/auth/phone"
+    "chunkName": "pages/auth/phone",
+    "_name": "_3463a3bc"
   },
   {
     "name": "auth-register___ru",
     "path": "/ru/auth/register",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\auth\\\\register.vue",
-    "chunkName": "pages/auth/register"
+    "chunkName": "pages/auth/register",
+    "_name": "_683f3945"
   },
   {
     "name": "profile-edit___ru",
     "path": "/ru/profile/edit",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\profile\\\\edit.vue",
-    "chunkName": "pages/profile/edit"
+    "chunkName": "pages/profile/edit",
+    "_name": "_ff66622e"
   },
   {
     "name": "magazine-id___ru",
     "path": "/ru/magazine/:id?",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\magazine\\\\_id.vue",
-    "chunkName": "pages/magazine/_id"
+    "chunkName": "pages/magazine/_id",
+    "_name": "_3d61c41c"
   },
   {
     "name": "order-id___ru",
     "path": "/ru/order/:id?",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\order\\\\_id.vue",
-    "chunkName": "pages/order/_id"
+    "chunkName": "pages/order/_id",
+    "_name": "_ebe668b4"
   },
   {
     "name": "product-id___ru",
     "path": "/ru/product/:id?",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\product\\\\_id.vue",
-    "chunkName": "pages/product/_id"
+    "chunkName": "pages/product/_id",
+    "_name": "_49abfaa5"
   },
   {
     "name": "magazine-id___uz",
     "path": "/magazine/:id?",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\magazine\\\\_id.vue",
-    "chunkName": "pages/magazine/_id"
+    "chunkName": "pages/magazine/_id",
+    "_name": "_3d61c41c"
   },
   {
     "name": "order-id___uz",
     "path": "/order/:id?",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\order\\\\_id.vue",
-    "chunkName": "pages/order/_id"
+    "chunkName": "pages/order/_id",
+    "_name": "_ebe668b4"
   },
   {
     "name": "product-id___uz",
     "path": "/product/:id?",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\product\\\\_id.vue",
-    "chunkName": "pages/product/_id"
+    "chunkName": "pages/product/_id",
+    "_name": "_49abfaa5"
   },
   {
     "name": "index___uz",
     "path": "/",
     "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\work\\\\tujjor\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_283a4dc8"
   }
 ]
