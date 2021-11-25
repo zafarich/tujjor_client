@@ -29,9 +29,6 @@ export default {
     },
     beforeDestroy() {
         window.removeEventListener("scroll", this.scrollTop);
-        // window.scrollTo({
-        //     top: 0
-        // });
     },
     methods: {
         scrollTop() {

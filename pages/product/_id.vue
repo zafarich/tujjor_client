@@ -1315,7 +1315,7 @@ body {
 
         // styling img__view__box
         .img__view__box {
-            height: 150px;
+            height: 100%;
             overflow-y: auto;
 
             .img__view__list {
