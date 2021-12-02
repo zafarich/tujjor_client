@@ -1315,7 +1315,7 @@ body {
 
         // styling img__view__box
         .img__view__box {
-            height: 100%;
+            max-height: 500px;
             overflow-y: auto;
 
             .img__view__list {
@@ -2134,6 +2134,10 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+    .img__view__box {
+        height: 292px !important;
+        overflow-y: scroll;
+    }
     .product-info {
         .select__size {
             display: flex;
