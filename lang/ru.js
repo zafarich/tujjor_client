@@ -1,7 +1,14 @@
 export default {
     // авторизация
+    exit: "Выйти",
+    profil: "Профиль",
+    kod: "Введите код",
     tel: "Номер телефона",
+    tolshart: "Обязательно",
+    kodsms: "Код был отправлен на ваш номер телефона по SMS",
+    davometish: "Продолжить",
     yourName: "Имя",
+    togtol: "Залить правильно",
     surName: "Фамилия",
     password: "Пароль",
     rePassword: "Повторите пароль",

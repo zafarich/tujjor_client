@@ -174,7 +174,7 @@ export default {
                         // autoFetch: true
                 },
                 endpoints: {
-                    login: { url: "/user/login", method: "post" },
+                    login: { url: "/user/checkCode", method: "post" },
                     user: { url: "/user/me", method: "get" }
                 }
             }

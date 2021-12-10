@@ -1,6 +1,13 @@
 export default {
     // авторизация
+    exit: "Chiqish",
+    kod: "Kodni kiriting",
+    tolshart: "To'ldirish shart",
+    kodsms: "Kod sms tarzida telefon nomeringizga jo'natildi",
+    davometish: "Davom etish",
+    togtol: "To'g'ri to'ldiring",
     tel: "Telefon raqam",
+    profil: "Profil",
     yourName: "Ism",
     surName: "Familiya",
     password: "Parol",

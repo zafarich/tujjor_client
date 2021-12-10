@@ -248,21 +248,10 @@
                         </nuxt-link>
                     </div>
 
-                    <div
-                        class="person__box"
-                        :class="
-                            searchActive.active
-                                ? searchActive.neighbourClass
-                                : ''
-                        "
-                        @click="doVisiblePerson"
-                        v-click-other="falsePerson"
-                    >
-                        <button
-                            style="border:none; outline:none; background-color:inherit"
-                            id="personBox"
-                        >
-                            <span class="header__item ">
+                    <div class="header-login">
+                        <div class="profile" v-click-other="clickOut">
+                            <button @click="clickProfile" class="login">
+                                <div class="pro-img"></div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -275,62 +264,33 @@
                                         fill="#FB8500"
                                     />
                                 </svg>
-                            </span>
-                        </button>
+                            </button>
 
-                        <div class="person__dropdown" v-if="isVisiblePerson">
-                            <div class="person__logIn" v-if="loggedIn">
-                                <div class="info">
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 20 20"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M10 0.375C8.09636 0.375 6.23546 0.939497 4.65264 1.99711C3.06982 3.05471 1.83616 4.55793 1.10766 6.31667C0.37917 8.07541 0.188563 10.0107 0.559946 11.8777C0.931329 13.7448 1.84802 15.4598 3.1941 16.8059C4.54018 18.152 6.25519 19.0687 8.12226 19.4401C9.98933 19.8114 11.9246 19.6208 13.6833 18.8923C15.4421 18.1638 16.9453 16.9302 18.0029 15.3474C19.0605 13.7645 19.625 11.9036 19.625 10C19.6221 7.44818 18.6071 5.00172 16.8027 3.19731C14.9983 1.39291 12.5518 0.377911 10 0.375ZM15.4945 16.1366C15.4808 15.2349 15.1134 14.3746 14.4714 13.7411C13.8295 13.1076 12.9644 12.7517 12.0625 12.75H7.9375C7.03563 12.7517 6.17052 13.1076 5.52857 13.7411C4.88661 14.3746 4.51921 15.2349 4.5055 16.1366C3.25877 15.0234 2.37957 13.5577 1.98433 11.9337C1.58909 10.3097 1.69645 8.60392 2.29219 7.04228C2.88794 5.48063 3.94397 4.13677 5.32045 3.18864C6.69693 2.24051 8.32893 1.73283 10.0003 1.73283C11.6718 1.73283 13.3038 2.24051 14.6802 3.18864C16.0567 4.13677 17.1128 5.48063 17.7085 7.04228C18.3042 8.60392 18.4116 10.3097 18.0164 11.9337C17.6211 13.5577 16.7419 15.0234 15.4952 16.1366H15.4945Z"
-                                            fill="#565656"
-                                        />
-                                    </svg>
-
-                                    <span> {{ $auth.user.name }} </span>
-                                </div>
-                                <nuxt-link
-                                    :to="{ name: `profile___${$i18n.locale}` }"
-                                    class="links"
+                            <div v-if="isProfile" class="pro-dropdown">
+                                <h6>{{ $auth.user.name }}</h6>
+                                <ul>
+                                    <li @click="isProfile = false">
+                                        <nuxt-link
+                                            :to="{
+                                                name: `profile___${$i18n.locale}`
+                                            }"
+                                        >
+                                            <span>
+                                                <fa icon="user" />
+                                            </span>
+                                            {{ $t("profil") }}</nuxt-link
+                                        >
+                                    </li>
+                                </ul>
+                                <button
+                                    @click="
+                                        $auth.logout();
+                                        isProfile = false;
+                                    "
+                                    class="logout"
                                 >
-                                    <span>> Профиль</span>
-                                </nuxt-link>
-                                <!-- <nuxt-link to="/my__orders" class="links">
-                                    <span>> Заказы</span>
-                                </nuxt-link> -->
-                                <a class="links" @click="logOut">
-                                    <span>> Выйти</span>
-                                </a>
-                            </div>
-
-                            <div class="person__logOut" v-if="!loggedIn">
-                                <nuxt-link
-                                    :to="{
-                                        name: `auth-register___${$i18n.locale}`
-                                    }"
-                                    class="links"
-                                >
-                                    <button class="button_register">
-                                        {{ $t("regis") }}
-                                    </button>
-                                </nuxt-link>
-                                <nuxt-link
-                                    :to="{
-                                        name: `auth-login___${$i18n.locale}`
-                                    }"
-                                    class="links"
-                                >
-                                    <button class="button_auth">
-                                        {{ $t("log_in") }}
-                                    </button>
-                                </nuxt-link>
+                                    <fa icon="power-off" /> {{ $t("exit") }}
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -590,6 +550,84 @@
             </div>
         </div>
 
+        <div @click="closeModal" v-if="isCheck" class="fixvh"></div>
+        <div v-if="isCheck" class="modal-card" style="width: 400px">
+            <div class="modal-title">
+                <h2>{{ $t("log_in") }}</h2>
+                <button @click="closeModal">
+                    <fa class="times" icon="times" />
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div
+                    class="input-form"
+                    :class="{ 'form-error': $v.auth.password.$error }"
+                >
+                    <input
+                        v-model="$v.auth.password.$model"
+                        type="text"
+                        :placeholder="$t('kod')"
+                    />
+                    <h6 v-if="!$v.auth.password.required" class="error-text">
+                        {{ $t("tolshart") }}
+                    </h6>
+                </div>
+
+                <p class="send-code">
+                    {{ $t("kodsms") }}
+                </p>
+
+                <div>
+                    <button
+                        class="btn-sm mb-15 w-100 btn-sm-active"
+                        @click="sendCode"
+                    >
+                        {{ $t("davometish") }}
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div @click="closeModal" v-if="isLogin" class="fixvh"></div>
+        <div v-if="isLogin" class="modal-card" style="width: 400px">
+            <div class="modal-title">
+                <h2>{{ $t("log_in") }}</h2>
+                <button @click="closeModal">
+                    <fa class="times" icon="times" />
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div
+                    class="input-form"
+                    :class="{ 'form-error': $v.login.phone.$error }"
+                >
+                    <input
+                        type="text"
+                        v-model.trim="$v.login.phone.$model"
+                        autocomplete="off"
+                        placeholder="+998 -- --- -- --"
+                        v-mask="'+998 ## ### ## ##'"
+                    />
+                    <h6 v-if="!$v.login.phone.required" class="error-text">
+                        {{ $t("tolshart") }}
+                    </h6>
+                    <h6 v-if="!$v.login.phone.minLength" class="error-text">
+                        {{ $t("togtol") }}
+                    </h6>
+                </div>
+                <div>
+                    <button
+                        @click="loginUser"
+                        class="btn-sm mb-15 w-100 btn-sm-active"
+                    >
+                        {{ $t("log_in") }}
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <div class="scroll-to-top-btn" @click="navigateToTop">
             <svg
                 xml:space="preserve"
@@ -836,10 +874,17 @@
 
 <script>
 import { mapActions, mapMutations, mapGetters } from "vuex";
-
+import { required, minLength, sameAs, helpers } from "vuelidate/lib/validators";
+const email = helpers.regex(
+    "alpha",
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+);
 export default {
     data() {
         return {
+            isProfile: false,
+            isLogin: false,
+            isCheck: false,
             visibleCategory: false,
             activeLanguage: false,
             isVisibleDropdownList: false,
@@ -847,6 +892,12 @@ export default {
             personName: "",
             childCategory: [],
             searchTxt: "",
+            login: {
+                phone: ""
+            },
+            auth: {
+                password: ""
+            },
 
             categoryAll: null,
             tabIndex: 0,
@@ -873,7 +924,74 @@ export default {
             positionData: new Map()
         };
     },
+    validations: {
+        login: {
+            phone: {
+                required,
+                minLength: minLength(17)
+            }
+        },
+        auth: {
+            password: {
+                required
+            }
+        }
+    },
     methods: {
+        clickProfile() {
+            if (this.$auth.loggedIn) {
+                this.isProfile = true;
+            } else {
+                this.isLogin = true;
+            }
+        },
+        clickOut() {
+            this.isProfile = false;
+        },
+
+        closeModal() {
+            this.isLogin = false;
+            this.isCheck = false;
+        },
+        async loginUser() {
+            this.$v.login.$touch();
+            if (!this.$v.login.$invalid) {
+                let phone = this.login.phone.replace(/[^0-9]/g, "");
+
+                this.$axios
+                    .$post("user/getCode", {
+                        phone
+                    })
+                    .then(res => {
+                        this.closeModal();
+                        if (res.success) {
+                            this.isCheck = true;
+                        }
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    });
+            }
+        },
+
+        async sendCode() {
+            this.$v.auth.$touch();
+            if (!this.$v.auth.$invalid) {
+                let phone = this.login.phone.replace(/[^0-9]/g, "");
+
+                try {
+                    let response = await this.$auth.loginWith("local", {
+                        data: {
+                            phone: phone,
+                            code: this.auth.password
+                        }
+                    });
+                    this.$router.go();
+                } catch (err) {
+                    console.log(err);
+                }
+            }
+        },
         ...mapActions(["searchProduct", "fetchCountBasket"]),
         ...mapMutations([
             "setSearchBody",
@@ -1097,6 +1215,98 @@ export default {
 </script>
 
 <style lang="scss">
+div.header-login {
+    display: flex;
+    button.login {
+        font-size: 16px;
+        color: #fff;
+        border-radius: 8px;
+
+        background-color: transparent;
+        font-weight: 500;
+        border: 1px solid transparent;
+        transition: 0.2s;
+    }
+
+    div.profile {
+        display: flex;
+        position: relative;
+        button.profile {
+            display: flex;
+            align-items: center;
+            div.pro-img {
+                position: relative;
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            svg {
+                font-size: 20px;
+                margin-left: 5px;
+                color: $gc;
+            }
+        }
+
+        div.pro-dropdown {
+            position: absolute;
+            box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 8%);
+            right: 0;
+            top: 60px;
+            background-color: #fff;
+            border-radius: 5px;
+            min-width: 180px;
+            padding: 5px;
+            h6 {
+                font-size: 13px;
+                margin: 5px 10px;
+                font-weight: 500;
+                color: $gc;
+                border-bottom: 1px solid $gc;
+                padding-bottom: 5px;
+            }
+            ul {
+                // border-bottom: 1px solid $gc;
+                margin-bottom: 0px;
+
+                li {
+                    display: block;
+                    a {
+                        font-size: 14px;
+                        color: #333;
+                        padding: 8px 10px;
+                        display: block;
+                        font-weight: 500;
+                        border-radius: 5px;
+                        svg {
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            background-color: $gc;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            button.logout {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgb(255, 87, 87);
+                padding: 5px 10px;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}
 .sticky {
     top: 0 !important;
 }

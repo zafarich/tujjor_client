@@ -51,7 +51,7 @@ export default function (ctx, inject) {
   },
   "endpoints": {
     "login": {
-      "url": "/user/login",
+      "url": "/user/checkCode",
       "method": "post"
     },
     "user": {
