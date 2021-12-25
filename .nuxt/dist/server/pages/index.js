@@ -631,7 +631,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "70822c0d"
+  "5a88c9cf"
   
 )
 
@@ -706,7 +706,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "29e44b5a"
+  "0ec67195"
   
 )
 
@@ -857,7 +857,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "60d2426a"
+  "f6ea4ca8"
   
 )
 
@@ -934,7 +934,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "fc3f97cc"
+  "67ea3d98"
   
 )
 
@@ -1011,7 +1011,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "496ae5bc"
+  "2ea4de20"
   
 )
 
@@ -1095,7 +1095,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "0eb71c86"
+  "e15cb670"
   
 )
 
@@ -1204,7 +1204,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "2683c68d"
+  "4947774f"
   
 )
 
@@ -1245,12 +1245,12 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=b8be99b2&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=0df4d382&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('banner-on-main-page'),_vm._ssrNode(" "),_c('on-sale-item'),_vm._ssrNode(" "),_c('other-items'),_vm._ssrNode(" "),_c('logo-rectangle'),_vm._ssrNode(" "),_c('popular-item'),_vm._ssrNode(" "),_c('brands'),_vm._ssrNode(" "),_c('news')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=b8be99b2&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=0df4d382&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&
 //
@@ -1266,7 +1266,7 @@ var staticRenderFns = []
 //
 //
 //
-/* harmony default export */ var lib_vue_loader_options_pagesvue_type_script_lang_js_ = ({layout:"main__page__layout",data(){return{seach:null};},mounted(){},created(){window.addEventListener("scroll",this.scrollTop);// window.scrollTo({
+/* harmony default export */ var lib_vue_loader_options_pagesvue_type_script_lang_js_ = ({layout:"main__page__layout",data(){return{seach:null};},async mounted(){let b=[{count:1}];localStorage.setItem("basket",b);console.log("sss",localStorage.getItem("basket"));},created(){window.addEventListener("scroll",this.scrollTop);// window.scrollTo({
 //     top: this.$store.state.all.scrollTop
 // });
 },beforeDestroy(){window.removeEventListener("scroll",this.scrollTop);},methods:{scrollTop(){this.$store.commit("SCROLL_TOP",window.scrollY);}}});
@@ -1295,7 +1295,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "648732ee"
+  "2694d6a0"
   
 )
 
@@ -1425,7 +1425,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "46236f3e",
-  "509d18fd"
+  "2bd43f3f"
   
 )
 
@@ -1561,7 +1561,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "f0aedeb2",
-  "160daab5"
+  "6967fbb3"
   
 )
 

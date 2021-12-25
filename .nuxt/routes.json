@@ -2,341 +2,341 @@
   {
     "name": "about___uz",
     "path": "/about",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\about.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_5178b1be"
+    "_name": "_4f2a3c32"
   },
   {
     "name": "allmagazines___uz",
     "path": "/allmagazines",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\allmagazines.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\allmagazines.vue",
     "chunkName": "pages/allmagazines",
-    "_name": "_35cd237a"
+    "_name": "_47195df4"
   },
   {
     "name": "application___uz",
     "path": "/application",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\application\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\application\\\\index.vue",
     "chunkName": "pages/application/index",
-    "_name": "_39ce399e"
+    "_name": "_fd819ed0"
   },
   {
     "name": "basket___uz",
     "path": "/basket",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\basket\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\basket\\\\index.vue",
     "chunkName": "pages/basket/index",
-    "_name": "_20a7b8e0"
+    "_name": "_38e2cda6"
   },
   {
     "name": "business___uz",
     "path": "/business",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\business\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\business\\\\index.vue",
     "chunkName": "pages/business/index",
-    "_name": "_44a623a6"
+    "_name": "_3a6f1eec"
   },
   {
     "name": "faq___uz",
     "path": "/faq",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\faq.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\faq.vue",
     "chunkName": "pages/faq",
-    "_name": "_4488d12a"
+    "_name": "_01ac0570"
   },
   {
     "name": "favourite___uz",
     "path": "/favourite",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\favourite\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\favourite\\\\index.vue",
     "chunkName": "pages/favourite/index",
-    "_name": "_c8ca24b6"
+    "_name": "_5ef15b1f"
   },
   {
     "name": "filter___uz",
     "path": "/filter",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\filter\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\filter\\\\index.vue",
     "chunkName": "pages/filter/index",
-    "_name": "_4771f824"
+    "_name": "_16fbce98"
   },
   {
     "name": "myorders___uz",
     "path": "/myorders",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\myorders.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\myorders.vue",
     "chunkName": "pages/myorders",
-    "_name": "_6245a0ad"
+    "_name": "_d313afb2"
   },
   {
     "name": "news___uz",
     "path": "/news",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\news.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\news.vue",
     "chunkName": "pages/news",
     "children": [
       {
         "name": "news-id___uz",
         "path": ":id?",
-        "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\news\\\\_id.vue",
+        "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\news\\\\_id.vue",
         "chunkName": "pages/news/_id",
-        "_name": "_dbba204a"
+        "_name": "_37f950be"
       }
     ],
-    "_name": "_6d1c5cef"
+    "_name": "_545fb169"
   },
   {
     "name": "profile___uz",
     "path": "/profile",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\profile\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\profile\\\\index.vue",
     "chunkName": "pages/profile/index",
-    "_name": "_de0d54b6"
+    "_name": "_ffbe4cc2"
   },
   {
     "name": "index___ru",
     "path": "/ru",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_1208fc34"
+    "_name": "_0fba86a8"
   },
   {
     "name": "search___uz",
     "path": "/search",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\search\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\search\\\\index.vue",
     "chunkName": "pages/search/index",
-    "_name": "_b6ffa884"
+    "_name": "_86897ef8"
   },
   {
     "name": "test___uz",
     "path": "/test",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\test.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\test.vue",
     "chunkName": "pages/test",
-    "_name": "_54c3c1a4"
+    "_name": "_863d18b0"
   },
   {
     "name": "auth-code___uz",
     "path": "/auth/code",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\code.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\code.vue",
     "chunkName": "pages/auth/code",
-    "_name": "_f5dff19e"
+    "_name": "_6f3c982b"
   },
   {
     "name": "auth-login___uz",
     "path": "/auth/login",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\login.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\login.vue",
     "chunkName": "pages/auth/login",
-    "_name": "_0777f456"
+    "_name": "_57a9941b"
   },
   {
     "name": "auth-newpassword___uz",
     "path": "/auth/newpassword",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\newpassword.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\newpassword.vue",
     "chunkName": "pages/auth/newpassword",
-    "_name": "_6f5692a7"
+    "_name": "_16cdd46d"
   },
   {
     "name": "auth-phone___uz",
     "path": "/auth/phone",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\phone.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\phone.vue",
     "chunkName": "pages/auth/phone",
-    "_name": "_2568c95a"
+    "_name": "_fe6350c0"
   },
   {
     "name": "auth-register___uz",
     "path": "/auth/register",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\register.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\register.vue",
     "chunkName": "pages/auth/register",
-    "_name": "_2e33c6e7"
+    "_name": "_1d5b4ae1"
   },
   {
     "name": "profile-edit___uz",
     "path": "/profile/edit",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\profile\\\\edit.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\profile\\\\edit.vue",
     "chunkName": "pages/profile/edit",
-    "_name": "_449f0507"
+    "_name": "_5cda19cd"
   },
   {
     "name": "about___ru",
     "path": "/ru/about",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\about.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_5178b1be"
+    "_name": "_4f2a3c32"
   },
   {
     "name": "allmagazines___ru",
     "path": "/ru/allmagazines",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\allmagazines.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\allmagazines.vue",
     "chunkName": "pages/allmagazines",
-    "_name": "_35cd237a"
+    "_name": "_47195df4"
   },
   {
     "name": "application___ru",
     "path": "/ru/application",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\application\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\application\\\\index.vue",
     "chunkName": "pages/application/index",
-    "_name": "_39ce399e"
+    "_name": "_fd819ed0"
   },
   {
     "name": "basket___ru",
     "path": "/ru/basket",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\basket\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\basket\\\\index.vue",
     "chunkName": "pages/basket/index",
-    "_name": "_20a7b8e0"
+    "_name": "_38e2cda6"
   },
   {
     "name": "business___ru",
     "path": "/ru/business",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\business\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\business\\\\index.vue",
     "chunkName": "pages/business/index",
-    "_name": "_44a623a6"
+    "_name": "_3a6f1eec"
   },
   {
     "name": "faq___ru",
     "path": "/ru/faq",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\faq.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\faq.vue",
     "chunkName": "pages/faq",
-    "_name": "_4488d12a"
+    "_name": "_01ac0570"
   },
   {
     "name": "favourite___ru",
     "path": "/ru/favourite",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\favourite\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\favourite\\\\index.vue",
     "chunkName": "pages/favourite/index",
-    "_name": "_c8ca24b6"
+    "_name": "_5ef15b1f"
   },
   {
     "name": "filter___ru",
     "path": "/ru/filter",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\filter\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\filter\\\\index.vue",
     "chunkName": "pages/filter/index",
-    "_name": "_4771f824"
+    "_name": "_16fbce98"
   },
   {
     "name": "myorders___ru",
     "path": "/ru/myorders",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\myorders.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\myorders.vue",
     "chunkName": "pages/myorders",
-    "_name": "_6245a0ad"
+    "_name": "_d313afb2"
   },
   {
     "name": "news___ru",
     "path": "/ru/news",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\news.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\news.vue",
     "chunkName": "pages/news",
     "children": [
       {
         "name": "news-id___ru",
         "path": ":id?",
-        "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\news\\\\_id.vue",
+        "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\news\\\\_id.vue",
         "chunkName": "pages/news/_id",
-        "_name": "_dbba204a"
+        "_name": "_37f950be"
       }
     ],
-    "_name": "_6d1c5cef"
+    "_name": "_545fb169"
   },
   {
     "name": "profile___ru",
     "path": "/ru/profile",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\profile\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\profile\\\\index.vue",
     "chunkName": "pages/profile/index",
-    "_name": "_de0d54b6"
+    "_name": "_ffbe4cc2"
   },
   {
     "name": "search___ru",
     "path": "/ru/search",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\search\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\search\\\\index.vue",
     "chunkName": "pages/search/index",
-    "_name": "_b6ffa884"
+    "_name": "_86897ef8"
   },
   {
     "name": "test___ru",
     "path": "/ru/test",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\test.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\test.vue",
     "chunkName": "pages/test",
-    "_name": "_54c3c1a4"
+    "_name": "_863d18b0"
   },
   {
     "name": "auth-code___ru",
     "path": "/ru/auth/code",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\code.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\code.vue",
     "chunkName": "pages/auth/code",
-    "_name": "_f5dff19e"
+    "_name": "_6f3c982b"
   },
   {
     "name": "auth-login___ru",
     "path": "/ru/auth/login",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\login.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\login.vue",
     "chunkName": "pages/auth/login",
-    "_name": "_0777f456"
+    "_name": "_57a9941b"
   },
   {
     "name": "auth-newpassword___ru",
     "path": "/ru/auth/newpassword",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\newpassword.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\newpassword.vue",
     "chunkName": "pages/auth/newpassword",
-    "_name": "_6f5692a7"
+    "_name": "_16cdd46d"
   },
   {
     "name": "auth-phone___ru",
     "path": "/ru/auth/phone",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\phone.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\phone.vue",
     "chunkName": "pages/auth/phone",
-    "_name": "_2568c95a"
+    "_name": "_fe6350c0"
   },
   {
     "name": "auth-register___ru",
     "path": "/ru/auth/register",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\auth\\\\register.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\register.vue",
     "chunkName": "pages/auth/register",
-    "_name": "_2e33c6e7"
+    "_name": "_1d5b4ae1"
   },
   {
     "name": "profile-edit___ru",
     "path": "/ru/profile/edit",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\profile\\\\edit.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\profile\\\\edit.vue",
     "chunkName": "pages/profile/edit",
-    "_name": "_449f0507"
+    "_name": "_5cda19cd"
   },
   {
     "name": "magazine-id___ru",
     "path": "/ru/magazine/:id?",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\magazine\\\\_id.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\magazine\\\\_id.vue",
     "chunkName": "pages/magazine/_id",
-    "_name": "_01b3fa3a"
+    "_name": "_19ef0f00"
   },
   {
     "name": "order-id___ru",
     "path": "/ru/order/:id?",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\order\\\\_id.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\order\\\\_id.vue",
     "chunkName": "pages/order/_id",
-    "_name": "_89c50b70"
+    "_name": "_b56be97c"
   },
   {
     "name": "product-id___ru",
     "path": "/ru/product/:id?",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\product\\\\_id.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\product\\\\_id.vue",
     "chunkName": "pages/product/_id",
-    "_name": "_794b88c7"
+    "_name": "_ead0797e"
   },
   {
     "name": "magazine-id___uz",
     "path": "/magazine/:id?",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\magazine\\\\_id.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\magazine\\\\_id.vue",
     "chunkName": "pages/magazine/_id",
-    "_name": "_01b3fa3a"
+    "_name": "_19ef0f00"
   },
   {
     "name": "order-id___uz",
     "path": "/order/:id?",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\order\\\\_id.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\order\\\\_id.vue",
     "chunkName": "pages/order/_id",
-    "_name": "_89c50b70"
+    "_name": "_b56be97c"
   },
   {
     "name": "product-id___uz",
     "path": "/product/:id?",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\product\\\\_id.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\product\\\\_id.vue",
     "chunkName": "pages/product/_id",
-    "_name": "_794b88c7"
+    "_name": "_ead0797e"
   },
   {
     "name": "index___uz",
     "path": "/",
-    "component": "C:\\\\Users\\\\ZAFAR_0210\\\\OneDrive\\\\Desktop\\\\tujjor_test\\\\pages\\\\index.vue",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_1208fc34"
+    "_name": "_0fba86a8"
   }
 ]

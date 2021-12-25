@@ -299,7 +299,7 @@ export default {
         ]
     },
 
-    middleware: "auth",
+    // middleware: "auth",
 
     data() {
         return {
@@ -510,7 +510,7 @@ export default {
                 ";c=https://tujjor.org/profile";
 
             const base64 = btoa(str);
-            console.log("base64", base64, str);
+            console.log("base64", str);
             const link = "https://checkout.paycom.uz/" + base64;
 
             window.location = link;

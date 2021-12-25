@@ -203,6 +203,7 @@
                         <nuxt-link
                             :to="{ name: 'favourite___' + $i18n.locale }"
                             class="header__item basket"
+                            v-if="$auth.loggedIn"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -226,10 +227,7 @@
                                 : ''
                         "
                     >
-                        <nuxt-link
-                            :to="{ name: 'basket___' + $i18n.locale }"
-                            class=" header__item basket"
-                        >
+                        <a class=" header__item basket" @click="goBasket">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="21"
@@ -245,7 +243,7 @@
                             <span class="basket-count" v-if="countBasket > 0">
                                 {{ countBasket }}
                             </span>
-                        </nuxt-link>
+                        </a>
                     </div>
 
                     <div class="header-login">
@@ -883,8 +881,7 @@ export default {
     data() {
         return {
             isProfile: false,
-            isLogin: false,
-            isCheck: false,
+
             visibleCategory: false,
             activeLanguage: false,
             isVisibleDropdownList: false,
@@ -938,11 +935,18 @@ export default {
         }
     },
     methods: {
+        goBasket() {
+            if (this.$auth.loggedIn) {
+                this.$router.push({ name: `basket___${this.$i18n.locale}` });
+            } else {
+                this.$store.commit("CHANGE_LOGIN", true);
+            }
+        },
         clickProfile() {
             if (this.$auth.loggedIn) {
                 this.isProfile = true;
             } else {
-                this.isLogin = true;
+                this.$store.commit("CHANGE_LOGIN", true);
             }
         },
         clickOut() {
@@ -950,8 +954,8 @@ export default {
         },
 
         closeModal() {
-            this.isLogin = false;
-            this.isCheck = false;
+            this.$store.commit("CHANGE_LOGIN", false);
+            this.$store.commit("CHANGE_CHECK", false);
         },
         async loginUser() {
             this.$v.login.$touch();
@@ -965,7 +969,7 @@ export default {
                     .then(res => {
                         this.closeModal();
                         if (res.success) {
-                            this.isCheck = true;
+                            this.$store.commit("CHANGE_CHECK", true);
                         }
                     })
                     .catch(err => {
@@ -986,6 +990,7 @@ export default {
                             code: this.auth.password
                         }
                     });
+                    this.closeModal();
                     this.$router.go();
                 } catch (err) {
                     console.log(err);
@@ -1167,6 +1172,12 @@ export default {
     },
 
     computed: {
+        isLogin() {
+            return this.$store.state.isLogin || false;
+        },
+        isCheck() {
+            return this.$store.state.isCheck || false;
+        },
         ...mapGetters(["searchBody", "countBasket", "loggedIn"])
     },
 

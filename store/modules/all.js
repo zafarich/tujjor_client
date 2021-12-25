@@ -6,6 +6,12 @@ export default {
         limit1: 10;
         limit2: 20;
         limit3: 10;
+
+        basket: [
+            {
+                count: 1
+            }
+        ];
     },
     mutations: {
         GET_CATEGORY(state, data) {
@@ -25,6 +31,9 @@ export default {
         },
         LIMIT_3(state, data) {
             state.limit3 = data;
+        },
+        SET_BASKET(state, data) {
+            state.basket = data;
         }
     },
     actions: {
@@ -37,5 +46,9 @@ export default {
             commit("GET_BRANDS", brands.data);
         }
     },
-    getters: {}
+    getters: {
+        basket(state) {
+            return state.basket;
+        }
+    }
 };

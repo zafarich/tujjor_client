@@ -3,7 +3,8 @@ export default {
     ssr: true,
     target: "server",
     head: {
-        title: "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor",
+        title:
+            "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor",
         htmlAttrs: {
             lang: "en"
         },
@@ -12,21 +13,25 @@ export default {
             { charset: "utf-8" },
             {
                 name: "viewport",
-                content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+                content:
+                    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
             },
             {
                 hid: "description",
                 name: "description",
-                content: "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor. "
+                content:
+                    "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor. "
             },
 
             {
                 name: "keywords",
-                content: "интернет магазин, узбекистан, ташкент, рассрочка, скидка, Книги, телефоны и гаджеты, компьютеры  и  оргтехника, для геймеров, кондиционеры, бытовая техника, телевизоры, видео и аудио, посуда, мебель, техника для красоты и здоровья, техника для кухни, для дома и офиса, инструменты и автотовары, игрушки, подарки и аксессуары, рамазан, одежда, обувь и аксессуары"
+                content:
+                    "интернет магазин, узбекистан, ташкент, рассрочка, скидка, Книги, телефоны и гаджеты, компьютеры  и  оргтехника, для геймеров, кондиционеры, бытовая техника, телевизоры, видео и аудио, посуда, мебель, техника для красоты и здоровья, техника для кухни, для дома и офиса, инструменты и автотовары, игрушки, подарки и аксессуары, рамазан, одежда, обувь и аксессуары"
             }
         ],
 
-        link: [{
+        link: [
+            {
                 rel: "icon",
                 type: "image/x-icon",
                 href: "/favicon.ico"
@@ -34,27 +39,32 @@ export default {
             {
                 rel: "stylesheet",
                 type: "text/css",
-                href: "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+                href:
+                    "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
             },
             {
                 rel: "stylesheet",
                 type: "text/css",
-                href: "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+                href:
+                    "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
             },
 
             {
                 rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+                href:
+                    "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
             },
 
             {
                 rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                href:
+                    "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             },
 
             {
                 rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+                href:
+                    "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
             }
         ]
     },
@@ -105,7 +115,8 @@ export default {
         "@nuxt/image"
     ],
     i18n: {
-        locales: [{
+        locales: [
+            {
                 code: "uz",
                 file: "uz.js"
             },
@@ -171,7 +182,7 @@ export default {
                 },
                 user: {
                     property: "data"
-                        // autoFetch: true
+                    // autoFetch: true
                 },
                 endpoints: {
                     login: { url: "/user/checkCode", method: "post" },

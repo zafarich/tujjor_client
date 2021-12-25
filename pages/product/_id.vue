@@ -1014,19 +1014,17 @@ export default {
         },
 
         async toggleBasket() {
-            if (!!this.$auth.user) {
-                const {
-                    product,
-                    param,
-                    size,
-                    count
-                } = this.setProductOptionToBasket();
+            const {
+                product,
+                param,
+                size,
+                count
+            } = this.setProductOptionToBasket();
+            if (this.$auth.loggedIn) {
                 const token = this.user.token;
 
                 this.resetBasketSetts();
 
-                // await this.fetchCounBasket(token);
-                // await this.basketFilter({ product, param, size });
                 await Promise.all([
                     this.fetchCounBasket(token),
                     this.basketFilter({ product, param, size })
@@ -1047,46 +1045,34 @@ export default {
                     this.resetBasketSetts();
                 }, 1800);
             } else {
-                const index = 1;
-                const link = this.$route.fullPath;
-                this.setRedirect({ link, index });
-                this.$router.push({
-                    path: "/auth/login"
-                });
+                this.$store.commit("CHANGE_LOGIN", true);
+
+                // this.$store.commit("SET_BASKET");
             }
         },
 
         goToOrder() {
-            if (!!this.$auth.user) {
-                const product = this.selectedProduct;
-                let basket = [];
+            const product = this.selectedProduct;
+            let basket = [];
 
-                basket.push({
-                    image: product.image,
-                    name: product.name,
-                    count: this.productCount,
-                    param: product.params,
-                    size: product.size,
-                    shop: product.shop,
-                    description: product.description,
-                    product: product._id
-                });
+            basket.push({
+                image: product.image,
+                name: product.name,
+                count: this.productCount,
+                param: product.params,
+                size: product.size,
+                shop: product.shop,
+                description: product.description,
+                product: product._id
+            });
 
-                console.log("alll", basket);
-                this.orderProduct(basket);
+            console.log("alll", basket);
+            this.orderProduct(basket);
 
-                this.$router.push({
-                    name: `order-id___${this.$i18n.locale}`,
-                    params: { id: "all" }
-                });
-            } else {
-                const index = 1;
-                const link = this.$route.fullPath;
-                this.setRedirect({ link, index });
-                this.$router.push({
-                    path: "/auth/login"
-                });
-            }
+            this.$router.push({
+                name: `order-id___${this.$i18n.locale}`,
+                params: { id: "all" }
+            });
         },
 
         // fetch products by magazine

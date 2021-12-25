@@ -19,8 +19,16 @@ export default {
             seach: null
         };
     },
-    mounted() {},
+    async mounted() {
+        let b = [
+            {
+                count: 1
+            }
+        ];
+        localStorage.setItem("basket", b);
 
+        console.log("sss", localStorage.getItem("basket"));
+    },
     created() {
         window.addEventListener("scroll", this.scrollTop);
         // window.scrollTo({

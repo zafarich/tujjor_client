@@ -20,7 +20,7 @@ export const options = {
   sortRoutes: true,
   strategy: "prefix_except_default",
   lazy: true,
-  langDir: "C:\\Users\\ZAFAR_0210\\OneDrive\\Desktop\\tujjor_test\\lang",
+  langDir: "D:\\active_projects\\tujjor_test\\lang",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","redirectOn":"root","useCookie":true},
   differentDomains: false,

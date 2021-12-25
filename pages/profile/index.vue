@@ -16,20 +16,20 @@
             <section class="profile-section">
                 <div class="profile-box">
                     <div class="profile">
-                        <img
+                        <!-- <img
                             id="profile-photo"
                             :src="$cdn + userMe.image"
                             alt="Profile photo"
-                        />
-                        <h3 id="profile-title" v-text="userMe.name"></h3>
+                        /> -->
+                        <!-- <h3 id="profile-title" v-text="userMe.name"></h3> -->
                         <h5 id="profile-id">ID {{ userMe._id }}</h5>
                     </div>
-                    <nuxt-link
+                    <!-- <nuxt-link
                         :to="{ name: `profile-edit___${$i18n.locale}` }"
                         class="edit-link"
                     >
                         <fa icon="cog" class="cog-icon" />
-                    </nuxt-link>
+                    </nuxt-link> -->
 
                     <!-- <nuxt-link to="/profile/edit" class="edit-link">
                     Выйти
@@ -169,7 +169,7 @@
                                                 }}
                                             </p>
                                             <p class="p-second">
-                                                <span>{{$t('size')}}</span>
+                                                <span>{{ $t("size") }}</span>
                                                 {{ products.size }}
                                             </p>
                                         </div>
@@ -412,7 +412,7 @@
                                                 }}
                                             </p>
                                             <p class="p-second">
-                                                <span>{{$t('size')}}</span>
+                                                <span>{{ $t("size") }}</span>
                                                 {{ products.size }}
                                             </p>
                                         </div>
@@ -643,7 +643,7 @@
                                                 }}
                                             </p>
                                             <p class="p-second">
-                                                <span>{{$t('size')}}</span>
+                                                <span>{{ $t("size") }}</span>
                                                 {{ products.size }}
                                             </p>
                                         </div>

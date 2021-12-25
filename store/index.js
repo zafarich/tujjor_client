@@ -6,8 +6,18 @@ import redirect from "./modules/redirect";
 import authSets from "./modules/auth";
 import all from "./modules/all";
 
-export const state = () => ({});
-export const mutations = {};
+export const state = () => ({
+    isLogin: false,
+    isCheck: false
+});
+export const mutations = {
+    CHANGE_LOGIN(state, data) {
+        state.isLogin = data;
+    },
+    CHANGE_CHECK(state, data) {
+        state.isCheck = data;
+    }
+};
 export const actions = {};
 
 export const modules = {

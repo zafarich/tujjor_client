@@ -4,30 +4,30 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _5178b1be = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _35cd237a = () => interopDefault(import('..\\pages\\allmagazines.vue' /* webpackChunkName: "pages/allmagazines" */))
-const _39ce399e = () => interopDefault(import('..\\pages\\application\\index.vue' /* webpackChunkName: "pages/application/index" */))
-const _20a7b8e0 = () => interopDefault(import('..\\pages\\basket\\index.vue' /* webpackChunkName: "pages/basket/index" */))
-const _44a623a6 = () => interopDefault(import('..\\pages\\business\\index.vue' /* webpackChunkName: "pages/business/index" */))
-const _4488d12a = () => interopDefault(import('..\\pages\\faq.vue' /* webpackChunkName: "pages/faq" */))
-const _c8ca24b6 = () => interopDefault(import('..\\pages\\favourite\\index.vue' /* webpackChunkName: "pages/favourite/index" */))
-const _4771f824 = () => interopDefault(import('..\\pages\\filter\\index.vue' /* webpackChunkName: "pages/filter/index" */))
-const _6245a0ad = () => interopDefault(import('..\\pages\\myorders.vue' /* webpackChunkName: "pages/myorders" */))
-const _6d1c5cef = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
-const _dbba204a = () => interopDefault(import('..\\pages\\news\\_id.vue' /* webpackChunkName: "pages/news/_id" */))
-const _de0d54b6 = () => interopDefault(import('..\\pages\\profile\\index.vue' /* webpackChunkName: "pages/profile/index" */))
-const _1208fc34 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _b6ffa884 = () => interopDefault(import('..\\pages\\search\\index.vue' /* webpackChunkName: "pages/search/index" */))
-const _54c3c1a4 = () => interopDefault(import('..\\pages\\test.vue' /* webpackChunkName: "pages/test" */))
-const _f5dff19e = () => interopDefault(import('..\\pages\\auth\\code.vue' /* webpackChunkName: "pages/auth/code" */))
-const _0777f456 = () => interopDefault(import('..\\pages\\auth\\login.vue' /* webpackChunkName: "pages/auth/login" */))
-const _6f5692a7 = () => interopDefault(import('..\\pages\\auth\\newpassword.vue' /* webpackChunkName: "pages/auth/newpassword" */))
-const _2568c95a = () => interopDefault(import('..\\pages\\auth\\phone.vue' /* webpackChunkName: "pages/auth/phone" */))
-const _2e33c6e7 = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
-const _449f0507 = () => interopDefault(import('..\\pages\\profile\\edit.vue' /* webpackChunkName: "pages/profile/edit" */))
-const _01b3fa3a = () => interopDefault(import('..\\pages\\magazine\\_id.vue' /* webpackChunkName: "pages/magazine/_id" */))
-const _89c50b70 = () => interopDefault(import('..\\pages\\order\\_id.vue' /* webpackChunkName: "pages/order/_id" */))
-const _794b88c7 = () => interopDefault(import('..\\pages\\product\\_id.vue' /* webpackChunkName: "pages/product/_id" */))
+const _4f2a3c32 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _47195df4 = () => interopDefault(import('..\\pages\\allmagazines.vue' /* webpackChunkName: "pages/allmagazines" */))
+const _fd819ed0 = () => interopDefault(import('..\\pages\\application\\index.vue' /* webpackChunkName: "pages/application/index" */))
+const _38e2cda6 = () => interopDefault(import('..\\pages\\basket\\index.vue' /* webpackChunkName: "pages/basket/index" */))
+const _3a6f1eec = () => interopDefault(import('..\\pages\\business\\index.vue' /* webpackChunkName: "pages/business/index" */))
+const _01ac0570 = () => interopDefault(import('..\\pages\\faq.vue' /* webpackChunkName: "pages/faq" */))
+const _5ef15b1f = () => interopDefault(import('..\\pages\\favourite\\index.vue' /* webpackChunkName: "pages/favourite/index" */))
+const _16fbce98 = () => interopDefault(import('..\\pages\\filter\\index.vue' /* webpackChunkName: "pages/filter/index" */))
+const _d313afb2 = () => interopDefault(import('..\\pages\\myorders.vue' /* webpackChunkName: "pages/myorders" */))
+const _545fb169 = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
+const _37f950be = () => interopDefault(import('..\\pages\\news\\_id.vue' /* webpackChunkName: "pages/news/_id" */))
+const _ffbe4cc2 = () => interopDefault(import('..\\pages\\profile\\index.vue' /* webpackChunkName: "pages/profile/index" */))
+const _0fba86a8 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _86897ef8 = () => interopDefault(import('..\\pages\\search\\index.vue' /* webpackChunkName: "pages/search/index" */))
+const _863d18b0 = () => interopDefault(import('..\\pages\\test.vue' /* webpackChunkName: "pages/test" */))
+const _6f3c982b = () => interopDefault(import('..\\pages\\auth\\code.vue' /* webpackChunkName: "pages/auth/code" */))
+const _57a9941b = () => interopDefault(import('..\\pages\\auth\\login.vue' /* webpackChunkName: "pages/auth/login" */))
+const _16cdd46d = () => interopDefault(import('..\\pages\\auth\\newpassword.vue' /* webpackChunkName: "pages/auth/newpassword" */))
+const _fe6350c0 = () => interopDefault(import('..\\pages\\auth\\phone.vue' /* webpackChunkName: "pages/auth/phone" */))
+const _1d5b4ae1 = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
+const _5cda19cd = () => interopDefault(import('..\\pages\\profile\\edit.vue' /* webpackChunkName: "pages/profile/edit" */))
+const _19ef0f00 = () => interopDefault(import('..\\pages\\magazine\\_id.vue' /* webpackChunkName: "pages/magazine/_id" */))
+const _b56be97c = () => interopDefault(import('..\\pages\\order\\_id.vue' /* webpackChunkName: "pages/order/_id" */))
+const _ead0797e = () => interopDefault(import('..\\pages\\product\\_id.vue' /* webpackChunkName: "pages/product/_id" */))
 
 const emptyFn = () => {}
 
@@ -42,197 +42,197 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _5178b1be,
+    component: _4f2a3c32,
     name: "about___uz"
   }, {
     path: "/allmagazines",
-    component: _35cd237a,
+    component: _47195df4,
     name: "allmagazines___uz"
   }, {
     path: "/application",
-    component: _39ce399e,
+    component: _fd819ed0,
     name: "application___uz"
   }, {
     path: "/basket",
-    component: _20a7b8e0,
+    component: _38e2cda6,
     name: "basket___uz"
   }, {
     path: "/business",
-    component: _44a623a6,
+    component: _3a6f1eec,
     name: "business___uz"
   }, {
     path: "/faq",
-    component: _4488d12a,
+    component: _01ac0570,
     name: "faq___uz"
   }, {
     path: "/favourite",
-    component: _c8ca24b6,
+    component: _5ef15b1f,
     name: "favourite___uz"
   }, {
     path: "/filter",
-    component: _4771f824,
+    component: _16fbce98,
     name: "filter___uz"
   }, {
     path: "/myorders",
-    component: _6245a0ad,
+    component: _d313afb2,
     name: "myorders___uz"
   }, {
     path: "/news",
-    component: _6d1c5cef,
+    component: _545fb169,
     name: "news___uz",
     children: [{
       path: ":id?",
-      component: _dbba204a,
+      component: _37f950be,
       name: "news-id___uz"
     }]
   }, {
     path: "/profile",
-    component: _de0d54b6,
+    component: _ffbe4cc2,
     name: "profile___uz"
   }, {
     path: "/ru",
-    component: _1208fc34,
+    component: _0fba86a8,
     name: "index___ru"
   }, {
     path: "/search",
-    component: _b6ffa884,
+    component: _86897ef8,
     name: "search___uz"
   }, {
     path: "/test",
-    component: _54c3c1a4,
+    component: _863d18b0,
     name: "test___uz"
   }, {
     path: "/auth/code",
-    component: _f5dff19e,
+    component: _6f3c982b,
     name: "auth-code___uz"
   }, {
     path: "/auth/login",
-    component: _0777f456,
+    component: _57a9941b,
     name: "auth-login___uz"
   }, {
     path: "/auth/newpassword",
-    component: _6f5692a7,
+    component: _16cdd46d,
     name: "auth-newpassword___uz"
   }, {
     path: "/auth/phone",
-    component: _2568c95a,
+    component: _fe6350c0,
     name: "auth-phone___uz"
   }, {
     path: "/auth/register",
-    component: _2e33c6e7,
+    component: _1d5b4ae1,
     name: "auth-register___uz"
   }, {
     path: "/profile/edit",
-    component: _449f0507,
+    component: _5cda19cd,
     name: "profile-edit___uz"
   }, {
     path: "/ru/about",
-    component: _5178b1be,
+    component: _4f2a3c32,
     name: "about___ru"
   }, {
     path: "/ru/allmagazines",
-    component: _35cd237a,
+    component: _47195df4,
     name: "allmagazines___ru"
   }, {
     path: "/ru/application",
-    component: _39ce399e,
+    component: _fd819ed0,
     name: "application___ru"
   }, {
     path: "/ru/basket",
-    component: _20a7b8e0,
+    component: _38e2cda6,
     name: "basket___ru"
   }, {
     path: "/ru/business",
-    component: _44a623a6,
+    component: _3a6f1eec,
     name: "business___ru"
   }, {
     path: "/ru/faq",
-    component: _4488d12a,
+    component: _01ac0570,
     name: "faq___ru"
   }, {
     path: "/ru/favourite",
-    component: _c8ca24b6,
+    component: _5ef15b1f,
     name: "favourite___ru"
   }, {
     path: "/ru/filter",
-    component: _4771f824,
+    component: _16fbce98,
     name: "filter___ru"
   }, {
     path: "/ru/myorders",
-    component: _6245a0ad,
+    component: _d313afb2,
     name: "myorders___ru"
   }, {
     path: "/ru/news",
-    component: _6d1c5cef,
+    component: _545fb169,
     name: "news___ru",
     children: [{
       path: ":id?",
-      component: _dbba204a,
+      component: _37f950be,
       name: "news-id___ru"
     }]
   }, {
     path: "/ru/profile",
-    component: _de0d54b6,
+    component: _ffbe4cc2,
     name: "profile___ru"
   }, {
     path: "/ru/search",
-    component: _b6ffa884,
+    component: _86897ef8,
     name: "search___ru"
   }, {
     path: "/ru/test",
-    component: _54c3c1a4,
+    component: _863d18b0,
     name: "test___ru"
   }, {
     path: "/ru/auth/code",
-    component: _f5dff19e,
+    component: _6f3c982b,
     name: "auth-code___ru"
   }, {
     path: "/ru/auth/login",
-    component: _0777f456,
+    component: _57a9941b,
     name: "auth-login___ru"
   }, {
     path: "/ru/auth/newpassword",
-    component: _6f5692a7,
+    component: _16cdd46d,
     name: "auth-newpassword___ru"
   }, {
     path: "/ru/auth/phone",
-    component: _2568c95a,
+    component: _fe6350c0,
     name: "auth-phone___ru"
   }, {
     path: "/ru/auth/register",
-    component: _2e33c6e7,
+    component: _1d5b4ae1,
     name: "auth-register___ru"
   }, {
     path: "/ru/profile/edit",
-    component: _449f0507,
+    component: _5cda19cd,
     name: "profile-edit___ru"
   }, {
     path: "/ru/magazine/:id?",
-    component: _01b3fa3a,
+    component: _19ef0f00,
     name: "magazine-id___ru"
   }, {
     path: "/ru/order/:id?",
-    component: _89c50b70,
+    component: _b56be97c,
     name: "order-id___ru"
   }, {
     path: "/ru/product/:id?",
-    component: _794b88c7,
+    component: _ead0797e,
     name: "product-id___ru"
   }, {
     path: "/magazine/:id?",
-    component: _01b3fa3a,
+    component: _19ef0f00,
     name: "magazine-id___uz"
   }, {
     path: "/order/:id?",
-    component: _89c50b70,
+    component: _b56be97c,
     name: "order-id___uz"
   }, {
     path: "/product/:id?",
-    component: _794b88c7,
+    component: _ead0797e,
     name: "product-id___uz"
   }, {
     path: "/",
-    component: _1208fc34,
+    component: _0fba86a8,
     name: "index___uz"
   }],
 
