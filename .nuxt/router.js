@@ -24,6 +24,7 @@ const _57a9941b = () => interopDefault(import('..\\pages\\auth\\login.vue' /* we
 const _16cdd46d = () => interopDefault(import('..\\pages\\auth\\newpassword.vue' /* webpackChunkName: "pages/auth/newpassword" */))
 const _fe6350c0 = () => interopDefault(import('..\\pages\\auth\\phone.vue' /* webpackChunkName: "pages/auth/phone" */))
 const _1d5b4ae1 = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
+const _7d504161 = () => interopDefault(import('..\\pages\\order\\complete.vue' /* webpackChunkName: "pages/order/complete" */))
 const _5cda19cd = () => interopDefault(import('..\\pages\\profile\\edit.vue' /* webpackChunkName: "pages/profile/edit" */))
 const _19ef0f00 = () => interopDefault(import('..\\pages\\magazine\\_id.vue' /* webpackChunkName: "pages/magazine/_id" */))
 const _b56be97c = () => interopDefault(import('..\\pages\\order\\_id.vue' /* webpackChunkName: "pages/order/_id" */))
@@ -122,6 +123,10 @@ export const routerOptions = {
     component: _1d5b4ae1,
     name: "auth-register___uz"
   }, {
+    path: "/order/complete",
+    component: _7d504161,
+    name: "order-complete___uz"
+  }, {
     path: "/profile/edit",
     component: _5cda19cd,
     name: "profile-edit___uz"
@@ -202,6 +207,10 @@ export const routerOptions = {
     path: "/ru/auth/register",
     component: _1d5b4ae1,
     name: "auth-register___ru"
+  }, {
+    path: "/ru/order/complete",
+    component: _7d504161,
+    name: "order-complete___ru"
   }, {
     path: "/ru/profile/edit",
     component: _5cda19cd,

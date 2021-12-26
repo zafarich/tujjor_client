@@ -70,13 +70,13 @@ module.exports = __webpack_require__.p + "img/bg-2.4124a28.jpg";
 
 /***/ }),
 
-/***/ 187:
+/***/ 188:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(253);
+var content = __webpack_require__(256);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -88,26 +88,26 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 251:
+/***/ 254:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/magazine-icon.c4a7718.png";
 
 /***/ }),
 
-/***/ 252:
+/***/ 255:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_webpack_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(187);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_webpack_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(188);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_webpack_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_webpack_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_webpack_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_nuxt_webpack_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_sass_resources_loader_lib_loader_js_ref_7_oneOf_1_4_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MagazineDescription_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 253:
+/***/ 256:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -124,7 +124,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 285:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -132,7 +132,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/MagazineDescription.vue?vue&type=template&id=622ddf08&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"magazine__section"},[_vm._ssrNode("<div class=\"product-show\">","</div>",[_vm._ssrNode("<div class=\"container\">","</div>",[_vm._ssrNode("<div class=\"title-box\">","</div>",[_vm._ssrNode("<ul>","</ul>",[_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v("Главная страница")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Все магазины")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Аристокракта")])],1)],2)])])]),_vm._ssrNode(" <div class=\"container magazine__description__box\"><div class=\"magazine__description__logo__text\"><img"+(_vm._ssrAttr("src",__webpack_require__(251)))+" alt=\"Logo image\" class=\"magazine__description--logo\"> <p class=\"magazine__description--text\">\n                АРИСТОКРАТКА - это больше чем элитный бутик это идеальный\n                шопинг для вашей души, дополняйте модные предметы гардероба\n                стильной одеждой, обувью, сумками и изысканными\n                аксессуарами.\n            </p></div> <div class=\"magazine__description__img\"><div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(123)))+" alt=\"Icon image\"> <span> +998 90 999-20-30 </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(124)))+" alt=\"Icon image\"> <span>\n                    info@aristokratka.uz\n                </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(125)))+" alt=\"Icon image\"> <span>Шахрисабз 3/74, Метро Айбек\n                    <br>\n                    Ташкент, ул. Шахрисабзская 3/74 (Ориентир: Метро Айбек),\n                    100015\n                </span></div></div></div> "),_vm._ssrNode("<section class=\"catalog__container container\">","</section>",[_vm._ssrNode("<div class=\"catalog__filtraiton__box\">","</div>",[_vm._ssrNode("<section class=\"popular__container catalog__dropdown__container\"><div class=\"popular__dropdown__box\"><button class=\"popular__dropdown--btn\"><span>Сортировка по</span> <img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Vector\"></button> <div class=\"popular__dropdown__content\"><a href=\"#\" class=\"popular__dropdown--link\">По дате</a> <a href=\"#\" class=\"popular__dropdown--link\">По рейтинг</a></div></div></section> "),_vm._ssrNode("<form action=\"#\" class=\"filtraiton__form__box\">","</form>",[_vm._ssrNode("<h5 class=\"filtraiton__header\">\n                    Диапазон цена\n                </h5> "),_vm._ssrNode("<div class=\"input__range\">","</div>",[_c('vue-slider',{attrs:{"id":"range","name":"range","value":"range","min":0,"max":1500000,"interval":10000,"process-style":{
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"magazine__section"},[_vm._ssrNode("<div class=\"product-show\">","</div>",[_vm._ssrNode("<div class=\"container\">","</div>",[_vm._ssrNode("<div class=\"title-box\">","</div>",[_vm._ssrNode("<ul>","</ul>",[_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v("Главная страница")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Все магазины")]),_vm._ssrNode("\n                        /\n                    ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/rubashki"}},[_vm._v("Аристокракта")])],1)],2)])])]),_vm._ssrNode(" <div class=\"container magazine__description__box\"><div class=\"magazine__description__logo__text\"><img"+(_vm._ssrAttr("src",__webpack_require__(254)))+" alt=\"Logo image\" class=\"magazine__description--logo\"> <p class=\"magazine__description--text\">\n                АРИСТОКРАТКА - это больше чем элитный бутик это идеальный\n                шопинг для вашей души, дополняйте модные предметы гардероба\n                стильной одеждой, обувью, сумками и изысканными\n                аксессуарами.\n            </p></div> <div class=\"magazine__description__img\"><div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(123)))+" alt=\"Icon image\"> <span> +998 90 999-20-30 </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(124)))+" alt=\"Icon image\"> <span>\n                    info@aristokratka.uz\n                </span></div> <div class=\"magazine__description__img--box\"><img"+(_vm._ssrAttr("src",__webpack_require__(125)))+" alt=\"Icon image\"> <span>Шахрисабз 3/74, Метро Айбек\n                    <br>\n                    Ташкент, ул. Шахрисабзская 3/74 (Ориентир: Метро Айбек),\n                    100015\n                </span></div></div></div> "),_vm._ssrNode("<section class=\"catalog__container container\">","</section>",[_vm._ssrNode("<div class=\"catalog__filtraiton__box\">","</div>",[_vm._ssrNode("<section class=\"popular__container catalog__dropdown__container\"><div class=\"popular__dropdown__box\"><button class=\"popular__dropdown--btn\"><span>Сортировка по</span> <img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt=\"Vector\"></button> <div class=\"popular__dropdown__content\"><a href=\"#\" class=\"popular__dropdown--link\">По дате</a> <a href=\"#\" class=\"popular__dropdown--link\">По рейтинг</a></div></div></section> "),_vm._ssrNode("<form action=\"#\" class=\"filtraiton__form__box\">","</form>",[_vm._ssrNode("<h5 class=\"filtraiton__header\">\n                    Диапазон цена\n                </h5> "),_vm._ssrNode("<div class=\"input__range\">","</div>",[_c('vue-slider',{attrs:{"id":"range","name":"range","value":"range","min":0,"max":1500000,"interval":10000,"process-style":{
                             backgroundColor: '#FE9E0D'
                         },"tooltip-style":{
                             backgroundColor: 'black',
@@ -531,7 +531,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(252)
+  var style0 = __webpack_require__(255)
 if (style0.__inject__) style0.__inject__(context)
 
 }

@@ -142,6 +142,13 @@
     "_name": "_1d5b4ae1"
   },
   {
+    "name": "order-complete___uz",
+    "path": "/order/complete",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\order\\\\complete.vue",
+    "chunkName": "pages/order/complete",
+    "_name": "_7d504161"
+  },
+  {
     "name": "profile-edit___uz",
     "path": "/profile/edit",
     "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\profile\\\\edit.vue",
@@ -282,6 +289,13 @@
     "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\auth\\\\register.vue",
     "chunkName": "pages/auth/register",
     "_name": "_1d5b4ae1"
+  },
+  {
+    "name": "order-complete___ru",
+    "path": "/ru/order/complete",
+    "component": "D:\\\\active_projects\\\\tujjor_test\\\\pages\\\\order\\\\complete.vue",
+    "chunkName": "pages/order/complete",
+    "_name": "_7d504161"
   },
   {
     "name": "profile-edit___ru",

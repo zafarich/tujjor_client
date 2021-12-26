@@ -1,4 +1,4 @@
-exports.ids = [35,12,20];
+exports.ids = [33,12,20];
 exports.modules = {
 
 /***/ 100:
@@ -137,7 +137,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(210);
+var content = __webpack_require__(211);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -149,14 +149,14 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 208:
+/***/ 209:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEuSURBVHgBnVJdTsJAEJ5pm1qjMfHNxKjrDeQG3EA9AeVdjT0BegKMP/GZE8gN9AjcAAwx8bFBEsTu7rjTQAO23QrfS7cz38x+880CWDB5FoIej49sHMeWRKlPvykJ125gEJo2dRsByxIsH6Tu8zlAV+BF/x1WUcDy52fbGDhp7wnw/EZBjovETGaPALo5hvzppCOM7w9CF7BlmAL+ASKICam5dTnsZh6wEvT8F3PTSUX5G8ikuRl9DmbqljF9OGxpgJuiUiS6C66G0WIsZ6L2nA6UYEN93f6N5beQqDqUYOrtNKoboJOS2CgEfW2+mWQCOsvRF3+yx0MwUEqdb0cfvTTOq3b9V95SIEe7GMVxsQIjPzVKjWrzYgY7HiinxrmiMTKMn0TFCg2nvb/E+QXgHHLD5nWLDwAAAABJRU5ErkJggg=="
 
 /***/ }),
 
-/***/ 209:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -168,7 +168,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 210:
+/***/ 211:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -182,7 +182,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 264:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -193,7 +193,7 @@ __webpack_require__.r(__webpack_exports__);
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[(!_vm.isGet)?_c('base-loading'):_vm._e(),_vm._ssrNode(" "),(_vm.isGet && _vm.noData)?_vm._ssrNode("<section class=\"favourite__is__empty\" data-v-7a0b77e6>","</section>",[_vm._ssrNode("<div class=\"container\" data-v-7a0b77e6>","</div>",[_vm._ssrNode("<div class=\"title-box title__about__us\" data-v-7a0b77e6>","</div>",[_vm._ssrNode("<ul data-v-7a0b77e6>","</ul>",[_vm._ssrNode("<li data-v-7a0b77e6>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v(_vm._s(_vm.$t("home"))+" ")]),_vm._ssrNode("\n                            /\n                        ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-7a0b77e6>","</li>",[_c('nuxt-link',{attrs:{"to":"#"}},[_vm._v(" "+_vm._s(_vm.$t("izb"))+" ")])],1)],2)])]),_vm._ssrNode(" <section class=\"container popular__container\" data-v-7a0b77e6><div class=\"popular__heading\" data-v-7a0b77e6>"+_vm._ssrEscape("\n                    "+_vm._s(_vm.$t("netkor"))+"\n                ")+"</div></section>")],2):_vm._e(),_vm._ssrNode(" "),(_vm.isGet && !_vm.noData)?_vm._ssrNode("<section data-v-7a0b77e6>","</section>",[_vm._ssrNode("<div class=\"container\" data-v-7a0b77e6>","</div>",[_vm._ssrNode("<div class=\"title-box title__about__us\" data-v-7a0b77e6>","</div>",[_vm._ssrNode("<ul data-v-7a0b77e6>","</ul>",[_vm._ssrNode("<li data-v-7a0b77e6>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v(" "+_vm._s(_vm.$t("home")))]),_vm._ssrNode("\n                            /\n                        ")],2),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-7a0b77e6>","</li>",[_c('nuxt-link',{attrs:{"to":"#"}},[_vm._v(" "+_vm._s(_vm.$t("izb"))+" ")])],1)],2)])]),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"container popular__container\" data-v-7a0b77e6>","</section>",[_vm._ssrNode("<div class=\"popular__heading\" data-v-7a0b77e6>"+_vm._ssrEscape(_vm._s(_vm.$t("izb")))+"</div> "),_vm._ssrNode("<div class=\"popular__item-box\" data-v-7a0b77e6>","</div>",_vm._l((_vm.allFavourites),function(product){return _vm._ssrNode("<div class=\"popular__items\" data-v-7a0b77e6>","</div>",[_c('nuxt-link',{attrs:{"to":{
                                 name: ("product-id___" + (_vm.$i18n.locale)),
                                 params: { id: product.slug }
-                            }}},[_c('img',{staticClass:"popular__items__img",attrs:{"src":_vm.$cdn + product.product.image,"alt":"Popular item photo","type":"photo/png"}}),_vm._v(" "),_c('div',{staticClass:"popular__items__desription"},[_c('div',{staticClass:"name__rating"},[_c('span',{staticClass:"popular__items__desription--name"},[_vm._v("\n                                        "+_vm._s(product.product.category.name.uz)+"\n                                    ")]),_vm._v(" "),_c('div',{staticClass:"magazine__item--rating"},[_c('img',{attrs:{"src":__webpack_require__(208),"alt":"Star img"}}),_c('span',[_vm._v("4")])])]),_vm._v(" "),_c('h4',{staticClass:"popular__items__desription--categorie"},[_vm._v("\n                                    "+_vm._s(product.product.name.uz)+"\n                                ")]),_vm._v(" "),_c('div',{staticClass:"d-flex justify-content-between align-items-center"},[(!!product.discount)?_c('span',{staticClass:"popular__items__desription--price"},[_vm._v("\n                                        "+_vm._s(_vm.updatePriceFormat(product.discount))+"\n                                        "+_vm._s(_vm.$t("sum"))+"\n                                    ")]):_vm._e(),_vm._v(" "),(!product.discount)?_c('span',{staticClass:"popular__items__desription--price"},[_vm._v("\n                                        "+_vm._s(_vm.updatePriceFormat(product.price))+"\n                                        "+_vm._s(_vm.$t("sum"))+"\n                                    ")]):_vm._e(),_vm._v(" "),_c('p',{staticClass:"button__delete",on:{"click":function($event){$event.preventDefault();_vm.resetModalSettings();
+                            }}},[_c('img',{staticClass:"popular__items__img",attrs:{"src":_vm.$cdn + product.product.image,"alt":"Popular item photo","type":"photo/png"}}),_vm._v(" "),_c('div',{staticClass:"popular__items__desription"},[_c('div',{staticClass:"name__rating"},[_c('span',{staticClass:"popular__items__desription--name"},[_vm._v("\n                                        "+_vm._s(product.product.category.name.uz)+"\n                                    ")]),_vm._v(" "),_c('div',{staticClass:"magazine__item--rating"},[_c('img',{attrs:{"src":__webpack_require__(209),"alt":"Star img"}}),_c('span',[_vm._v("4")])])]),_vm._v(" "),_c('h4',{staticClass:"popular__items__desription--categorie"},[_vm._v("\n                                    "+_vm._s(product.product.name.uz)+"\n                                ")]),_vm._v(" "),_c('div',{staticClass:"d-flex justify-content-between align-items-center"},[(!!product.discount)?_c('span',{staticClass:"popular__items__desription--price"},[_vm._v("\n                                        "+_vm._s(_vm.updatePriceFormat(product.discount))+"\n                                        "+_vm._s(_vm.$t("sum"))+"\n                                    ")]):_vm._e(),_vm._v(" "),(!product.discount)?_c('span',{staticClass:"popular__items__desription--price"},[_vm._v("\n                                        "+_vm._s(_vm.updatePriceFormat(product.price))+"\n                                        "+_vm._s(_vm.$t("sum"))+"\n                                    ")]):_vm._e(),_vm._v(" "),_c('p',{staticClass:"button__delete",on:{"click":function($event){$event.preventDefault();_vm.resetModalSettings();
                                             _vm.showDeleteModal();
                                             _vm.defaultProductId();
                                             _vm.addProductId(product._id);}}},[_c('svg',{attrs:{"width":"10","height":"10","viewBox":"0 0 10 10","fill":"none","xmlns":"http://www.w3.org/2000/svg"}},[_c('path',{attrs:{"d":"M9.37507 0.625018C9.02991 0.279827 8.47027 0.279794 8.12507 0.624945L4.99956 3.75L1.87489 0.625055C1.52972 0.279855 0.970058 0.279856 0.624889 0.625055C0.279763 0.970212 0.279763 1.52979 0.624889 1.87494L3.74967 5L0.624889 8.12506C0.279763 8.47021 0.279763 9.02979 0.624889 9.37495C0.970058 9.72015 1.52972 9.72014 1.87489 9.37494L4.99956 6.25L8.12507 9.37506C8.47027 9.72021 9.02991 9.72017 9.37507 9.37498C9.72022 9.02981 9.72022 8.4702 9.37507 8.12502L6.25033 5L9.37507 1.87498C9.72022 1.5298 9.72022 0.970195 9.37507 0.625018Z","fill":"#F7931E"}})])])]),_vm._v(" "),(!!product.discount)?_c('span',{staticClass:"popular__items__desription--price popular__items__desription--old--price hidden"},[_vm._v("\n                                    "+_vm._s(_vm.updatePriceFormat(product.price))+"\n                                    "+_vm._s(_vm.$t("sum"))+"\n                                ")]):_vm._e()])])],1)}),0)],2),_vm._ssrNode(" "),_c('b-modal',{staticClass:"b-modal",attrs:{"id":"modal-danger","hide-footer":"","hide-header":"","centered":""},model:{value:(_vm.dangerModal.showModal),callback:function ($$v) {_vm.$set(_vm.dangerModal, "showModal", $$v)},expression:"dangerModal.showModal"}},[(_vm.dangerModal.showContent)?_c('div',[_c('div',{staticClass:"d-block text-center"},[_c('h3',[_vm._v("\n                            "+_vm._s(_vm.$t("vixotite"))+"\n                            "+_vm._s(_vm.removeProductId === "rm/all"
@@ -517,7 +517,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(209)
+  var style0 = __webpack_require__(210)
 if (style0.__inject__) style0.__inject__(context)
 
 }

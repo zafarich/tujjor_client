@@ -38,6 +38,17 @@
                         <h4>{{ $t("danni") }}</h4>
 
                         <div class="person__home--description">
+                            <span>{{ $t("yourName") }}</span>
+                            <input
+                                type="text"
+                                :placeholder="$t('yourName')"
+                                id="Adress"
+                                name="Adress"
+                                v-model="order.name"
+                            />
+                        </div>
+
+                        <div class="person__home--description">
                             <span>{{ $t("city") }}</span>
                             <select
                                 name="region"
@@ -315,6 +326,7 @@ export default {
             selectedCityDistricts: [],
 
             order: {
+                name: "",
                 address: {
                     region: "",
                     district: "",
@@ -446,6 +458,7 @@ export default {
                 region: this.order.address.region._id,
                 district: this.order.address.district,
                 address: this.order.address.address,
+
                 phone: this.order.address.phone.replace(/[^0-9]/g, "")
             };
             await this.updateOrderAddress({ add });
@@ -455,7 +468,8 @@ export default {
                 !!address.address &&
                 !!address.district &&
                 !!address.phone &&
-                !!address.region
+                !!address.region &&
+                !!this.order.name
             ) {
                 let prod = [];
 
@@ -481,7 +495,8 @@ export default {
                         amount: this.allPricePay,
                         address: address,
                         toMyHouse: this.tohome,
-                        products: prod
+                        products: prod,
+                        name: this.order.name
                     })
                     .then(res => {
                         return res;
@@ -501,19 +516,27 @@ export default {
         },
         // go to pay me
         redirectToPayMe() {
-            const teene = this.base64Data.amount * 100;
-            const str =
-                "m=6113b418754e932e68fd87ad;ac.order=" +
-                this.base64Data.orderId +
-                ";a=" +
-                +teene +
-                ";c=https://tujjor.org/profile";
+            // const teene = this.base64Data.amount * 100;
+            // const str =
+            //     "m=6113b418754e932e68fd87ad;ac.order=" +
+            //     this.base64Data.orderId +
+            //     ";a=" +
+            //     +teene +
+            //     ";c=https://tujjor.org/profile";
 
-            const base64 = btoa(str);
-            console.log("base64", str);
-            const link = "https://checkout.paycom.uz/" + base64;
+            // const base64 = btoa(str);
+            // console.log("base64", str);
+            // const link = "https://checkout.paycom.uz/" + base64;
 
-            window.location = link;
+            this.$router.push({
+                name: `order-complete___${this.$i18n.locale}`,
+                query: {
+                    amount: this.base64Data.amount,
+                    order: this.base64Data.orderId
+                }
+            });
+
+            // window.location = link;
         }
     },
 

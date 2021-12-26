@@ -1,4 +1,4 @@
-exports.ids = [24,1,20];
+exports.ids = [22,1,20];
 exports.modules = {
 
 /***/ 107:
@@ -45,7 +45,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 189:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -177,7 +177,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 258:
+/***/ 259:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var about = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {AboutUs: __webpack_require__(189).default})
+installComponents(component, {AboutUs: __webpack_require__(190).default})
 
 
 /***/ }),

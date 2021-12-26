@@ -24,6 +24,8 @@ export default {
         this.$store.commit("LIMIT_1", 10);
         this.$store.commit("LIMIT_2", 20);
         this.$store.commit("LIMIT_3", 10);
+
+        let orr = this.$axios.$get("order/me?status=notPayed");
     }
 };
 </script>

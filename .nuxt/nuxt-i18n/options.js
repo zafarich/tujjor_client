@@ -1,4 +1,5 @@
-
+import locale78296afc from '../..\\lang\\uz.js'
+import locale77fcde9e from '../..\\lang\\ru.js'
 
 export const Constants = {
   COMPONENT_OPTIONS_KEY: "nuxtI18n",
@@ -19,10 +20,10 @@ export const options = {
   defaultLocaleRouteNameSuffix: "default",
   sortRoutes: true,
   strategy: "prefix_except_default",
-  lazy: true,
+  lazy: false,
   langDir: "D:\\active_projects\\tujjor_test\\lang",
   rootRedirect: null,
-  detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","redirectOn":"root","useCookie":true},
+  detectBrowserLanguage: false,
   differentDomains: false,
   baseUrl: "",
   vuex: {"moduleName":"i18n","syncRouteParams":true},
@@ -31,11 +32,12 @@ export const options = {
   skipSettingLocaleOnNavigate: false,
   onBeforeLanguageSwitch: () => {},
   onLanguageSwitched: () => null,
+  prefix_except_default: "uz",
   normalizedLocales: [{"code":"uz","file":"uz.js"},{"code":"ru","file":"ru.js"}],
   localeCodes: ["uz","ru"],
 }
 
 export const localeMessages = {
-  'uz.js': () => import('../..\\lang\\uz.js' /* webpackChunkName: "lang-uz.js" */),
-  'ru.js': () => import('../..\\lang\\ru.js' /* webpackChunkName: "lang-ru.js" */),
+  'uz.js': () => Promise.resolve(locale78296afc),
+  'ru.js': () => Promise.resolve(locale77fcde9e),
 }

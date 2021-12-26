@@ -1,4 +1,4 @@
-exports.ids = [37,2,3,9,14,15,16,17,18,20];
+exports.ids = [35,2,3,9,14,15,16,17,18,20];
 exports.modules = {
 
 /***/ 109:
@@ -510,7 +510,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(222);
+var content = __webpack_require__(223);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -522,7 +522,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 191:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -639,7 +639,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 192:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -718,7 +718,7 @@ installComponents(component, {ProductCard: __webpack_require__(93).default})
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -869,7 +869,7 @@ installComponents(component, {ProductCard: __webpack_require__(93).default})
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -942,7 +942,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1023,7 +1023,7 @@ installComponents(component, {ProductCard: __webpack_require__(93).default})
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1103,7 +1103,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1212,7 +1212,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1224,7 +1224,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 222:
+/***/ 223:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1238,7 +1238,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 270:
+/***/ 271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1281,7 +1281,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(221)
+  var style0 = __webpack_require__(222)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1302,7 +1302,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {BannerOnMainPage: __webpack_require__(191).default,OnSaleItem: __webpack_require__(192).default,OtherItems: __webpack_require__(193).default,LogoRectangle: __webpack_require__(194).default,PopularItem: __webpack_require__(195).default,Brands: __webpack_require__(196).default,News: __webpack_require__(197).default})
+installComponents(component, {BannerOnMainPage: __webpack_require__(192).default,OnSaleItem: __webpack_require__(193).default,OtherItems: __webpack_require__(194).default,LogoRectangle: __webpack_require__(195).default,PopularItem: __webpack_require__(196).default,Brands: __webpack_require__(197).default,News: __webpack_require__(198).default})
 
 
 /***/ }),

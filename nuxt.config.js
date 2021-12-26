@@ -115,6 +115,7 @@ export default {
         "@nuxt/image"
     ],
     i18n: {
+        detectBrowserLanguage: false,
         locales: [
             {
                 code: "uz",
@@ -125,10 +126,11 @@ export default {
                 file: "ru.js"
             }
         ],
-        lazy: true,
+        lazy: false,
+        defaultLocale: "uz",
         langDir: "lang/",
-        strategy: "prefix_except_default",
-        defaultLocale: "uz"
+        detectBrowserLanguage: false,
+        prefix_except_default: "uz"
     },
 
     router: {
