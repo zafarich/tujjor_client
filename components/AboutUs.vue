@@ -85,7 +85,7 @@ export default {
         return {
             aboutUsArray: [],
             isGet: false,
-            error: null
+            error: null,
         };
     },
     methods: {},
@@ -96,8 +96,8 @@ export default {
         this.isGet = false;
         this.error = null;
         const ip = await this.$axios
-            .$get("http://cdn.tujjor.org/api/info/client/all")
-            .then(response => {
+            .$get("https://cdn.tujjor.uz/api/info/client/all")
+            .then((response) => {
                 if (response.success) {
                     this.isGet = true;
                     this.aboutUsArray = response.data;
@@ -106,12 +106,12 @@ export default {
                     throw new Error("Could not save data!");
                 }
             })
-            .catch(error => {
+            .catch((error) => {
                 // handle error
                 console.log(error);
                 this.error = error.message;
             });
-    }
+    },
 };
 </script>
 

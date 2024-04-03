@@ -3,10 +3,9 @@ export default {
     ssr: true,
     target: "server",
     head: {
-        title:
-            "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor",
+        title: "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor",
         htmlAttrs: {
-            lang: "en"
+            lang: "en",
         },
 
         meta: [
@@ -14,59 +13,54 @@ export default {
             {
                 name: "viewport",
                 content:
-                    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+                    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
             },
             {
                 hid: "description",
                 name: "description",
                 content:
-                    "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor. "
+                    "Интернет-платформа  Tujjor —  низкие цены и широкий ассортимент! | Tujjor. ",
             },
 
             {
                 name: "keywords",
                 content:
-                    "интернет магазин, узбекистан, ташкент, рассрочка, скидка, Книги, телефоны и гаджеты, компьютеры  и  оргтехника, для геймеров, кондиционеры, бытовая техника, телевизоры, видео и аудио, посуда, мебель, техника для красоты и здоровья, техника для кухни, для дома и офиса, инструменты и автотовары, игрушки, подарки и аксессуары, рамазан, одежда, обувь и аксессуары"
-            }
+                    "интернет магазин, узбекистан, ташкент, рассрочка, скидка, Книги, телефоны и гаджеты, компьютеры  и  оргтехника, для геймеров, кондиционеры, бытовая техника, телевизоры, видео и аудио, посуда, мебель, техника для красоты и здоровья, техника для кухни, для дома и офиса, инструменты и автотовары, игрушки, подарки и аксессуары, рамазан, одежда, обувь и аксессуары",
+            },
         ],
 
         link: [
             {
                 rel: "icon",
                 type: "image/x-icon",
-                href: "/favicon.ico"
+                href: "/favicon.ico",
             },
             {
                 rel: "stylesheet",
                 type: "text/css",
-                href:
-                    "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+                href: "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
             },
             {
                 rel: "stylesheet",
                 type: "text/css",
-                href:
-                    "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+                href: "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css",
             },
 
             {
                 rel: "stylesheet",
-                href:
-                    "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+                href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap",
             },
 
             {
                 rel: "stylesheet",
-                href:
-                    "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                href: "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap",
             },
 
             {
                 rel: "stylesheet",
-                href:
-                    "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-            }
-        ]
+                href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap",
+            },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -74,7 +68,7 @@ export default {
 
     loading: {
         color: "#f7931f",
-        hieght: "1px"
+        hieght: "1px",
     },
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -87,14 +81,14 @@ export default {
         { src: "@plugins/v-mask.js", ssr: false },
         { src: "@plugins/persistedState.js", ssr: false },
         { src: "@plugins/vuelidate.js", ssr: false },
-        { src: "@plugins/pdf.js", ssr: false }
+        { src: "@plugins/pdf.js", ssr: false },
     ],
     fontawesome: {
         component: "fa",
         icons: {
             solid: true,
-            brands: true
-        }
+            brands: true,
+        },
     },
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -112,25 +106,25 @@ export default {
         "@nuxtjs/axios",
         "@nuxtjs/auth-next",
         "@nuxtjs/i18n",
-        "@nuxt/image"
+        "@nuxt/image",
     ],
     i18n: {
         detectBrowserLanguage: false,
         locales: [
             {
                 code: "uz",
-                file: "uz.js"
+                file: "uz.js",
             },
             {
                 code: "ru",
-                file: "ru.js"
-            }
+                file: "ru.js",
+            },
         ],
         lazy: false,
         defaultLocale: "uz",
         langDir: "lang/",
         detectBrowserLanguage: false,
-        prefix_except_default: "uz"
+        prefix_except_default: "uz",
     },
 
     router: {
@@ -148,7 +142,7 @@ export default {
                         window.scrollTo({
                             top: y,
                             left: x,
-                            behavior: "smooth"
+                            behavior: "smooth",
                         });
 
                         if (scrollY <= y + 150 && scrollY >= y - 150) {
@@ -164,7 +158,7 @@ export default {
             } else {
                 return { x: 0, y: 0 };
             }
-        }
+        },
     },
 
     auth: {
@@ -172,7 +166,7 @@ export default {
             login: "/auth/login",
             logout: "/",
             callback: "/auth/login",
-            home: "/"
+            home: "/",
         },
         strategies: {
             local: {
@@ -180,33 +174,33 @@ export default {
                     property: "token",
                     // required: true,
                     // type: 'Bearer'
-                    name: "token"
+                    name: "token",
                 },
                 user: {
-                    property: "data"
+                    property: "data",
                     // autoFetch: true
                 },
                 endpoints: {
                     login: { url: "/user/checkCode", method: "post" },
-                    user: { url: "/user/me", method: "get" }
-                }
-            }
-        }
+                    user: { url: "/user/me", method: "get" },
+                },
+            },
+        },
     },
     styleResources: {
-        scss: ["@/assets/scss/*.scss"]
+        scss: ["@/assets/scss/*.scss"],
     },
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
-        baseURL: "https://cdn.tujjor.org/api"
+        baseURL: "https://cdn.tujjor.uz/api",
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
         babel: {
-            compact: true
+            compact: true,
         },
         transpile: ["vue-slick"],
-        vendor: ["vue-slider-component", "star-rating"]
-    }
+        vendor: ["vue-slider-component", "star-rating"],
+    },
 };

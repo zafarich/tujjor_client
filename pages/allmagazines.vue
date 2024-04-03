@@ -509,7 +509,7 @@ export default {
     },
 
     async mounted() {
-        const ip = await this.$axios.$get("http://cdn.tujjor.org/api/shop/all");
+        const ip = await this.$axios.$get("https://cdn.tujjor.uz/api/shop/all");
         this.magazinesData = ip;
         this.visibleMagazinies = !this.visibleMagazinies;
         console.log(this.magazinesData);

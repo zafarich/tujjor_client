@@ -206,9 +206,7 @@
                                     fill="#FB8500"
                                 />
                             </svg>
-                            <span class="basket-count">
-                                4
-                            </span>
+                            <span class="basket-count"> 4 </span>
                         </nuxt-link>
                     </span>
                     <span class="header__item header__item__logo">
@@ -491,7 +489,7 @@ export default {
             isVibibleDropdownList: false,
             loggedIn: null,
             isVisiblePerson: false,
-            personName: ""
+            personName: "",
         };
     },
     methods: {
@@ -529,19 +527,19 @@ export default {
             await this.$auth.logout();
             this.loggedIn = this.$auth.loggedIn;
             this.personName = this.$auth.user?.name;
-        }
+        },
     },
 
     computed: {},
 
     async mounted() {
         const ip = await this.$axios.$get(
-            "http://cdn.tujjor.org/api/category/all"
+            "https://cdn.tujjor.uz/api/category/all"
         );
         this.categoryArray = ip.data;
         this.loggedIn = this.$auth.loggedIn;
         this.personName = this.$auth.user?.name;
-    }
+    },
 };
 </script>
 

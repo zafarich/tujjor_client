@@ -21,7 +21,7 @@
 
             <div class="news">
                 <section
-                    class="container popular__container news__section__heading "
+                    class="container popular__container news__section__heading"
                 >
                     <div class="popular__heading">
                         {{ $t("news") }}
@@ -30,13 +30,13 @@
 
                 <div class="news__box container">
                     <div
-                        class=" news__box--item"
+                        class="news__box--item"
                         v-for="(newsItem, index) in newsImage"
                         :key="index"
                     >
                         <img
                             class="news__box--item--img"
-                            :src="'http://cdn.tujjor.org' + newsItem.file"
+                            :src="'https://cdn.tujjor.uz' + newsItem.file"
                             alt="News"
                         />
                         <div class="news__box--description">
@@ -52,7 +52,7 @@
                             <nuxt-link
                                 :to="{
                                     name: 'news-id___' + $i18n.locale,
-                                    params: { id: newsItem.slug }
+                                    params: { id: newsItem.slug },
                                 }"
                                 class="data__box--btn text-center"
                             >
@@ -83,8 +83,8 @@
                             <div class="video__img__container">
                                 <video
                                     :src="
-                                        'http://cdn.tujjor.org' +
-                                            newsVideo[0].file
+                                        'https://cdn.tujjor.uz' +
+                                        newsVideo[0].file
                                     "
                                     controls="controls"
                                 ></video>
@@ -205,9 +205,9 @@ export default {
             {
                 hid: "description",
                 name: "description",
-                content: "Новости - Tujjor"
-            }
-        ]
+                content: "Новости - Tujjor",
+            },
+        ],
     },
 
     components: { BaseLoading },
@@ -216,7 +216,7 @@ export default {
             newsArray: [],
             newsImage: [],
             newsVideo: [],
-            isGet: false
+            isGet: false,
         };
     },
 
@@ -231,21 +231,21 @@ export default {
                     : date.getMonth() + 1;
             const year = date.getFullYear();
             return day + "." + month + "." + year;
-        }
+        },
     },
 
     async mounted() {
         this.isGet = false;
         const ip = await this.$axios
-            .$get("http://cdn.tujjor.org/api/news/all")
-            .then(response => {
+            .$get("https://cdn.tujjor.uz/api/news/all")
+            .then((response) => {
                 if (response.success) {
                     return response;
                 } else {
                     throw new Error("Could not save data!");
                 }
             })
-            .catch(error => {
+            .catch((error) => {
                 // handle error
                 console.log(error);
                 this.error = error.message;
@@ -260,7 +260,7 @@ export default {
             }
         }
         this.isGet = true;
-    }
+    },
 };
 </script>
 
