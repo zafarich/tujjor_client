@@ -504,7 +504,7 @@ export default {
         return {
             name: 1,
             magazinesData: [],
-            visibleMagazinies: false
+            visibleMagazinies: false,
         };
     },
 
@@ -513,7 +513,7 @@ export default {
         this.magazinesData = ip;
         this.visibleMagazinies = !this.visibleMagazinies;
         console.log(this.magazinesData);
-    }
+    },
 };
 </script>
 
@@ -700,7 +700,7 @@ export default {
     }
 }
 
-@media only screen and(max-width: 1100px) {
+@media (max-width: 1100px) {
     .all_magazine__section {
         .magazin__container {
             .popular__heading {
@@ -742,7 +742,7 @@ export default {
     }
 }
 
-@media only screen and(max-width: 550px) {
+@media (max-width: 550px) {
     .all_magazine__section {
         .magazin__container {
             flex-wrap: wrap;

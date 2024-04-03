@@ -154,12 +154,20 @@ div.form-error {
             object-fit: cover !important;
         }
     }
-    .other__item__banner--carousel .b-carousel .carousel-inner .b-carousel-slide img {
+    .other__item__banner--carousel
+        .b-carousel
+        .carousel-inner
+        .b-carousel-slide
+        img {
         min-height: 250px !important;
     }
 }
 
-.other__item__banner--carousel .b-carousel .carousel-inner .b-carousel-slide img {
+.other__item__banner--carousel
+    .b-carousel
+    .carousel-inner
+    .b-carousel-slide
+    img {
     min-height: 450px;
 }
 
@@ -224,7 +232,10 @@ div.card-3 {
         position: relative !important;
         top: unset !important;
     }
-    .catalog__container .catalog__filtraiton__box .filtraiton__form__box .filtraiton__form--submit {
+    .catalog__container
+        .catalog__filtraiton__box
+        .filtraiton__form__box
+        .filtraiton__form--submit {
         margin-bottom: 0px !important;
     }
     .catalog__container .catalog__page__about {
@@ -454,7 +465,7 @@ h1.title-form {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            &:hover+.popular__dropdown__content {
+            &:hover + .popular__dropdown__content {
                 visibility: visible;
                 opacity: 1;
             }
@@ -731,7 +742,8 @@ div.category-modal {
             ul {
                 list-style-type: none;
                 margin-bottom: 25px;
-                li {}
+                li {
+                }
                 a {
                     font-size: 16px;
                     color: #888;
